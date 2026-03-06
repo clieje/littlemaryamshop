@@ -15,7 +15,9 @@
         "text_h1_line_1": "Begin",
         "text_h1_line_2": "Klein",
         "url_link": "",
-        "text_button_tekst": "shop nu"
+        "text_button_tekst": "shop nu",
+        "image_bio_label": "shopify://shop_images/bio.svg",
+        "image_halal_label": "shopify://shop_images/halal_c7da04a8-4809-4252-a740-68b3574d8980.svg"
       }
     },
     "homepagina_producten": {
