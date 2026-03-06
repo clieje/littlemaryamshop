@@ -1,0 +1,194 @@
+<div class="container-mid">
+          <div class="_2-text">
+            <div>
+              <div class="image-card big">{% if section.settings.image_afbeelding_biologisch_en_halal %}
+{{ section.settings.image_afbeelding_biologisch_en_halal | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'background-image-absolute' }}
+{% else %}
+<img src="{{ 'hero-apparel-1.svg' | asset_url }}" loading="lazy" alt="" class="background-image-absolute">
+{% endif %}</div>
+            </div>
+            <div class="button-title-par">
+              <div class="small-tag">
+                <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                    <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                  </svg></div>
+                <div class="tag-text">
+{{ section.settings.text_tag }}
+</div>
+              </div>
+              <div class="_2-line-h2">
+                <h2 class="h2_1 left">
+{{ section.settings.text_h2_1 }}
+</h2>
+                <h2 class="h2_2 left">
+{{ section.settings.text_h2_2 }}
+</h2>
+              </div>
+              <div data-w-id="8ed76353-eb46-c237-83d5-3fb2e384ea66" style="opacity:0" class="text-size-regular paragraph"> {{ section.settings.richtext_paragraph }} </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-mid">
+          <div class="grid-eigenschappen">
+            <div class="eigenschap product_list-item">{% if section.settings.image_afbeelding_eigenschap_1 %}
+{{ section.settings.image_afbeelding_eigenschap_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'eigenschap_img' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="eigenschap_img">
+{% endif %}
+              <div>
+                <h4>
+{{ section.settings.text_titel_eigenschap_1 }}
+</h4>
+                <div class="text-size-regular mid">
+{{ section.settings.text_tekst_eigenschap_1 }}
+</div>
+              </div>
+            </div>
+            <div class="eigenschap product_list-item">{% if section.settings.image_afbeelding_eigenschap_2 %}
+{{ section.settings.image_afbeelding_eigenschap_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'eigenschap_img' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="eigenschap_img">
+{% endif %}
+              <div>
+                <h4>
+{{ section.settings.text_titel_eigenschap_3 }}
+</h4>
+                <div class="text-size-regular mid">
+{{ section.settings.text_tekst_eigenschap_2 }}
+</div>
+              </div>
+            </div>
+            <div class="eigenschap product_list-item">{% if section.settings.image_afbeelding_eigenschap_3 %}
+{{ section.settings.image_afbeelding_eigenschap_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'eigenschap_img' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="eigenschap_img">
+{% endif %}
+              <div>
+                <h4>
+{{ section.settings.text_titel_eigenschap_3 }}
+</h4>
+                <div class="text-size-regular mid">
+{{ section.settings.text_tekst_eigenschap_3 }}
+</div>
+              </div>
+            </div>
+            <div class="eigenschap product_list-item">{% if section.settings.image_afbeelding_eigenschap_4 %}
+{{ section.settings.image_afbeelding_eigenschap_4 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'eigenschap_img' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="eigenschap_img">
+{% endif %}
+              <div>
+                <h4>
+{{ section.settings.text_titel_eigenschap_4 }}
+</h4>
+                <div class="text-size-regular mid">
+{{ section.settings.text_tekst_eigenschap_4 }}
+</div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Biologisch en Halal",
+    "class": "section_biohalal",
+    "settings": [
+        {
+            "id": "image_afbeelding_biologisch_en_halal",
+            "type": "image_picker",
+            "label": "Afbeelding biologisch en halal"
+        },
+        {
+            "id": "text_tag",
+            "type": "text",
+            "label": "Tag",
+            "default": "verantwoord"
+        },
+        {
+            "id": "text_h2_1",
+            "type": "text",
+            "label": "H2 1",
+            "default": "biologich"
+        },
+        {
+            "id": "text_h2_2",
+            "type": "text",
+            "label": "H2 2",
+            "default": "en halal"
+        },
+        {
+            "id": "richtext_paragraph",
+            "type": "richtext",
+            "label": "Paragraph",
+            "default": "<p><strong>Biologisch en halal<\/strong><br\/>Little Maryam heeft liefde voor jouw kind \u00e9n respect voor de wereld.<br\/><br\/>Daarom maken we onze babyhapjes alleen met biologische ingredi\u00ebnten, zonder chemische toevoegingen. We kiezen bewust voor veehouders met diervriendelijke werkwijzen en dragen met trots zowel het Europees biologisch keurmerk als het halal-keurmerk. <br\/><br\/>Om dat te garanderen zijn de productieketen en producten gecertificeerd door een betrouwbare en werel<\/p>"
+        },
+        {
+            "id": "image_afbeelding_eigenschap_1",
+            "type": "image_picker",
+            "label": "Afbeelding Eigenschap 1"
+        },
+        {
+            "id": "text_titel_eigenschap_1",
+            "type": "text",
+            "label": "Titel Eigenschap 1",
+            "default": "halal"
+        },
+        {
+            "id": "text_tekst_eigenschap_1",
+            "type": "text",
+            "label": "Tekst Eigenschap 1",
+            "default": "Gegarandeerd<br\/>altijd halal"
+        },
+        {
+            "id": "image_afbeelding_eigenschap_2",
+            "type": "image_picker",
+            "label": "Afbeelding Eigenschap 2"
+        },
+        {
+            "id": "text_titel_eigenschap_3",
+            "type": "text",
+            "label": "Titel Eigenschap 3",
+            "default": "halal"
+        },
+        {
+            "id": "text_tekst_eigenschap_2",
+            "type": "text",
+            "label": "Tekst Eigenschap 2",
+            "default": "Gegarandeerd<br\/>altijd halal"
+        },
+        {
+            "id": "image_afbeelding_eigenschap_3",
+            "type": "image_picker",
+            "label": "Afbeelding Eigenschap 3"
+        },
+        {
+            "id": "text_tekst_eigenschap_3",
+            "type": "text",
+            "label": "Tekst Eigenschap 3",
+            "default": "Gegarandeerd<br\/>altijd halal"
+        },
+        {
+            "id": "image_afbeelding_eigenschap_4",
+            "type": "image_picker",
+            "label": "Afbeelding Eigenschap 4"
+        },
+        {
+            "id": "text_titel_eigenschap_4",
+            "type": "text",
+            "label": "Titel Eigenschap 4",
+            "default": "halal"
+        },
+        {
+            "id": "text_tekst_eigenschap_4",
+            "type": "text",
+            "label": "Tekst Eigenschap 4",
+            "default": "Gegarandeerd<br\/>altijd halal"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Biologisch en Halal",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

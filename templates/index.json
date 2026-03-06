@@ -1,0 +1,44 @@
+{
+    "sections": {
+        "berichtenbalk": {
+            "type": "berichtenbalk"
+        },
+        "home_header": {
+            "type": "home_header"
+        },
+        "homepagina_producten": {
+            "type": "homepagina_producten"
+        },
+        "ons_verhaal": {
+            "type": "ons_verhaal"
+        },
+        "biologisch_en_halal": {
+            "type": "biologisch_en_halal"
+        },
+        "lint": {
+            "type": "lint"
+        },
+        "call_to_action": {
+            "type": "call_to_action"
+        },
+        "supermarkten": {
+            "type": "supermarkten"
+        },
+        "custom_liquid": {
+            "type": "custom_liquid"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "berichtenbalk",
+        "home_header",
+        "homepagina_producten",
+        "ons_verhaal",
+        "biologisch_en_halal",
+        "lint",
+        "call_to_action",
+        "supermarkten",
+        "custom_liquid"
+    ]
+}
