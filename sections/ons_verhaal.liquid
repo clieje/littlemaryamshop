@@ -1,0 +1,81 @@
+<div class="container-mid">
+          <div class="ons-verhaal-container">
+            <div class="_2-text">
+              <div class="image-card">{% if section.settings.image_afbeelding_ons_verhaal %}
+{{ section.settings.image_afbeelding_ons_verhaal | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'background-image-absolute' }}
+{% else %}
+<img src="{{ 'hero-apparel-1.svg' | asset_url }}" loading="lazy" alt="" class="background-image-absolute">
+{% endif %}</div>
+              <div class="text-mid">
+                <div class="_2-line-h2">
+                  <h2 class="h2_1 left">
+{{ section.settings.text_h2_1 }}
+</h2>
+                  <h2 class="h2_2 left">
+{{ section.settings.text_h2_2 }}
+</h2>
+                </div>
+                <div class="small-tag">
+                  <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                      <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                    </svg></div>
+                  <div class="tag-text">
+{{ section.settings.text_tag }}
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="_2-text">
+              <div data-w-id="4d94675d-76b4-ea5a-2a0a-8185475190dd" style="opacity:0" class="text-size-regular paragraph"> {{ section.settings.richtext_paragraph_1 }} </div>
+              <div data-w-id="b1770703-1878-8e9e-e879-9089ac137c98" style="opacity:0" class="text-size-regular paragraph"> {{ section.settings.richtext_paragraph_2 }} </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Ons verhaal",
+    "class": "section_onsverhaal",
+    "settings": [
+        {
+            "id": "image_afbeelding_ons_verhaal",
+            "type": "image_picker",
+            "label": "Afbeelding ons verhaal"
+        },
+        {
+            "id": "text_h2_1",
+            "type": "text",
+            "label": "H2 1",
+            "default": "ons"
+        },
+        {
+            "id": "text_h2_2",
+            "type": "text",
+            "label": "H2 2",
+            "default": "verhaal"
+        },
+        {
+            "id": "text_tag",
+            "type": "text",
+            "label": "Tag",
+            "default": "sinds 2019"
+        },
+        {
+            "id": "richtext_paragraph_1",
+            "type": "richtext",
+            "label": "Paragraph 1",
+            "default": "<p><strong>Over Little Maryam<\/strong><br\/>Je wilt alles goed doen. Logisch, want kijk waar je ineens verantwoordelijk voor bent\u2026 een leven. Een jong, uniek en kwetsbaar leven dat je koestert en waar je alles voor doet om het te beschermen.<br\/><br\/>Dus het is helemaal niet gek dat je vragen hebt. Dat je graag luistert naar mensen die je vertrouwt, maar niet alleen wilt vertrouwen op hun beste bedoelingen. En dat je voor jouw kind alleen maar het allerbeste wilt.<br\/><br\/>Dat <\/p>"
+        },
+        {
+            "id": "richtext_paragraph_2",
+            "type": "richtext",
+            "label": "Paragraph 2",
+            "default": "<p><strong>Goedgekeurd door di\u00ebtisten en mama\u2019s<\/strong><br\/>Little Maryam begrijpt dat je zekerheid wilt over wat jouw kleintje eet. Daarom bestaat onze babyvoeding uit de allerbeste ingredi\u00ebnten voor jouw kind: biologisch halal-vlees en gezonde biologische groenten.<br\/><br\/>Dus onbespoten en boordevol vitamines en mineralen. En alle gerechten van Little Maryam zijn samengesteld door gespecialiseerde kinderdi\u00ebtisten en worden bereid volgens strikte veiligheidsnormen en ce<\/p>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Ons verhaal",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

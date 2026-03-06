@@ -1,0 +1,243 @@
+<div class="footer-container-top">
+          <div class="container-large big">
+            <div class="footer_main-wrapper">
+              <div class="footer-left">
+                <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="footer_logo-link w-inline-block">{% if section.settings.image_logo %}
+{{ section.settings.image_logo | image_url: width: 1000 | image_tag: class: 'footer_logo', sizes: '(max-width: 1000px) 100vw, 1000px', loading: 'lazy' }}
+{% else %}
+<img class="footer_logo" src="{{ 'Logo-LM-PurpleTrans.png' | asset_url }}" alt="" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy" srcset="{{ 'Logo-LM-PurpleTrans-p-500.png' | asset_url }} 500w, {{ 'Logo-LM-PurpleTrans-p-800.png' | asset_url }} 800w, {{ 'Logo-LM-PurpleTrans.png' | asset_url }} 1000w">
+{% endif %}</a>
+                <div class="footer_link-grid">
+                  {% for link in linklists[section.settings.footer_menu].links %}    <div li-for="link in linklists[section.settings.footer_menu].links" class="footer_link-column">
+                                    
+                    
+                            <div li-object="link.title" class="text-weight-semibold">{{ link.title }}</div>
+                            
+                    
+                            <div li-for:inside="child_link in link.links" class="footer_link-list">
+        {% for child_link in link.links %}                            
+                      
+                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" class="footer_link">{{ child_link.title }}</a>
+                            
+                    
+                    {% endfor %}    </div>
+                            
+                  
+                        </div>
+{% endfor %}
+                </div>
+              </div>
+              <div class="footer-right">
+                {% for link in linklists['legal'].links %}    <div li-for="link in linklists['legal'].links" class="footer_link-column">
+                                    
+                  
+                            <div li-object="link.title" class="text-weight-semibold">{{ link.title }}</div>
+                            
+                  
+                            <div li-for:inside="child_link in link.links" class="footer_link-list">
+        {% for child_link in link.links %}                            
+                    
+                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" class="footer_link">{{ child_link.title }}</a>
+                            
+                  
+                    {% endfor %}    </div>
+                            
+                
+                        </div>
+{% endfor %}
+                {% for link in linklists['legal'].links %}    <div li-for="link in linklists['legal'].links" class="footer_link-column">
+                                    
+                  
+                            <div class="text-weight-semibold">
+{{ section.settings.text_contact }}
+</div>
+                            
+                  
+                            <div>
+                    <div class="text-size-regular space">
+{{ section.settings.text_adresgegevens }}
+</div>
+                  </div>
+                            
+                
+                        </div>
+{% endfor %}
+                <div class="footer_icon-block">
+                  <div class="footer_icon-row socialmedia">
+                    {% for block in section.blocks %}
+    {% if block.type == "social-media" %}
+                    <div li-block="Social-Media" class="footer_icon-item socialmedia">
+                                    
+                      
+                                    <a href="{{ block.settings.url_link }}" target="_blank" class="footer_social-link w-inline-block"> {% if block.settings.image_icon %} {{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_social-icon' }} {% else %} <img src="{{ 'Social-Icon.svg' | asset_url }}" loading="lazy" alt="" class="footer_social-icon"> {% endif %} <div class="sm-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewbox="0 0 55.579 45.677"> <defs> <clippath id="clip-path"> <rect id="Rectangle_1" data-name="Rectangle 1" width="55.579" height="45.677" fill="CurrentColor"></rect> </clippath> </defs> <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)"> <path id="Path_1" data-name="Path 1" d="M55.191,14.582A20.768,20.768,0,0,0,50.8,6.819c-.279-.3-1.467-1.5-1.689-1.688C41.216-1.55,26.872-.674,17.492,1.972S3.614,9.012,1.024,18.427c-3.412,12.405,1.83,21.478,13.8,25.521.53.179,1.709.55,2.2.675a41.819,41.819,0,0,0,11.485,1.013c10.237-.426,17.48-5.257,22.323-14.063,2.745-4.99,5.857-11.164,4.362-16.99" transform="translate(0 0)" fill="CurrentColor"></path> </g> </svg></div> </a>
+                                    
+                    
+                            </div>
+            {% endif %}
+{% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="_5-container">
+          <div class="container-large big">
+            <div class="footer_sub-footer">
+              <div class="flex-left">
+                <div class="footer_icon-block">
+                  <div class="text-size-regular">
+{{ section.settings.text_delivery }}
+</div>
+                  <div class="footer_icon-row">
+                    {% for block in section.blocks %}
+    {% if block.type == "shipping" %}
+                    <div li-block="Shipping" class="footer_icon-item">
+                                    {% if block.settings.image_icon %}
+{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}
+                            </div>
+            {% endif %}
+{% endfor %}
+                  </div>
+                </div>
+                {% if enabled_payment_types.length > 0 %}    <div li-if="enabled_payment_types.length > 0" class="footer_icon-block">
+    
+                  <div class="text-size-regular">
+{{ section.settings.text_payment_method }}
+</div>
+                  <ul role="list" class="footer_payment-list w-list-unstyled">
+                    {% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
+                                    
+                      
+                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
+                            
+                    
+                        </li>
+{% endfor %}
+                  </ul>
+                    </div>
+{% endif %}
+              </div>
+              <div class="text-size-regular">
+{{ section.settings.text_copyright_text }}
+</div>
+              <div class="text-size-regular">
+{{ section.settings.text_little_maryam_is_onderdeel_van }}
+</div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "footer",
+    "name": "Footer",
+    "class": "section_footer",
+    "blocks": [
+        {
+            "name": "Social-Media",
+            "type": "social-media",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "image_icon",
+                    "type": "image_picker",
+                    "label": "Icon"
+                }
+            ]
+        },
+        {
+            "name": "Shipping",
+            "type": "shipping",
+            "settings": [
+                {
+                    "id": "image_icon",
+                    "type": "image_picker",
+                    "label": "Icon"
+                }
+            ]
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_logo",
+            "type": "image_picker",
+            "label": "Logo"
+        },
+        {
+            "id": "text_contact",
+            "type": "text",
+            "label": "Contact",
+            "default": "Contact"
+        },
+        {
+            "id": "text_adresgegevens",
+            "type": "text",
+            "label": "Adresgegevens",
+            "default": "Little Maryam\u2028<br\/>Kerkenbos 1037<br\/>6546 BB Nijmegen<br\/>Nederland"
+        },
+        {
+            "id": "text_delivery",
+            "type": "text",
+            "label": "Delivery",
+            "default": "Verzendmethoden"
+        },
+        {
+            "id": "text_payment_method",
+            "type": "text",
+            "label": "Payment Method",
+            "default": "Betalingsmethoden"
+        },
+        {
+            "id": "text_copyright_text",
+            "type": "text",
+            "label": "Copyright text",
+            "default": "\u00a9 2021-2026 Alle rechten voorbehouden Little Maryam"
+        },
+        {
+            "id": "text_little_maryam_is_onderdeel_van",
+            "type": "text",
+            "label": "Little Maryam is onderdeel van",
+            "default": "Little Maryam is onderdeel van Hal\u2019All Food Friends"
+        },
+        {
+            "type": "text",
+            "id": "placeholder_text",
+            "label": "Placeholder Text",
+            "default": "Email address"
+        },
+        {
+            "type": "header",
+            "content": "Navigation"
+        },
+        {
+            "type": "link_list",
+            "id": "footer_menu",
+            "label": "Footer Menu",
+            "default": "footer"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Footer",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "social-media"
+                },
+                {
+                    "type": "shipping"
+                }
+            ]
+        }
+    ],
+    "enabled_on": {
+        "groups": [
+            "*"
+        ]
+    }
+} {% endschema %}

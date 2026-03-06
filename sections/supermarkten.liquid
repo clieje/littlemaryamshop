@@ -1,0 +1,55 @@
+<div class="container-mid">
+          <div class="grid-vertical">
+            <h3 class="h3-mid">little maryam is ook verkrijgbaar bij</h3>
+            <div class="logo-grid">{% if section.settings.image_logo_1 %}
+{{ section.settings.image_logo_1 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-_21aac7b8-f328-d01a-7dbd-da3322dac00e-9580fc40', class: 'supermarkt-logo product_list-item' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" id="w-node-_21aac7b8-f328-d01a-7dbd-da3322dac00e-9580fc40" alt="" class="supermarkt-logo product_list-item">
+{% endif %}{% if section.settings.image_logo_2 %}
+{{ section.settings.image_logo_2 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-_8dd4970e-5a76-755e-0984-794fd0904bb8-9580fc40', class: 'supermarkt-logo product_list-item' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" id="w-node-_8dd4970e-5a76-755e-0984-794fd0904bb8-9580fc40" alt="" class="supermarkt-logo product_list-item">
+{% endif %}{% if section.settings.image_logo_4 %}
+{{ section.settings.image_logo_4 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-_3fa2267d-adc2-b15c-a55b-02d47fbe2ce2-9580fc40', class: 'supermarkt-logo product_list-item' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" id="w-node-_3fa2267d-adc2-b15c-a55b-02d47fbe2ce2-9580fc40" alt="" class="supermarkt-logo product_list-item">
+{% endif %}{% if section.settings.image_logo_3 %}
+{{ section.settings.image_logo_3 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-_70caa9fa-a2a6-45f2-ec85-8e4493608dec-9580fc40', class: 'supermarkt-logo product_list-item' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" id="w-node-_70caa9fa-a2a6-45f2-ec85-8e4493608dec-9580fc40" alt="" class="supermarkt-logo product_list-item">
+{% endif %}</div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Supermarkten",
+    "class": "section_supermarkten",
+    "settings": [
+        {
+            "id": "image_logo_1",
+            "type": "image_picker",
+            "label": "Logo 1"
+        },
+        {
+            "id": "image_logo_2",
+            "type": "image_picker",
+            "label": "Logo 2"
+        },
+        {
+            "id": "image_logo_4",
+            "type": "image_picker",
+            "label": "Logo 4"
+        },
+        {
+            "id": "image_logo_3",
+            "type": "image_picker",
+            "label": "Logo 3"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Supermarkten",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

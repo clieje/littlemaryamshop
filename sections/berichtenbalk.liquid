@@ -1,0 +1,35 @@
+<div li-s="" class="padding_5">
+        <div class="flex-mid text-icon">{% if section.settings.image_icon %}
+{{ section.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'delivery-icon' }}
+{% else %}
+<img src="{{ 'deliverytruck.svg' | asset_url }}" loading="lazy" alt="" class="delivery-icon">
+{% endif %}
+          <div class="small-text">
+{{ section.settings.text_bericht }}
+</div>
+        </div>
+      </div> {% schema %} {
+    "tag": "div",
+    "name": "Berichtenbalk",
+    "class": "message_section",
+    "settings": [
+        {
+            "id": "image_icon",
+            "type": "image_picker",
+            "label": "Icon"
+        },
+        {
+            "id": "text_bericht",
+            "type": "text",
+            "label": "Bericht",
+            "default": "Vandaag v\u00f3\u00f3r 14.00 besteld = morgen in huis"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Berichtenbalk",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
