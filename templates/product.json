@@ -85,21 +85,12 @@
         "url_link": "",
         "text_button_tekst": "shop nu"
       }
-    },
-    "recommended_products_HieT3q": {
-      "type": "recommended_products",
-      "name": "Recommended Products",
-      "settings": {
-        "collection_collection": "smaken",
-        "collection_collection_limit": 6
-      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header",
-    "recommended_products_HieT3q",
     "lint_RdFjr9",
     "call_to_action_MLPxrH"
   ]
