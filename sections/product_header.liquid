@@ -36,7 +36,8 @@
                     {% endfor %}    </div>
                     </div>
                     <div class="swiper-slide is-product-thumbnail is-active hide"></div>
-                    <div class="labels-vertical"><img src="{{ product.metafields.custom.maandenlabel | image_url: width: 100 }}" loading="lazy" li-object:src="product.metafields.custom.maandenlabel | image_url: width: 100" alt="" class="labelcircle">{% if section.settings.image_halal %}
+                  </div>
+                  <div class="labels-vertical"><img src="{{ product.metafields.custom.maandenlabel | image_url: width: 90 }}" loading="lazy" li-object:src="product.metafields.custom.maandenlabel | image_url: width: 90" alt="" class="labelcircle">{% if section.settings.image_halal %}
 {{ section.settings.image_halal | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'labelcircle' }}
 {% else %}
 <img src="{{ 'halal_label_prdct.svg' | asset_url }}" loading="lazy" alt="" class="labelcircle">
@@ -45,7 +46,6 @@
 {% else %}
 <img src="{{ 'biolabel_prdct.svg' | asset_url }}" loading="lazy" alt="" class="labelcircle">
 {% endif %}</div>
-                  </div>
                 </div>
                 <div li-cf-theme-blocks="theme" id="w-node-e206aa1f-c6a7-a112-f7c6-30bd6839644e-9580fc58" class="product-header_product-details">
 {% content_for 'blocks' %}

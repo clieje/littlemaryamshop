@@ -11,14 +11,16 @@
 </div>
             </div>
           </div>
-          {% for link in linklists['top-banner-menu'].links %}    <div li-for="link in linklists['top-banner-menu'].links" class="small-navigation">
+          <div class="flex-right">
+            {% for link in linklists['top-banner-menu'].links %}    <div li-for="link in linklists['top-banner-menu'].links" class="small-navigation">
                                     
-            
+              
                             <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="small-text link">{{ link.title }}</a>
                             
-          
+            
                         </div>
 {% endfor %}
+          </div>
         </div>
       </div> {% schema %} {
     "tag": "div",
