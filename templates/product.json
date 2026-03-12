@@ -68,12 +68,33 @@
         "url_link": "",
         "text_button_tekst": "alle producten"
       }
+    },
+    "lint_RdFjr9": {
+      "type": "lint",
+      "name": "Lint",
+      "settings": {
+        "text_halal": "halal",
+        "text_biologisch": "biologisch",
+        "text_verantwoord": "verantwoord"
+      }
+    },
+    "call_to_action_MLPxrH": {
+      "type": "call_to_action",
+      "name": "Call to action",
+      "settings": {
+        "image_achtergrondafbeelding": "shopify://shop_images/cta.png",
+        "text_titel": "Wereldsesmaken metliefde bereid",
+        "url_link": "",
+        "text_button_tekst": "shop nu"
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header",
-    "homepagina_producten_U9TnU9"
+    "homepagina_producten_U9TnU9",
+    "lint_RdFjr9",
+    "call_to_action_MLPxrH"
   ]
 }
