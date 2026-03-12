@@ -63,18 +63,6 @@
         "text_levertijd": "Levertijd: 1 tot 2 werkdagen"
       }
     },
-    "homepagina_producten_U9TnU9": {
-      "type": "homepagina_producten",
-      "name": "Homepagina producten",
-      "settings": {
-        "text_h2_1": "meer van onze",
-        "text_h2_2": "producten",
-        "collection_collection": "frontpage",
-        "collection_collection_limit": 6,
-        "url_link": "",
-        "text_button_tekst": "alle producten"
-      }
-    },
     "lint_RdFjr9": {
       "type": "lint",
       "name": "Lint",
@@ -99,7 +87,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header",
-    "homepagina_producten_U9TnU9",
     "lint_RdFjr9",
     "call_to_action_MLPxrH"
   ]
