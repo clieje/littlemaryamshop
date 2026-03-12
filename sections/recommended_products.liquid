@@ -1,10 +1,7 @@
 <div data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related" class="_5-container">
           <div class="container-large big">
             <div class="product_list-wrapper">
-              {% assign collection = collections['smaken'] %}
-              {% assign productcount = 0 %}
-              {% paginate collection.products by 3000 %}
-    <div li-paginate:by="3000" li-paginate="collection.products" class="product_list-wrapper w-dyn-list" by="3000">
+              <div class="product_list-wrapper w-dyn-list">
                 <div li-for:inside="product in collection.products" role="list" class="product_list w-dyn-items">
         {% for product in collection.products %}                            
                   
@@ -23,7 +20,7 @@
                 <div class="hide w-dyn-empty">
                   <div>No items found.</div>
                 </div>
-              </div>{% endpaginate %}
+              </div>
             </div>
           </div>
         </div>
