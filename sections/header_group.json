@@ -1,1 +1,30 @@
-{"type":"header","name":"Header Group","sections":{"header":{"type":"header","settings":{}}},"order":["header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "header": {
+      "type": "header",
+      "settings": {
+        "url_link": "",
+        "text_button_tekst": "shop nu",
+        "text_cart": "Winkelwagen",
+        "text_checkout_tekst": "ik ga bestellen",
+        "text_belofte_1": "100% Halal",
+        "text_belofte_2": "Voor 23:59 besteld = morgen in huis",
+        "menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}
