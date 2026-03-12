@@ -1501,7 +1501,7 @@ figcaption {
   color: var(--_schema---main);
   justify-content: space-between;
   align-items: center;
-  padding: 65px 25px 5px;
+  padding: 40px 25px 5px;
   display: flex;
 }
 
@@ -1634,7 +1634,8 @@ figcaption {
 }
 
 .product-item_image-link {
-  margin-bottom: -32px;
+  height: 330px;
+  margin-bottom: -62px;
   display: block;
   position: relative;
 }
@@ -1855,8 +1856,8 @@ figcaption {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  width: 1rem;
-  height: 1rem;
+  width: 20px;
+  height: 20px;
   padding-top: 0;
   font-family: Droid Sans, sans-serif;
   font-size: .7rem;
@@ -1966,6 +1967,7 @@ figcaption {
 
 .section_product-header {
   padding-top: 145px;
+  padding-bottom: 25px;
   position: relative;
 }
 
@@ -2147,6 +2149,8 @@ figcaption {
 
 .section_product-recommended {
   border-top: 1px solid var(--base-color-neutral--neutral-lightest);
+  background-color: var(--_schema---white);
+  text-transform: none;
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
@@ -2408,7 +2412,7 @@ figcaption {
 }
 
 .swiper-container.is-product-gallery {
-  background-image: url({{ 'littlemaryambackground.svg' | asset_url }});
+  background-image: url({{ 'littlemaryambackground1.svg' | asset_url }});
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -3956,8 +3960,8 @@ figcaption {
   z-index: 76;
   background-color: var(--_schema---secondary);
   color: var(--_schema---white);
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
+  padding-top: 0;
+  padding-bottom: 0;
   font-family: Baukasten, Arial, sans-serif;
   position: relative;
 }
@@ -3979,6 +3983,7 @@ figcaption {
 }
 
 .small-text {
+  font-family: Baukasten, Arial, sans-serif;
   font-size: 12px;
 }
 
@@ -3989,6 +3994,14 @@ figcaption {
 .small-text.bold {
   font-family: Baukasten, Arial, sans-serif;
   font-weight: 700;
+}
+
+.small-text.link {
+  transition: all .2s;
+}
+
+.small-text.link:hover {
+  opacity: .75;
 }
 
 .flex-mid-vert {
@@ -4046,7 +4059,7 @@ figcaption {
   padding-bottom: 23px;
 }
 
-.icon-button.checkout:hover {
+.icon-button.checkout:hover, .icon-button.green:hover {
   color: var(--_schema---secondary);
   transform: none;
 }
@@ -4382,6 +4395,11 @@ figcaption {
   display: flex;
 }
 
+.flex-outside.line {
+  border-left: .5px solid #ffffff57;
+  border-right: .5px solid #ffffff57;
+}
+
 ._2-text {
   grid-column-gap: 100px;
   grid-row-gap: 100px;
@@ -4632,7 +4650,6 @@ figcaption {
 }
 
 .colordiv {
-  background-color: var(--_schema---smaken--donkergroen);
   border-radius: 15px;
   height: 100%;
 }
@@ -4866,6 +4883,53 @@ figcaption {
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
+}
+
+.winkelwagen {
+  font-size: 18px;
+}
+
+.small-navigation {
+  border-left: .5px solid #ffffff57;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7.5px 15px;
+  display: flex;
+}
+
+.small-navigation.right {
+  border-left-style: none;
+  border-right: .5px solid #ffffff6e;
+}
+
+.labels-vertical {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: auto 50px 50px auto;
+}
+
+.labelcircle {
+  width: 100px;
+  height: 100px;
+}
+
+.breadcrumb-path {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -25px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.hartje-kleinst {
+  width: 15px;
 }
 
 @media screen and (max-width: 991px) {

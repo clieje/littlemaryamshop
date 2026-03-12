@@ -1,12 +1,24 @@
 <div li-s="" class="padding_5">
-        <div class="flex-mid text-icon">{% if section.settings.image_icon %}
+        <div class="flex-outside line">
+          <div class="small-navigation right">
+            <div class="flex-mid text-icon">{% if section.settings.image_icon %}
 {{ section.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'delivery-icon' }}
 {% else %}
 <img src="{{ 'deliverytruck.svg' | asset_url }}" loading="lazy" alt="" class="delivery-icon">
 {% endif %}
-          <div class="small-text">
+              <div class="small-text">
 {{ section.settings.text_bericht }}
 </div>
+            </div>
+          </div>
+          {% for link in linklists['top-banner-menu'].links %}    <div li-for="link in linklists['top-banner-menu'].links" class="small-navigation">
+                                    
+            
+                            <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="small-text link">{{ link.title }}</a>
+                            
+          
+                        </div>
+{% endfor %}
         </div>
       </div> {% schema %} {
     "tag": "div",
