@@ -3,16 +3,17 @@
                     
                     <div class="product-header_price-wrapper">
                       <div class="price">€</div>
-                      <div li-js-price="product.selected_or_first_available_variant.price" class="price-text text-style-muted text-style-strikethrough" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">1,89</div>
+                      <div li-js-price="product.compare_at_price | money" class="price-text text-style-muted text-style-strikethrough" x-text="LiquifyHelper.moneyFormat(product.compare_at_price | money, true, '{{ shop.money_with_currency_format }}')">1,89</div>
                       <div li-js-price="product.selected_or_first_available_variant.price" class="price-text" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">1,89</div>
-                      <template x-if="product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price">
-            <div li-js-if="product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price">
-        
-                        <div li-object:text="product.metafields.custom.gewicht" class="price text-style-muted gram">
+                      <div li-block="Gram" {{ block.shopify_attributes }}>
+                    
+                        
+                    <div li-object:text="product.metafields.custom.gewicht" class="price text-style-muted gram">
 {{ product.metafields.custom.gewicht }}
 </div>
-                              </div>
-    </template>
+                    
+                      
+                </div>
                     </div>
                     
                   

@@ -1,0 +1,24 @@
+<ul li-block="betalingsprovider" role="list" class="footer_payment-list w-list-unstyled" {{ block.shopify_attributes }}>
+                    
+                    
+                    {% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
+                                    
+                      
+                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
+                            
+                    
+                        </li>
+{% endfor %}
+                    
+                  
+                </ul> {% schema %} {
+    "name": "betalingsprovider",
+    "settings": [],
+    "presets": [
+        {
+            "name": "betalingsprovider",
+            "blocks": []
+        }
+    ],
+    "tag": null
+} {% endschema %}
