@@ -50,7 +50,8 @@
             "image_icon_6": "shopify://shop_images/download_7.svg",
             "text_ingredienten": "Ingrediënten",
             "text_titel_2": "Allergenen",
-            "text_titel_3": "Voedingswaarden per 100 gram"
+            "text_titel_3": "Voedingswaarden per 100 gram",
+            "text_titel_4": "Bewaarinstructies"
           },
           "blocks": {}
         }
@@ -84,12 +85,21 @@
         "url_link": "",
         "text_button_tekst": "shop nu"
       }
+    },
+    "recommended_products_HieT3q": {
+      "type": "recommended_products",
+      "name": "Recommended Products",
+      "settings": {
+        "collection_collection": "smaken",
+        "collection_collection_limit": 6
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header",
+    "recommended_products_HieT3q",
     "lint_RdFjr9",
     "call_to_action_MLPxrH"
   ]
