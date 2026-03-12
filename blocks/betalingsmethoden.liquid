@@ -1,0 +1,87 @@
+<div li-block="Betalingsmethoden" class="betalingsmethoden" {{ block.shopify_attributes }}>
+                    
+                    
+                    <div class="footer_icon-item">{% if block.settings.image_icon %}
+{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}</div>
+                    
+                    
+                    <div class="footer_icon-item">{% if block.settings.image_icon_2 %}
+{{ block.settings.image_icon_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}</div>
+                    
+                    
+                    <div class="footer_icon-item">{% if block.settings.image_icon_3 %}
+{{ block.settings.image_icon_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}</div>
+                    
+                    
+                    <div class="footer_icon-item">{% if block.settings.image_icon_4 %}
+{{ block.settings.image_icon_4 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}</div>
+                    
+                    
+                    <div class="footer_icon-item">{% if block.settings.image_icon_5 %}
+{{ block.settings.image_icon_5 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}</div>
+                    
+                    
+                    <div class="footer_icon-item">{% if block.settings.image_icon_6 %}
+{{ block.settings.image_icon_6 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}</div>
+                    
+                  
+                </div> {% schema %} {
+    "name": "Betalingsmethoden",
+    "settings": [
+        {
+            "id": "image_icon",
+            "type": "image_picker",
+            "label": "Icon"
+        },
+        {
+            "id": "image_icon_2",
+            "type": "image_picker",
+            "label": "Icon 2"
+        },
+        {
+            "id": "image_icon_3",
+            "type": "image_picker",
+            "label": "Icon 3"
+        },
+        {
+            "id": "image_icon_4",
+            "type": "image_picker",
+            "label": "Icon 4"
+        },
+        {
+            "id": "image_icon_5",
+            "type": "image_picker",
+            "label": "Icon 5"
+        },
+        {
+            "id": "image_icon_6",
+            "type": "image_picker",
+            "label": "Icon 6"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Betalingsmethoden",
+            "blocks": []
+        }
+    ],
+    "tag": null
+} {% endschema %}

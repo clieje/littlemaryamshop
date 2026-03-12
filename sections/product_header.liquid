@@ -34,7 +34,6 @@
 {% content_for 'blocks' %}
 </div>
               </div>
-              <div style="background-color: #{{ product.metafields.custom.color }}"></div>
             </div>
           </div>
         </div>
@@ -76,9 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "class": "section_product-header",
     "blocks": [
         {
-            "type": "vendor"
-        },
-        {
             "type": "product-name"
         },
         {
@@ -91,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "type": "add-to-cart"
         },
         {
-            "type": "betalingsprovider"
+            "type": "betalingsmethoden"
         },
         {
             "type": "informatie"
@@ -105,9 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "name": "Product Header",
             "category": "Liquify",
             "blocks": [
-                {
-                    "type": "vendor"
-                },
                 {
                     "type": "product-name"
                 },
@@ -126,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     "type": "add-to-cart"
                 },
                 {
-                    "type": "betalingsprovider"
+                    "type": "betalingsmethoden"
                 },
                 {
                     "type": "informatie"
