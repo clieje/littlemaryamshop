@@ -17,7 +17,7 @@
                             <template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper">
         
-                              <a li-element="add-to-cart" href="#" class="icon-button w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                              <a li-element="add-to-cart" href="#" class="icon-button green w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton">
                                 <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
                                     <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
                                   </svg></div>
@@ -158,6 +158,23 @@
                           </div>
                         </div>
                       </div>
+                      <div class="fs_accordion-1_item">
+                        <div id="accordion-1-header-1" tabindex="0" role="button" aria-controls="accordion-1-content-1" aria-expanded="false" class="fs_accordion-1_header">
+                          <div class="text-size-regular bold">
+{{ block.settings.text_titel_4 }}
+</div>
+                          <div class="fs_accordion-1_arrow-wrapper">
+                            <div class="fs_accordion-1_icon w-icon-dropdown-toggle"></div>
+                          </div>
+                        </div>
+                        <div id="accordion-1-content-1" aria-labelledby="accordion-header-1" class="fs_accordion-1_content">
+                          <div class="fs_accordion-1_body">
+                            <p li-object:text="product.metafields.custom.bewaarinstructies" class="text-size-regular paragraph">
+{{ product.metafields.custom.bewaarinstructies }}
+</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     
                   
@@ -223,6 +240,12 @@
             "type": "text",
             "label": "Titel 3",
             "default": "Voedingswaarden per 100 gram"
+        },
+        {
+            "id": "text_titel_4",
+            "type": "text",
+            "label": "Titel 4",
+            "default": "Bewaarinstructies"
         }
     ],
     "presets": [

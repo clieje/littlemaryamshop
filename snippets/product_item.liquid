@@ -1,73 +1,73 @@
 <div style="background-color: {{ product.metafields.custom.color }}" class="colordiv">
-                      <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
+                        <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="product-item_component" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
-                        <div class="product-item_image-link">
-                          <a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper w-inline-block"><img li-object:alt="product.featured_image.alt" loading="lazy" li-object:src="product.featured_image | image_url: width: 450" src="{{ product.featured_image | image_url: width: 450 }}" alt="{{ product.featured_image.alt }}" class="product-item_image">
-                            <div class="shadow"></div>
-                          </a>
-                          <div class="product-item_tag_list">
-                            {% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price" class="small-tag">
+                          <div class="product-item_image-link">
+                            <a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper w-inline-block"><img li-object:alt="product.featured_image.alt" loading="lazy" li-object:src="product.featured_image | image_url: width: 450" src="{{ product.featured_image | image_url: width: 450 }}" alt="{{ product.featured_image.alt }}" class="product-item_image">
+                              <div class="shadow"></div>
+                            </a>
+                            <div class="product-item_tag_list">
+                              {% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price" class="small-tag">
     
-                              <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
-                                  <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
-                                </svg></div>
-                              <div class="tag-text">SALE</div>
-                                </div>
+                                <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                                    <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                                  </svg></div>
+                                <div class="tag-text">SALE</div>
+                                  </div>
 {% endif %}
-                            {% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="small-tag red">
+                              {% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="small-tag red">
     
-                              <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
-                                  <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
-                                </svg></div>
-                              <div class="tag-text white">coming soon</div>
-                                </div>
+                                <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                                    <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                                  </svg></div>
+                                <div class="tag-text white">coming soon</div>
+                                  </div>
 {% endif %}
+                            </div>
                           </div>
-                        </div>
-                        <div class="spacer-xxsmall"></div>
-                        <a li-object:href="product.url" href="{{ product.url }}" class="product-item_text-link w-inline-block">
-                          <div class="product-item_left">
-                            <div li-object="product.title" class="heading-style-h4 text-weight-normal">{{ product.title }}</div>
-                            <div class="eigenschappen">
-                              <div li-object:text="product.metafields.custom.productbeschrijving" class="kleine_eigenschap">
+                          <div class="spacer-xxsmall"></div>
+                          <a li-object:href="product.url" href="{{ product.url }}" class="product-item_text-link w-inline-block">
+                            <div class="product-item_left">
+                              <div li-object="product.title" class="heading-style-h4 text-weight-normal">{{ product.title }}</div>
+                              <div class="eigenschappen">
+                                <div li-object:text="product.metafields.custom.productbeschrijving" class="kleine_eigenschap">
 {{ product.metafields.custom.productbeschrijving }}
 </div>
-                              <div li-object:text="product.metafields.custom.maanden" class="kleine_eigenschap">
+                                <div li-object:text="product.metafields.custom.maanden" class="kleine_eigenschap">
 {{ product.metafields.custom.maanden }}
 </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="product-item_price">
-                            {% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
+                            <div class="product-item_price">
+                              {% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
     
-                              <div li-object="product.compare_at_price | money" class="price text-style-strikethrough card">{{ product.compare_at_price | money }}</div>
-                                </div>
+                                <div li-object="product.compare_at_price | money" class="price text-style-strikethrough card">{{ product.compare_at_price | money }}</div>
+                                  </div>
 {% endif %}
-                            <div li-object="product.price | money" class="price">{{ product.price | money }}</div>
-                            <div li-object:text="product.metafields.custom.gewicht" class="kleine_eigenschap _1">
+                              <div li-object="product.price | money" class="price">{{ product.price | money }}</div>
+                              <div li-object:text="product.metafields.custom.gewicht" class="kleine_eigenschap _1">
 {{ product.metafields.custom.gewicht }}
 </div>
-                          </div>
-                        </a>
-                        <div class="spacer-small"></div>
-                        {% if product.available == true %}    <div li-if="product.available == true" class="product-buy-container">
-    
-                          <div li-element="add-to-cart" class="add-to-c" @click="addToCart($event, true)" :disabled="!addToCartButton">
-                            <div class="cart-background add-to-c-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewbox="0 0 55.579 45.677">
-                                <defs>
-                                  <clippath id="clip-path">
-                                    <rect id="Rectangle_1" data-name="Rectangle 1" width="55.579" height="45.677" fill="CurrentColor"></rect>
-                                  </clippath>
-                                </defs>
-                                <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
-                                  <path id="Path_1" data-name="Path 1" d="M55.191,14.582A20.768,20.768,0,0,0,50.8,6.819c-.279-.3-1.467-1.5-1.689-1.688C41.216-1.55,26.872-.674,17.492,1.972S3.614,9.012,1.024,18.427c-3.412,12.405,1.83,21.478,13.8,25.521.53.179,1.709.55,2.2.675a41.819,41.819,0,0,0,11.485,1.013c10.237-.426,17.48-5.257,22.323-14.063,2.745-4.99,5.857-11.164,4.362-16.99" transform="translate(0 0)" fill="CurrentColor"></path>
-                                </g>
-                              </svg></div>
-                            <div class="cart-svg w-embed"><svg xmlns="http://www.w3.org/2000/svg" id="cart" width="100%" height="100%" viewbox="0 0 21.923 19">
-                                <path id="Path_6" data-name="Path 6" d="M2855.894,338.75h-5.163a.729.729,0,0,0-.731.731V342.4a.729.729,0,0,0,.731.731h.077l1.023,9.216a.731.731,0,0,0,.727.65h16.808a.73.73,0,0,0,.727-.65l1.023-9.216h.077a.729.729,0,0,0,.731-.731v-2.923a.729.729,0,0,0-.731-.731h-5.163l-1.645-4.282a.732.732,0,0,0-1.366.525l1.447,3.757h-7.008l1.447-3.757a.732.732,0,0,0-1.366-.525Zm-3.614,4.385h17.363l-.932,8.4h-15.5Zm6.489,2.192v4.019a.731.731,0,0,0,1.462,0v-4.019a.731.731,0,0,0-1.462,0Zm2.923,0v4.019a.731.731,0,0,0,1.462,0v-4.019a.731.731,0,0,0-1.462,0Zm-5.846,0v4.019a.731.731,0,1,0,1.461,0v-4.019a.731.731,0,1,0-1.461,0Zm8.77,0v4.019a.731.731,0,1,0,1.461,0v-4.019a.731.731,0,1,0-1.461,0Zm5.846-5.115h-19v1.462h19Z" transform="translate(-2850 -334)" fill="#fff" fill-rule="evenodd"></path>
-                              </svg></div>
-                          </div>
                             </div>
+                          </a>
+                          <div class="spacer-small"></div>
+                          {% if product.available == true %}    <div li-if="product.available == true" class="product-buy-container">
+    
+                            <div li-element="add-to-cart" class="add-to-c" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                              <div class="cart-background add-to-c-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewbox="0 0 55.579 45.677">
+                                  <defs>
+                                    <clippath id="clip-path">
+                                      <rect id="Rectangle_1" data-name="Rectangle 1" width="55.579" height="45.677" fill="CurrentColor"></rect>
+                                    </clippath>
+                                  </defs>
+                                  <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
+                                    <path id="Path_1" data-name="Path 1" d="M55.191,14.582A20.768,20.768,0,0,0,50.8,6.819c-.279-.3-1.467-1.5-1.689-1.688C41.216-1.55,26.872-.674,17.492,1.972S3.614,9.012,1.024,18.427c-3.412,12.405,1.83,21.478,13.8,25.521.53.179,1.709.55,2.2.675a41.819,41.819,0,0,0,11.485,1.013c10.237-.426,17.48-5.257,22.323-14.063,2.745-4.99,5.857-11.164,4.362-16.99" transform="translate(0 0)" fill="CurrentColor"></path>
+                                  </g>
+                                </svg></div>
+                              <div class="cart-svg w-embed"><svg xmlns="http://www.w3.org/2000/svg" id="cart" width="100%" height="100%" viewbox="0 0 21.923 19">
+                                  <path id="Path_6" data-name="Path 6" d="M2855.894,338.75h-5.163a.729.729,0,0,0-.731.731V342.4a.729.729,0,0,0,.731.731h.077l1.023,9.216a.731.731,0,0,0,.727.65h16.808a.73.73,0,0,0,.727-.65l1.023-9.216h.077a.729.729,0,0,0,.731-.731v-2.923a.729.729,0,0,0-.731-.731h-5.163l-1.645-4.282a.732.732,0,0,0-1.366.525l1.447,3.757h-7.008l1.447-3.757a.732.732,0,0,0-1.366-.525Zm-3.614,4.385h17.363l-.932,8.4h-15.5Zm6.489,2.192v4.019a.731.731,0,0,0,1.462,0v-4.019a.731.731,0,0,0-1.462,0Zm2.923,0v4.019a.731.731,0,0,0,1.462,0v-4.019a.731.731,0,0,0-1.462,0Zm-5.846,0v4.019a.731.731,0,1,0,1.461,0v-4.019a.731.731,0,1,0-1.461,0Zm8.77,0v4.019a.731.731,0,1,0,1.461,0v-4.019a.731.731,0,1,0-1.461,0Zm5.846-5.115h-19v1.462h19Z" transform="translate(-2850 -334)" fill="#fff" fill-rule="evenodd"></path>
+                                </svg></div>
+                            </div>
+                              </div>
 {% endif %}
+                        </div>
                       </div>
-                    </div>
