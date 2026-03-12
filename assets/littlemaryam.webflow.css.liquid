@@ -1605,8 +1605,8 @@ figcaption {
 }
 
 .mini-cart_line-item_product-info {
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
+  grid-column-gap: 2.5px;
+  grid-row-gap: 2.5px;
   flex-direction: column;
   flex: 1;
   align-items: flex-start;
@@ -3687,6 +3687,10 @@ figcaption {
   display: flex;
 }
 
+.mini-cart_empty {
+  display: block;
+}
+
 .nav_dropdown-close-button {
   background-color: #0000;
   padding: 0;
@@ -4628,6 +4632,7 @@ figcaption {
 }
 
 .colordiv {
+  background-color: var(--_schema---smaken--donkergroen);
   border-radius: 15px;
   height: 100%;
 }
@@ -4854,6 +4859,13 @@ figcaption {
   color: var(--base-color-neutral--neutral-light);
   font-family: Baukasten, Arial, sans-serif;
   font-size: 10px;
+}
+
+.cart-title {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {

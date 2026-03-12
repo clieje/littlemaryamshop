@@ -517,15 +517,19 @@
     <li li-element="mini-cart-item" class="mini-cart_line-item_item">
                               <div class="div-img-cart"><img src="../images/product-apparel-2.svg" loading="lazy" alt="" class="mini-cart_line-item_img" x-bind:src="product.image"></div>
                               <div class="mini-cart_line-item_product-info">
-                                <div li-js-object="product.title" class="heading-style-h4 text-weight-normal dark" x-text="product.title">Product Title</div>
+                                <div class="cart-title">
+                                  <div li-js-object="product.title" class="heading-style-h4 text-weight-normal dark" x-text="product.title">Product Title</div>
+                                  <div li-js-object:text="product.metafields.custom.stuks" class="small-promise" x-bind:text="product.metafields.custom.stuks">6 stuks</div>
+                                </div>
                                 <div class="mini-cart_line-item_price">
-                                  <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                  <template x-if="product.price < product.original_price">
-            <div li-js-if="product.price < product.original_price">
-        
+                                  <div class="flex-left-small">
+                                    <div class="text-size-small">€</div>
+                                    <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">11.34</div>
+                                  </div>
+                                  <div class="flex-left-small">
+                                    <div class="text-size-small text-style-strikethrough text-style-muted">€</div>
                                     <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                          </div>
-    </template>
+                                  </div>
                                 </div>
                                 <div class="cart-flex">
                                   <div class="mini-cart_line-item_quantity">
@@ -547,7 +551,7 @@
                         </div>
                         <div class="mini-cart_footer">
                           <div class="mini-cart_footer-total">
-                            <div class="text-size-regular text-weight-bold">In totaal</div>
+                            <div li="" class="text-size-regular text-weight-bold">In totaal</div>
                             <div class="mini-cart_footer-price">
                               <div class="flex-left-small">
                                 <div class="text-size-regular text-weight-bold totaal">€</div>
