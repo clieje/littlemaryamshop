@@ -91,15 +91,13 @@ document.addEventListener("DOMContentLoaded", () => {
             "type": "add-to-cart"
         },
         {
-            "type": "@app"
-        }
-    ],
-    "settings": [
+            "type": "betalingsprovider"
+        },
         {
-            "id": "text_levertijd",
-            "type": "text",
-            "label": "Levertijd",
-            "default": "Levertijd: 1 tot 2 werkdagen"
+            "type": "informatie"
+        },
+        {
+            "type": "@app"
         }
     ],
     "presets": [
@@ -114,13 +112,24 @@ document.addEventListener("DOMContentLoaded", () => {
                     "type": "product-name"
                 },
                 {
-                    "type": "product-price"
+                    "type": "product-price",
+                    "blocks": [
+                        {
+                            "type": "gram"
+                        }
+                    ]
                 },
                 {
                     "type": "description"
                 },
                 {
                     "type": "add-to-cart"
+                },
+                {
+                    "type": "betalingsprovider"
+                },
+                {
+                    "type": "informatie"
                 }
             ]
         }

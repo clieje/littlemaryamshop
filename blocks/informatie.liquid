@@ -1,0 +1,70 @@
+<div li-block="Informatie" class="fs_accordion-1_component" {{ block.shopify_attributes }}>
+                    
+                    
+                    <div class="fs_accordion-1_embed w-embed w-script"><!--  [Finsweet Attributes] A11Y  -->
+                      <script>(()=>{var t="https://cdn.jsdelivr.net/npm/@finsweet/attributes-a11y@1/a11y.js",e=document.querySelector(`script[src="${t}"]`);e||(e=document.createElement("script"),e.async=!0,e.src=t,document.head.append(e));})();</script>
+                    </div>
+                    
+                    
+                    <div class="fs_accordion-1_item">
+                      <div id="accordion-1-header-1" tabindex="0" role="button" aria-controls="accordion-1-content-1" aria-expanded="false" class="fs_accordion-1_header">
+                        <div class="text-size-regular bold">Ingrediënten</div>
+                        <div class="fs_accordion-1_arrow-wrapper">
+                          <div class="fs_accordion-1_icon w-icon-dropdown-toggle"></div>
+                        </div>
+                      </div>
+                      <div id="accordion-1-content-1" aria-labelledby="accordion-header-1" class="fs_accordion-1_content">
+                        <div class="fs_accordion-1_body">
+                          <p li-object:text="product.metafields.custom.ingredients" class="text-size-regular paragraph">
+{{ product.metafields.custom.ingredients }}
+</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="fs_accordion-1_item">
+                      <div id="accordion-1-header-1" tabindex="0" role="button" aria-controls="accordion-1-content-1" aria-expanded="false" class="fs_accordion-1_header">
+                        <div class="text-size-regular bold">Allergenen</div>
+                        <div class="fs_accordion-1_arrow-wrapper">
+                          <div class="fs_accordion-1_icon w-icon-dropdown-toggle"></div>
+                        </div>
+                      </div>
+                      <div id="accordion-1-content-1" aria-labelledby="accordion-header-1" class="fs_accordion-1_content">
+                        <div class="fs_accordion-1_body">
+                          <p li-object:text="product.metafields.custom.allergenen" class="text-size-regular paragraph">
+{{ product.metafields.custom.allergenen }}
+</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="fs_accordion-1_item">
+                      <div id="accordion-1-header-1" tabindex="0" role="button" aria-controls="accordion-1-content-1" aria-expanded="false" class="fs_accordion-1_header">
+                        <div class="text-size-regular bold">Voedingswaarden per 100 gram</div>
+                        <div class="fs_accordion-1_arrow-wrapper">
+                          <div class="fs_accordion-1_icon w-icon-dropdown-toggle"></div>
+                        </div>
+                      </div>
+                      <div id="accordion-1-content-1" aria-labelledby="accordion-header-1" class="fs_accordion-1_content">
+                        <div class="fs_accordion-1_body">
+                          <p li-object:text="product.metafields.custom.voedingswaarden" class="text-size-regular paragraph">
+{{ product.metafields.custom.voedingswaarden }}
+</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  
+                </div> {% schema %} {
+    "name": "Informatie",
+    "settings": [],
+    "presets": [
+        {
+            "name": "Informatie",
+            "blocks": []
+        }
+    ],
+    "tag": null
+} {% endschema %}
