@@ -61,7 +61,7 @@
       "type": "homepagina_producten",
       "name": "Homepagina producten",
       "settings": {
-        "text_h2_1": "onze",
+        "text_h2_1": "meer van onze",
         "text_h2_2": "producten",
         "collection_collection": "frontpage",
         "collection_collection_limit": 6,
