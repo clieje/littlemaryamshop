@@ -2412,7 +2412,7 @@ figcaption {
 }
 
 .swiper-container.is-product-gallery {
-  background-image: url({{ 'littlemaryambackground1.svg' | asset_url }});
+  background-image: url({{ 'bg-lm.svg' | asset_url }});
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -3997,6 +3997,7 @@ figcaption {
 }
 
 .small-text.link {
+  font-weight: 400;
   transition: all .2s;
 }
 
@@ -4655,7 +4656,9 @@ figcaption {
 }
 
 .colordiv._2 {
+  background-color: var(--_schema---button-label);
   max-width: none;
+  position: relative;
 }
 
 .price-text {
@@ -4914,8 +4917,8 @@ figcaption {
 }
 
 .labelcircle {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .breadcrumb-path {
@@ -4930,6 +4933,12 @@ figcaption {
 
 .hartje-kleinst {
   width: 15px;
+}
+
+.flex-right {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
