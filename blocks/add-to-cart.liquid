@@ -2,7 +2,7 @@
                     
                     
                     <div class="winkelwagen-cont">
-                      <div class="product-inhoud"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" li-object:image="product.metafields.custom.verpakkingimg" alt="" class="inhoud-img" image="{{ product.metafields.custom.verpakkingimg }}">
+                      <div class="product-inhoud"><img src="{{ product.metafields.custom.verpakkingimg | image_url: width: 40 }}" loading="lazy" li-object:src="product.metafields.custom.verpakkingimg | image_url: width: 40" alt="" class="inhoud-img">
                         <div>
                           <div class="small-text bold">Per 6 stuks verpakt</div>
                           <div class="flex-left-small">
