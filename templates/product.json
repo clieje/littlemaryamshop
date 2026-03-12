@@ -40,7 +40,8 @@
           "type": "add-to-cart",
           "name": "Add to Cart",
           "settings": {
-            "text_button_tekst": "in winkelwagen"
+            "text_button_tekst": "in winkelwagen",
+            "text_levertijd": "Levertijd: 1 tot 2 werkdagen"
           },
           "blocks": {}
         }
@@ -56,10 +57,16 @@
         "text_levertijd": "Levertijd: 1 tot 2 werkdagen"
       }
     },
-    "recommended_products": {
-      "type": "recommended_products",
+    "homepagina_producten_U9TnU9": {
+      "type": "homepagina_producten",
+      "name": "Homepagina producten",
       "settings": {
-        "text_heading": "Recommended"
+        "text_h2_1": "onze",
+        "text_h2_2": "producten",
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6,
+        "url_link": "",
+        "text_button_tekst": "alle producten"
       }
     }
   },
@@ -67,6 +74,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header",
-    "recommended_products"
+    "homepagina_producten_U9TnU9"
   ]
 }
