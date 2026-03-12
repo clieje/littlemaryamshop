@@ -41,7 +41,13 @@
           "name": "Add to Cart",
           "settings": {
             "text_button_tekst": "in winkelwagen",
-            "text_levertijd": "Levertijd: 1 tot 2 werkdagen"
+            "text_levertijd": "Levertijd: 1 tot 2 werkdagen",
+            "image_icon": "shopify://shop_images/download_1.svg",
+            "image_icon_2": "shopify://shop_images/download_2.svg",
+            "image_icon_3": "shopify://shop_images/download_3.svg",
+            "image_icon_4": "shopify://shop_images/download_4.svg",
+            "image_icon_5": "shopify://shop_images/download_6.svg",
+            "image_icon_6": "shopify://shop_images/download_7.svg"
           },
           "blocks": {}
         }
