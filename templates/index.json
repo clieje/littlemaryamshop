@@ -42,6 +42,20 @@
         "richtext_paragraph_2": "<p><strong>Goedgekeurd door diëtisten en mama’s</strong><br/>Little Maryam begrijpt dat je zekerheid wilt over wat jouw kleintje eet. Daarom bestaat onze babyvoeding uit de allerbeste ingrediënten voor jouw kind: biologisch halal-vlees en gezonde biologische groenten.<br/><br/>Dus onbespoten en boordevol vitamines en mineralen. En alle gerechten van Little Maryam zijn samengesteld door gespecialiseerde kinderdiëtisten en worden bereid volgens strikte veiligheidsnormen en ce</p>"
       }
     },
+    "meals_dY7pAi": {
+      "type": "meals",
+      "name": "Meals",
+      "settings": {
+        "text_h2_1": "met little maryam",
+        "text_h2_2": "gaat een wereld",
+        "text_h2_3": "voor je open",
+        "url_link": "",
+        "text_button_tekst": "shop nu",
+        "image_gerecht_2": "shopify://shop_images/bord-1.png",
+        "image_gerecht_3": "shopify://shop_images/bord-3.png",
+        "image_gerecht_4": "shopify://shop_images/bord-2.png"
+      }
+    },
     "biologisch_en_halal": {
       "type": "biologisch_en_halal",
       "settings": {
@@ -93,17 +107,6 @@
       "type": "custom_liquid",
       "settings": {
         "custom_liquid": ""
-      }
-    },
-    "meals_dY7pAi": {
-      "type": "meals",
-      "name": "Meals",
-      "settings": {
-        "text_h2_1": "met little maryam",
-        "text_h2_2": "gaat een wereld",
-        "text_h2_3": "voor je open",
-        "url_link": "",
-        "text_button_tekst": "shop nu"
       }
     }
   },
