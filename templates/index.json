@@ -54,9 +54,10 @@
         "text_titel_eigenschap_1": "halal",
         "text_tekst_eigenschap_1": "Gegarandeerd<br> altijd halal",
         "image_afbeelding_eigenschap_2": "shopify://shop_images/4cfd86a8e90cd4c7b4483f369a38a924.png",
-        "text_titel_eigenschap_3": "Biologisch",
+        "text_titel_eigenschap_2": "halal",
         "text_tekst_eigenschap_2": "EU-bio <br>keurmerk",
         "image_afbeelding_eigenschap_3": "shopify://shop_images/7f42e4b3ec5d285756ec380334f84536.png",
+        "text_titel_eigenschap_3": "Biologisch",
         "text_tekst_eigenschap_3": "Productie<br> BRC-certified",
         "text_titel_eigenschap_4": "Verantwoord",
         "text_tekst_eigenschap_4": "Diëtist<br> goedgekeurd"
@@ -93,6 +94,17 @@
       "settings": {
         "custom_liquid": ""
       }
+    },
+    "meals_dY7pAi": {
+      "type": "meals",
+      "name": "Meals",
+      "settings": {
+        "text_h2_1": "met little maryam",
+        "text_h2_2": "gaat een wereld",
+        "text_h2_3": "voor je open",
+        "url_link": "",
+        "text_button_tekst": "shop nu"
+      }
     }
   },
   "layout": "theme",
@@ -101,6 +113,7 @@
     "home_header",
     "homepagina_producten",
     "ons_verhaal",
+    "meals_dY7pAi",
     "biologisch_en_halal",
     "lint",
     "call_to_action",
