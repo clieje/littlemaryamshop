@@ -66,16 +66,16 @@
         "richtext_paragraph": "<p><strong>Biologisch en halal</strong><br/>Little Maryam heeft liefde voor jouw kind én respect voor de wereld.<br/><br/>Daarom maken we onze babyhapjes alleen met biologische ingrediënten, zonder chemische toevoegingen. We kiezen bewust voor veehouders met diervriendelijke werkwijzen en dragen met trots zowel het Europees biologisch keurmerk als het halal-keurmerk. <br/><br/>Om dat te garanderen zijn de productieketen en producten gecertificeerd door een betrouwbare en werel</p>",
         "image_afbeelding_eigenschap_1": "shopify://shop_images/halal.png",
         "text_titel_eigenschap_1": "halal",
-        "text_tekst_eigenschap_1": "Gegarandeerd altijd halal",
+        "text_tekst_eigenschap_1": "Gegarandeerd <br>altijd halal",
         "image_afbeelding_eigenschap_2": "shopify://shop_images/4cfd86a8e90cd4c7b4483f369a38a924.png",
         "text_titel_eigenschap_2": "halal",
-        "text_tekst_eigenschap_2": "EU-bio keurmerk",
+        "text_tekst_eigenschap_2": "EU-bio <br>keurmerk",
         "image_afbeelding_eigenschap_3": "shopify://shop_images/7f42e4b3ec5d285756ec380334f84536.png",
         "text_titel_eigenschap_3": "Biologisch",
-        "text_tekst_eigenschap_3": "Productie BRC-certified",
+        "text_tekst_eigenschap_3": "Productie <br>BRC-certified",
         "image_afbeelding_eigenschap_4": "shopify://shop_images/Broccoli.png",
         "text_titel_eigenschap_4": "Verantwoord",
-        "text_tekst_eigenschap_4": "Diëtist goedgekeurd"
+        "text_tekst_eigenschap_4": "Diëtist <br>goedgekeurd"
       }
     },
     "lint": {
