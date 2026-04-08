@@ -1,0 +1,37 @@
+<div data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related" class="_5-container">
+          <div class="container-large big">
+            <div>
+              {% assign collection = collections['smaken'] %}
+              {% assign vendor = product.vendor %}
+              {% assign productcount = 0 %}
+              {% paginate collection.products by 1000 %}
+    <div li-paginate:by="1000" li-paginate="collection.products" class="product_list-wrapper w-dyn-list" by="1000">
+                <div li-for:inside="product in collection.products" role="list" class="product_list w-dyn-items">
+        {% for product in collection.products %}                            
+                  
+                            {% if product.vendor == vendor and productcount < 4 and product.available != false %}    <div li-if="product.vendor == vendor and productcount < 4 and product.available != false" role="listitem" class="product_list-item w-dyn-item">
+    
+                    {% render 'product_item', product: product %}
+                      </div>
+{% endif %}
+                            
+                
+                    {% endfor %}    </div>
+                <div class="hide w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              </div>{% endpaginate %}
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Uitgelicht",
+    "class": "section_product-recommended",
+    "presets": [
+        {
+            "name": "Uitgelicht",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
