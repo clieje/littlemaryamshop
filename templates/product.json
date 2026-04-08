@@ -27,7 +27,9 @@
         "product-price": {
           "type": "product-price",
           "name": "Product Price",
-          "settings": {},
+          "settings": {
+            "text_per_6_stuks_verpakt": "per 6 stuks"
+          },
           "blocks": {}
         },
         "description": {
@@ -86,20 +88,17 @@
         "text_button_tekst": "shop nu"
       }
     },
-    "recommended_products_7faXqi": {
-      "type": "recommended_products",
-      "name": "Recommended Products",
-      "settings": {
-        "collection_collection": "smaken",
-        "collection_collection_limit": 6
-      }
+    "uitgelicht_DNF8HQ": {
+      "type": "uitgelicht",
+      "name": "Uitgelicht",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header",
-    "recommended_products_7faXqi",
+    "uitgelicht_DNF8HQ",
     "lint_RdFjr9",
     "call_to_action_MLPxrH"
   ]
