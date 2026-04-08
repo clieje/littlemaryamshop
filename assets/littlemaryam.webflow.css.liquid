@@ -2186,6 +2186,8 @@ figcaption {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   place-items: stretch stretch;
+  padding-left: 0;
+  list-style-type: none;
   display: grid;
 }
 
@@ -5112,6 +5114,33 @@ figcaption {
 
 .thumb-img {
   height: 100%;
+}
+
+.breadcrumb {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.breadcrum_item {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+  display: flex;
+}
+
+._6pack-text {
+  color: var(--_schema---secondary);
+  margin-left: 5px;
+  font-family: College Star Full Lovesvg, Arial, sans-serif;
+  line-height: 1;
 }
 
 @media screen and (max-width: 991px) {

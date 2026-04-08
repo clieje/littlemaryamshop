@@ -1,14 +1,22 @@
 <div class="padding_5">
           <div class="container-large big">
-            <div class="breadcrumb-path">
-              <div class="small-text">
-{{ section.settings.text_breadcrumb_producten }}
-</div><img src="{{ 'hartje_klein.png' | asset_url }}" loading="lazy" sizes="(max-width: 2423px) 100vw, 2423px" srcset="{{ 'hartje_klein-p-500.png' | asset_url }} 500w, {{ 'hartje_klein-p-800.png' | asset_url }} 800w, {{ 'hartje_klein-p-1080.png' | asset_url }} 1080w, {{ 'hartje_klein-p-1600.png' | asset_url }} 1600w, {{ 'hartje_klein-p-2000.png' | asset_url }} 2000w, {{ 'hartje_klein.png' | asset_url }} 2423w" alt="" class="hartje-kleinst">
-              <div li-object:text="product.title" class="small-text">
-{{ product.title }}
-</div>
-            </div>
             <div class="product-header_component">
+              {% unless template.name == 'index' %}    <ul li-unless="template.name == 'index'" role="list" class="breadcrumb">
+    
+                {% if template == 'product' %}    <li li-if="template == 'product'" class="breadcrum_item">
+    
+                  <a li-object:href="product.collections[0].url" href="{{ product.collections[0].url }}" class="w-inline-block">
+                    <div li-object="product.collections[0].title" class="small-text">{{ product.collections[0].title }}</div>
+                  </a><img src="{{ 'hartje_klein.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 2472px) 98vw, 2423px, (max-width: 2423px) 100vw, 2423px" srcset="{{ 'hartje_klein-p-500.png' | asset_url }} 500w, {{ 'hartje_klein-p-800.png' | asset_url }} 800w, {{ 'hartje_klein-p-1080.png' | asset_url }} 1080w, {{ 'hartje_klein-p-1600.png' | asset_url }} 1600w, {{ 'hartje_klein-p-2000.png' | asset_url }} 2000w, {{ 'hartje_klein.png' | asset_url }} 2423w" alt="" class="hartje-kleinst">
+                    </li>
+{% endif %}
+                {% if template == 'product' %}    <li li-if="template == 'product'" class="breadcrum_item">
+    
+                  <div li-object="product.title" class="small-text">{{ product.title }}</div>
+                    </li>
+{% endif %}
+                  </ul>
+{% endunless %}
               <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
                 <div style="background-color: {{ product.metafields.custom.color }}" class="colordiv">
@@ -36,6 +44,15 @@
                     {% endfor %}    </div>
                     </div>
                     <div class="swiper-slide is-product-thumbnail is-active hide"></div>
+                    <div li-for:inside="media in product.media" class="swiper-wrapper-2">
+        {% for media in product.media %}                            
+                      
+                            {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="thumbnail-img">
+    <img src="{{ media | image_url: width: 200 }}" loading="lazy" li-object:src="media | image_url: width: 200" li-object:alt="media.alt" alt="{{ media.alt }}" class="thumb-img">    </div>
+{% endif %}
+                            
+                    
+                    {% endfor %}    </div>
                   </div>
                   {% for block in section.blocks %}
     {% if block.type == "elements" %}
@@ -54,15 +71,6 @@
                             </div>
             {% endif %}
 {% endfor %}
-                  <div li-for:inside="media in product.media" class="swiper-wrapper-2">
-        {% for media in product.media %}                            
-                    
-                            {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="thumbnail-img">
-    <img src="{{ media | image_url: width: 200 }}" loading="lazy" li-object:src="media | image_url: width: 200" li-object:alt="media.alt" alt="{{ media.alt }}" class="thumb-img">    </div>
-{% endif %}
-                            
-                  
-                    {% endfor %}    </div>
                 </div>
                 <div li-cf-theme-blocks="theme" id="w-node-e206aa1f-c6a7-a112-f7c6-30bd6839644e-9580fc58" class="product-header_product-details">
 {% content_for 'blocks' %}
@@ -113,14 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             "type": "@app"
-        }
-    ],
-    "settings": [
-        {
-            "id": "text_breadcrumb_producten",
-            "type": "text",
-            "label": "Breadcrumb producten",
-            "default": "Producten"
         }
     ],
     "presets": [
