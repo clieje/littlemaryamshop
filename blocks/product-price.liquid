@@ -4,18 +4,7 @@
                     <div class="product-header_price-wrapper">
                       <div class="price">€</div>
                       <div li-object-text="product.metafields.custom.vergelijkingsprijs_prijs_per_eenheid" class="price-text text-style-muted text-style-strikethrough"></div>
-                      <div li-object:text="product.metafields.custom.prijs_per_eenheid" class="price-text">
-{{ product.metafields.custom.prijs_per_eenheid }}
-</div>
-                      <div li-block="Gram" {{ block.shopify_attributes }}>
-                    
-                        
-                    <div li-object:text="product.metafields.custom.gewicht" class="price text-style-muted gram">
-{{ product.metafields.custom.gewicht }}
-</div>
-                    
-                      
-                </div>
+                      <div li-js-price="product.selected_or_first_available_variant.price" class="price-text" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">1,89</div>
                     </div>
                     
                   
