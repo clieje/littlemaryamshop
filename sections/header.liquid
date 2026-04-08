@@ -514,13 +514,13 @@
                         <div class="li-component_wrapper">
                           <div x-data="{ freeShipping: {{ section.settings.free_shipping }} }" class="mini-cart_footer-2">
                             <div x-bind:style="'display: ' + (((freeShipping - total.price) / 100) < 0 ? 'none' : 'block')" class="mini-cart_footer_progress-component">
-                              <h5 class="heading-style-h5">
+                              <h5 class="heading-style-h5 mid">
 {{ section.settings.text_gratis_verzending_titel }}
 </h5>
                               <div class="mini-cart_footer_progress-bar">
                                 <div x-bind:style="'width: ' + (total.price/freeShipping) *100 + '%'" class="mini-cart_footer_progress-bar-innner"></div>
                               </div>
-                              <div class="verzending-icons">
+                              <div class="verzending-icons spaceabove">
                                 <div class="send-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewbox="0 0 27 18">
                                     <rect id="Rectangle_22" data-name="Rectangle 22" width="27" height="18" rx="2" fill="#6ab37a"></rect>
                                     <g id="delivery-truck-truck-svgrepo-com" transform="translate(4.111 -128.31)">
@@ -552,7 +552,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div x-bind:style="'display: ' + (((freeShipping - total.price) / 100) < 0 ? 'block' : 'none')" class="mini-cart_footer_progress-component">
+                            <div x-bind:style="'display: ' + (((freeShipping - total.price) / 100) < 0 ? 'block' : 'none')" class="mini-cart_footer_progress-component small">
                               <div class="verzending-icons">
                                 <div class="send-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewbox="0 0 27 18">
                                     <rect id="Rectangle_22" data-name="Rectangle 22" width="27" height="18" rx="2" fill="#6ab37a"></rect>
