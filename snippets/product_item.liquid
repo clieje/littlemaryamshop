@@ -1,4 +1,4 @@
-<div style="background-color: {{ product.metafields.custom.color }}" class="colordiv">
+<div style="background-color: {{ product.metafields.custom.color }}" class="colordiv _2">
                         <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="product-item_component" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
                           <div class="product-item_image-link">
@@ -44,9 +44,7 @@
                                   </div>
 {% endif %}
                               <div li-object="product.price | money" class="price">{{ product.price | money }}</div>
-                              <div li-object:text="product.metafields.custom.gewicht" class="kleine_eigenschap _1">
-{{ product.metafields.custom.gewicht }}
-</div>
+                              <div class="kleine_eigenschap _1">6 stuks</div>
                             </div>
                           </a>
                           <div class="spacer-small"></div>

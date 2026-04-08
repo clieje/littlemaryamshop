@@ -2,15 +2,6 @@
                     
                     
                     <div class="winkelwagen-cont">
-                      <div class="product-inhoud"><img src="{{ product.metafields.custom.verpakkingimg | image_url: width: 40 }}" loading="lazy" li-object:src="product.metafields.custom.verpakkingimg | image_url: width: 40" alt="" class="inhoud-img">
-                        <div>
-                          <div class="small-text bold">Per 6 stuks verpakt</div>
-                          <div class="flex-left-small">
-                            <div class="small-text space">€</div>
-                            <div li-js-price="product.selected_or_first_available_variant.price" class="small-text space" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">11,33</div>
-                          </div>
-                        </div>
-                      </div>
                       <div class="product-header_form-block w-form">
                         {% form 'product', product, class: 'product-header_default-state' %}
 <div class="product-header_add-to-cart-wrapper">
