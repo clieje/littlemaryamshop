@@ -12,6 +12,7 @@
                             {% if product.vendor == vendor and productcount < 4 and product.available != false %}    <div li-if="product.vendor == vendor and productcount < 4 and product.available != false" role="listitem" class="product_list-item w-dyn-item">
     
                     {% render 'product_item', product: product %}
+                    {% assign productcount = productcount | plus: 1 %}
                       </div>
 {% endif %}
                             
