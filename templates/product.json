@@ -65,7 +65,9 @@
         "description",
         "add-to-cart"
       ],
-      "settings": {}
+      "settings": {
+        "text_producten": "Producten"
+      }
     },
     "uitgelicht_DNF8HQ": {
       "type": "uitgelicht",
@@ -282,7 +284,7 @@
       "settings": {
         "image_achtergrondafbeelding": "shopify://shop_images/cta.png",
         "text_titel": "Wereldsesmaken metliefde bereid",
-        "url_link": "",
+        "url_link": "shopify://collections/smaken",
         "text_button_tekst": "shop nu"
       }
     }
