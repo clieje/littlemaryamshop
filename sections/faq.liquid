@@ -35,8 +35,8 @@
                   </ul>
                   <ul x-data="{open: 0}" role="list" class="faq_list">
                     {% for block in section.blocks %}
-    {% if block.type == "faq-item" %}
-                    <li li-block="FAQ Item" role="button" tabindex="0" aria-controls="faq-body-{{forloop.index}}" x-on:click="open = (open === {{forloop.index}} ? 0 : {{forloop.index}}); $el.setAttribute('aria-expanded', open === {{forloop.index}} ? 'true' : 'false')" class="faq_item">
+    {% if block.type == "faq-item-2" %}
+                    <li li-block="FAQ Item 2" role="button" tabindex="0" aria-controls="faq-body-{{forloop.index}}" x-on:click="open = (open === {{forloop.index}} ? 0 : {{forloop.index}}); $el.setAttribute('aria-expanded', open === {{forloop.index}} ? 'true' : 'false')" class="faq_item">
                                     
                       
                                     <div class="faq_item-heading">
@@ -84,6 +84,24 @@
                     "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
                 }
             ]
+        },
+        {
+            "name": "FAQ Item 2",
+            "type": "faq-item-2",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Wat is Little Maryam?"
+                },
+                {
+                    "id": "richtext_richtext",
+                    "type": "richtext",
+                    "label": "Richtext",
+                    "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+                }
+            ]
         }
     ],
     "settings": [
@@ -103,7 +121,7 @@
                     "type": "faq-item"
                 },
                 {
-                    "type": "faq-item"
+                    "type": "faq-item-2"
                 }
             ]
         }
