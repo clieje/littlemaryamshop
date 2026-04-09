@@ -106,8 +106,57 @@
         "faq_item_2_8BTmm4": {
           "type": "faq-item-2",
           "settings": {
-            "text_heading": "Hoe zijn de producten verpakt en is de verpakking duurzaam?",
-            "richtext_richtext": "<p>De producten van Little Maryam zitten in glazen potjes — bewust gekozen omdat glas recyclebaar, veilig en smaakvrij is. Zes potjes zitten samen in een kartonnen tray (recyclebaar). Voor verzending worden de trays verpakt in een stevige verzenddoos met vulmiddel zodat de potjes veilig aankomen. De glazen potjes en het deksel kunnen na gebruik worden gerecycled via de glasbak.</p>"
+            "text_heading": "Welke betaalmethoden accepteren jullie?",
+            "richtext_richtext": "<p>Je kunt betalen via iDEAL, creditcard, Bancontact, PayPal en andere methoden via Mollie en Shopify Payments. De beschikbare opties zie je tijdens het afrekenen.</p>"
+          }
+        },
+        "faq_item_2_E8Rhtw": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Kan ik mijn bestelling annuleren?",
+            "richtext_richtext": "<p>Je hebt als consument altijd het recht om je bestelling kosteloos te annuleren binnen 14 dagen na ontvangst, zonder opgave van reden. Dit is het wettelijke herroepingsrecht. Neem contact op via retour@littlemaryam.com. Let op: voor bederfelijke producten of producten waarvan de verpakking al geopend is, geldt het herroepingsrecht niet.</p>"
+          }
+        },
+        "faq_item_2_MxfXcG": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Kan ik mijn bestelling retourneren?",
+            "richtext_richtext": "<p>Vanwege de aard van onze producten (biologische babyvoeding, bederfelijk en beperkt houdbaar) is retourneren helaas niet mogelijk nadat de verpakking is geopend. Ongeopende producten kunnen binnen 14 dagen worden geretourneerd, mits de verpakking onbeschadigd is.</p>"
+          }
+        },
+        "faq_item_2_9m4FFK": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Wat als ik een beschadigd of verkeerd product heb ontvangen?",
+            "richtext_richtext": "<p>Dat spijt ons! Neem binnen 48 uur na ontvangst contact op via shop@littlemaryam.com met een foto en beschrijving van het probleem. We zorgen voor een passende oplossing.</p>"
+          }
+        },
+        "faq_item_2_KtQeDH": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoe dien ik een klacht in?",
+            "richtext_richtext": "<p>Stuur je klacht zo volledig mogelijk naar shop@littlemaryam.com. We reageren binnen 14 dagen. Bij urgente klachten over productveiligheid of allergische reacties neem dan zo snel mogelijk contact op.</p>"
+          }
+        },
+        "faq_item_2_EjPD7t": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoe kan ik jullie bereiken?",
+            "richtext_richtext": "<p>Je kunt ons bereiken via:</p><p>•      E-mail: shop@littlemaryam.com (reactie<br/>binnen 1 werkdag)</p><p>•      Website: littlemaryam.com</p>"
+          }
+        },
+        "faq_item_2_MXUN3p": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Zijn jullie ook in de winkel verkrijgbaar?",
+            "richtext_richtext": "<p>Little Maryam is beschikbaar in meer dan 1.350 supermarkten in Nederland en België. Kijk op onze website voor een actueel overzicht van verkooppunten.</p>"
+          }
+        },
+        "faq_item_2_m4ViM7": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Ik ben retailer en wil Little Maryam inkopen. Wie kan ik benaderen?",
+            "richtext_richtext": "<p>Geweldig! Stuur een mail naar sales@littlemaryam.com en we nemen snel contact met je op.</p>"
           }
         },
         "faq_item_EkPKWG": {
@@ -194,6 +243,13 @@
         "faq_item_2_WEeq7J",
         "faq_item_2_waVbnA",
         "faq_item_2_8BTmm4",
+        "faq_item_2_E8Rhtw",
+        "faq_item_2_MxfXcG",
+        "faq_item_2_9m4FFK",
+        "faq_item_2_KtQeDH",
+        "faq_item_2_EjPD7t",
+        "faq_item_2_MXUN3p",
+        "faq_item_2_m4ViM7",
         "faq_item_EkPKWG",
         "faq_item_TxtbV4",
         "faq_item_Kp6xnY",
