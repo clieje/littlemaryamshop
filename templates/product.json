@@ -43,7 +43,7 @@
           "name": "Add to Cart",
           "settings": {
             "text_button_tekst": "in winkelwagen",
-            "text_levertijd": "Voor 23.59 besteld, morgen bezorgd",
+            "text_levertijd": "Binnen 1-2 werkdagen geleverd",
             "image_icon": "shopify://shop_images/download_1.svg",
             "image_icon_2": "shopify://shop_images/download_2.svg",
             "image_icon_3": "shopify://shop_images/download_3.svg",
@@ -65,9 +65,12 @@
         "description",
         "add-to-cart"
       ],
-      "settings": {
-        "text_levertijd": "Levertijd: 1 tot 2 werkdagen"
-      }
+      "settings": {}
+    },
+    "uitgelicht_DNF8HQ": {
+      "type": "uitgelicht",
+      "name": "Uitgelicht",
+      "settings": {}
     },
     "lint_RdFjr9": {
       "type": "lint",
@@ -87,11 +90,6 @@
         "url_link": "",
         "text_button_tekst": "shop nu"
       }
-    },
-    "uitgelicht_DNF8HQ": {
-      "type": "uitgelicht",
-      "name": "Uitgelicht",
-      "settings": {}
     }
   },
   "layout": "theme",
