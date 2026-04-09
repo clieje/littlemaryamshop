@@ -72,25 +72,6 @@
       "name": "Uitgelicht",
       "settings": {}
     },
-    "lint_RdFjr9": {
-      "type": "lint",
-      "name": "Lint",
-      "settings": {
-        "text_halal": "halal",
-        "text_biologisch": "biologisch",
-        "text_verantwoord": "verantwoord"
-      }
-    },
-    "call_to_action_MLPxrH": {
-      "type": "call_to_action",
-      "name": "Call to action",
-      "settings": {
-        "image_achtergrondafbeelding": "shopify://shop_images/cta.png",
-        "text_titel": "Wereldsesmaken metliefde bereid",
-        "url_link": "",
-        "text_button_tekst": "shop nu"
-      }
-    },
     "faq_FxhTmc": {
       "type": "faq",
       "blocks": {
@@ -158,6 +139,25 @@
         "text_heading": "Heading",
         "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
       }
+    },
+    "lint_RdFjr9": {
+      "type": "lint",
+      "name": "Lint",
+      "settings": {
+        "text_halal": "halal",
+        "text_biologisch": "biologisch",
+        "text_verantwoord": "verantwoord"
+      }
+    },
+    "call_to_action_MLPxrH": {
+      "type": "call_to_action",
+      "name": "Call to action",
+      "settings": {
+        "image_achtergrondafbeelding": "shopify://shop_images/cta.png",
+        "text_titel": "Wereldsesmaken metliefde bereid",
+        "url_link": "",
+        "text_button_tekst": "shop nu"
+      }
     }
   },
   "layout": "theme",
@@ -165,8 +165,8 @@
   "order": [
     "product_header",
     "uitgelicht_DNF8HQ",
+    "faq_FxhTmc",
     "lint_RdFjr9",
-    "call_to_action_MLPxrH",
-    "faq_FxhTmc"
+    "call_to_action_MLPxrH"
   ]
 }
