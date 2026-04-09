@@ -130,6 +130,34 @@
             "text_heading": "Bevatten de producten kunstmatige toevoegingen, suiker of zout?",
             "richtext_richtext": "<p>Nee. Onze producten bevatten geen toegevoegd suiker, zout, kunstmatige kleurstoffen, conserveringsmiddelen of smaakversterkers. Alleen pure, biologische ingrediënten, precies wat jij op het etiket ziet.</p>"
           }
+        },
+        "faq_item_yjQAkQ": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Zijn de producten geschikt voor niet-moslims?",
+            "richtext_richtext": "<p>Absoluut! Halal gecertificeerd betekent ook: hoge kwaliteitsnormen voor iedereen. Veel ouders kiezen bewust voor halal producten vanwege de strikte kwaliteitseisen, ongeacht hun geloofsovertuiging. Little Maryam is er voor elk gezin.</p>"
+          }
+        },
+        "faq_item_DfdKCn": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Welke leeftijdscategorieën zijn er?",
+            "richtext_richtext": "<p>Onze producten zijn ingedeeld per leeftijdsfase, zodat de textuur en samenstelling perfect aansluiten bij de ontwikkeling van jouw kindje. Kijk op onze website voor het actuele aanbod per leeftijdscategorie.</p>"
+          }
+        },
+        "faq_item_8h6jQK": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Bevatten de producten allergenen?",
+            "richtext_richtext": "<p>Een aantal van onze producten kan allergenen bevatten. Alle allergenen worden duidelijk vetgedrukt vermeld op de verpakking en op de productpagina op onze website. Twijfel je? Neem gerust contact op via shop@littlemaryam.com.</p>"
+          }
+        },
+        "faq_item_8JpTnT": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Zijn de producten geschikt voor kinderen met een koemelkallergie?",
+            "richtext_richtext": "<p>Sommige producten zijn zuivelvrij, andere niet. Bekijk altijd de ingrediëntenlijst op de verpakking of productpagina. Heb je vragen over specifieke allergieën? Stuur ons een bericht en we helpen je verder.</p>"
+          }
         }
       },
       "block_order": [
@@ -140,7 +168,11 @@
         "faq_item_MPVJWT",
         "faq_item_d4PPjA",
         "faq_item_XFLQjP",
-        "faq_item_FNLeJY"
+        "faq_item_FNLeJY",
+        "faq_item_yjQAkQ",
+        "faq_item_DfdKCn",
+        "faq_item_8h6jQK",
+        "faq_item_8JpTnT"
       ],
       "name": "FAQ",
       "settings": {
