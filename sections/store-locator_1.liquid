@@ -287,7 +287,7 @@ function lmInitMap(){
 
 (function(){
   const s=document.createElement('script');
-  s.src=`https://maps.googleapis.com/maps/api/js?key=${AIzaSyDM0BJ-YBwb7m5xp6vO24gA_3O0Up9SEo0}&callback=lmInitMap`;
+  s.src=`https://maps.googleapis.com/maps/api/js?key=${LM_API_KEY}&callback=lmInitMap`;
   s.async=true;s.defer=true;document.head.appendChild(s);
   window.lmInitMap=lmInitMap;
 })();
