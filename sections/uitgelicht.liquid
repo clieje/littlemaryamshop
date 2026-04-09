@@ -4,12 +4,13 @@
               {% assign collection = collections['smaken'] %}
               {% assign vendor = product.vendor %}
               {% assign productcount = 0 %}
+              {% assign current_id = product.id %}
               {% paginate collection.products by 1000 %}
     <div li-paginate:by="1000" li-paginate="collection.products" class="product_list-wrapper w-dyn-list" by="1000">
                 <div li-for:inside="product in collection.products" role="list" class="product_list w-dyn-items">
         {% for product in collection.products %}                            
                   
-                            {% if product.vendor == vendor and productcount < 4 and product.available != false %}    <div li-if="product.vendor == vendor and productcount < 4 and product.available != false" role="listitem" class="product_list-item w-dyn-item">
+                            {% if product.vendor == vendor and productcount < 5 and product.available != false and product.id != current_id %}    <div li-if="product.vendor == vendor and productcount < 5 and product.available != false and product.id != current_id" role="listitem" class="product_list-item w-dyn-item">
     
                     {% render 'product_item', product: product %}
                     {% assign productcount = productcount | plus: 1 %}
