@@ -4,11 +4,15 @@
                     <div class="product-header_price-wrapper">
                       <div class="price">€</div>
                       <div li-object-text="product.metafields.custom.vergelijkingsprijs_prijs_per_eenheid" class="price-text text-style-muted text-style-strikethrough"></div>
-                      <div li-js-price="product.selected_or_first_available_variant.price" class="price-text" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">1,89</div>
+                      <div id="price" li-js-price="product.selected_or_first_available_variant.price" class="price-text" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">1,89</div>
                       <div li-js-price="product.selected_or_first_available_variant.compare_at_price" class="price-text text-style-muted text-style-strikethrough" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.compare_at_price, true, '{{ shop.money_with_currency_format }}')">1,89</div>
-                      <div class="_6pack-text">
+                      <div class="per-stuk-prijs">
+                        <div class="_6pack-text">€</div>
+                        <div id="perstuk" class="_6pack-text">2,11</div>
+                        <div class="_6pack-text">
 {{ block.settings.text_per_6_stuks_verpakt }}
 </div>
+                      </div>
                     </div>
                     
                   
@@ -19,7 +23,7 @@
             "id": "text_per_6_stuks_verpakt",
             "type": "text",
             "label": "Per 6 stuks verpakt",
-            "default": "per 6 stuks"
+            "default": "\/ stuk"
         }
     ],
     "presets": [
