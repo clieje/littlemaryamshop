@@ -201,7 +201,7 @@
       ],
       "name": "FAQ",
       "settings": {
-        "text_heading": "Veelgestelde vragen"
+        "text_heading": "Veelgestelde <br>vragen"
       }
     }
   },
