@@ -106,11 +106,6 @@
       "settings": {
         "custom_liquid": ""
       }
-    },
-    "store_locator_1_yz8xMR": {
-      "type": "store-locator_1",
-      "name": "Winkelzoeker",
-      "settings": {}
     }
   },
   "layout": "theme",
@@ -124,7 +119,6 @@
     "lint",
     "call_to_action",
     "supermarkten",
-    "custom_liquid",
-    "store_locator_1_yz8xMR"
+    "custom_liquid"
   ]
 }
