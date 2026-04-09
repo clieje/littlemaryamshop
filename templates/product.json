@@ -75,49 +75,14 @@
     "faq_FxhTmc": {
       "type": "faq",
       "blocks": {
+        "faq_item_2_JmYeVb": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
         "faq_item_EkPKWG": {
-          "type": "faq-item",
-          "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
-          }
-        },
-        "faq_item_yjQDQc": {
-          "type": "faq-item",
-          "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
-          }
-        },
-        "faq_item_z3DR8T": {
-          "type": "faq-item",
-          "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
-          }
-        },
-        "faq_item_mmGTx3": {
-          "type": "faq-item",
-          "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
-          }
-        },
-        "faq_item_639Xa9": {
-          "type": "faq-item",
-          "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
-          }
-        },
-        "faq_item_MLNt7Y": {
-          "type": "faq-item",
-          "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
-          }
-        },
-        "faq_item_QeJgJF": {
           "type": "faq-item",
           "settings": {
             "text_heading": "Wat is Little Maryam?",
@@ -126,13 +91,8 @@
         }
       },
       "block_order": [
-        "faq_item_EkPKWG",
-        "faq_item_yjQDQc",
-        "faq_item_z3DR8T",
-        "faq_item_mmGTx3",
-        "faq_item_639Xa9",
-        "faq_item_MLNt7Y",
-        "faq_item_QeJgJF"
+        "faq_item_2_JmYeVb",
+        "faq_item_EkPKWG"
       ],
       "name": "FAQ",
       "settings": {
