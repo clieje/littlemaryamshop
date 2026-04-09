@@ -28,7 +28,7 @@
           "type": "product-price",
           "name": "Product Price",
           "settings": {
-            "text_per_6_stuks_verpakt": "per 6 stuks"
+            "text_per_6_stuks_verpakt": "/ stuk"
           },
           "blocks": {}
         },
@@ -136,8 +136,7 @@
       ],
       "name": "FAQ",
       "settings": {
-        "text_heading": "Heading",
-        "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+        "text_heading": "Heading"
       }
     },
     "lint_RdFjr9": {
