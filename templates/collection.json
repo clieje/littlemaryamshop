@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "collectionheader_cnFzdJ": {
+      "type": "collectionheader",
+      "name": "collectionheader",
+      "settings": {
+        "text_tag": "sinds 2019",
+        "text_heading_collections": "Werelde smakenmet liefde bereidt"
+      }
+    },
     "collection_products": {
       "type": "collection_products",
       "settings": {}
@@ -17,6 +25,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "collectionheader_cnFzdJ",
     "collection_products"
   ]
 }
