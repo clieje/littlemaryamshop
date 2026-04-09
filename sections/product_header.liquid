@@ -50,7 +50,7 @@
                       <div li-for:inside="media in product.media" class="swiper-wrapper is-product-thumbnail _1">
         {% for media in product.media %}                            
                         
-                            {% if media.media_type == 'image'  and forloop.first == false %}    <div li-if="media.media_type == 'image'  and forloop.first == false" class="swiper-slide is-product-thumbnail is-active">
+                            {% if media.media_type == 'image'  and forloop.first == false %}    <div li-if="media.media_type == 'image'  and forloop.first == false" class="swiper-slide is-product-thumbnail">
     <img li-object:src="media | image_url: width: 200" li-object:alt="media.alt" alt="{{ media.alt }}" src="{{ media | image_url: width: 200 }}" loading="lazy" class="product-header_thumbnail-image-3">    </div>
 {% endif %}
                             
