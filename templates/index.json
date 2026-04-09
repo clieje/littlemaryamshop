@@ -49,7 +49,7 @@
         "text_h2_1": "met little maryam",
         "text_h2_2": "gaat een wereld",
         "text_h2_3": "voor je open",
-        "url_link": "",
+        "url_link": "shopify://collections/smaken",
         "text_button_tekst": "shop nu",
         "image_gerecht_2": "shopify://shop_images/bord1.png",
         "image_gerecht_3": "shopify://shop_images/bord-3.png",
@@ -88,7 +88,7 @@
       "settings": {
         "image_achtergrondafbeelding": "shopify://shop_images/cta.png",
         "text_titel": "Wereldsesmaken metliefde bereid",
-        "url_link": "",
+        "url_link": "shopify://collections/smaken",
         "text_button_tekst": "shop nu"
       }
     },
