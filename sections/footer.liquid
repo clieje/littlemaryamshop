@@ -3,9 +3,9 @@
             <div class="footer_main-wrapper">
               <div class="footer-left">
                 <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="footer_logo-link w-inline-block">{% if section.settings.image_logo %}
-{{ section.settings.image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_logo' }}
+{{ section.settings.image_logo | image_url: width: 1000 | image_tag: class: 'footer_logo', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'Logo-LM-PurpleTrans.png' | asset_url }}" loading="lazy" alt="" class="footer_logo">
+<img class="footer_logo" src="{{ 'Logo-LM-PurpleTrans.png' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Logo-LM-PurpleTrans-p-500.png' | asset_url }} 500w, {{ 'Logo-LM-PurpleTrans-p-800.png' | asset_url }} 800w, {{ 'Logo-LM-PurpleTrans.png' | asset_url }} 1000w">
 {% endif %}</a>
                 <div class="footer_link-grid">
                   {% for link in linklists[section.settings.footer_menu].links %}    <div li-for="link in linklists[section.settings.footer_menu].links" class="footer_link-column">
