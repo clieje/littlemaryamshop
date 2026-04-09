@@ -86,17 +86,41 @@
           "type": "faq-item",
           "settings": {
             "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+            "richtext_richtext": "<p>Little Maryam is een biologische en halal gecertificeerde babyvoeding, gemaakt voor ouders die het beste willen voor hun kindje zonder concessies op het gebied van kwaliteit, gezondheid of voedingswaarden. Onze producten zijn puur, lekker en eerlijk.</p>"
+          }
+        },
+        "faq_item_TxtbV4": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Voor wie zijn de producten bedoeld?",
+            "richtext_richtext": "<p>Onze producten zijn geschikt voor baby's en peuters. We bieden maaltijden aan in verschillende leeftijdscategorieën, zodat er altijd iets passends is voor jouw kleintje, van de eerste hapjes tot een volledige maaltijd.</p>"
+          }
+        },
+        "faq_item_Kp6xnY": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Little Maryam is een biologische en halal gecertificeerde babyvoeding, gemaakt voor ouders die het beste willen voor hun kindje zonder concessies op het gebied van kwaliteit, gezondheid of voedingswaarden. Onze producten zijn puur, lekker en eerlijk.</p>"
+          }
+        },
+        "faq_item_MPVJWT": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Little Maryam is een biologische en halal gecertificeerde babyvoeding, gemaakt voor ouders die het beste willen voor hun kindje zonder concessies op het gebied van kwaliteit, gezondheid of voedingswaarden. Onze producten zijn puur, lekker en eerlijk.</p>"
           }
         }
       },
       "block_order": [
         "faq_item_2_JmYeVb",
-        "faq_item_EkPKWG"
+        "faq_item_EkPKWG",
+        "faq_item_TxtbV4",
+        "faq_item_Kp6xnY",
+        "faq_item_MPVJWT"
       ],
       "name": "FAQ",
       "settings": {
-        "text_heading": "Heading"
+        "text_heading": "Veelgestelde <br>vragen"
       }
     },
     "lint_RdFjr9": {
