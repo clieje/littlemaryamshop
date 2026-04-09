@@ -78,8 +78,36 @@
         "faq_item_2_JmYeVb": {
           "type": "faq-item-2",
           "settings": {
-            "text_heading": "Wat is Little Maryam?",
-            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+            "text_heading": "Hoe zijn de producten verpakt en is de verpakking duurzaam?",
+            "richtext_richtext": "<p>De producten van Little Maryam zitten in glazen potjes — bewust gekozen omdat glas recyclebaar, veilig en smaakvrij is. Zes potjes zitten samen in een kartonnen tray (recyclebaar). Voor verzending worden de trays verpakt in een stevige verzenddoos met vulmiddel zodat de potjes veilig aankomen. De glazen potjes en het deksel kunnen na gebruik worden gerecycled via de glasbak.</p>"
+          }
+        },
+        "faq_item_2_TNMRQk": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "In welke landen leveren jullie?",
+            "richtext_richtext": "<p>We leveren momenteel in Nederland, België, Duitsland en Frankrijk. Verzendkosten en levertijden per land worden getoond tijdens het afrekenen.</p>"
+          }
+        },
+        "faq_item_2_WEeq7J": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Wat zijn de levertijden?",
+            "richtext_richtext": "<p>Na verzending kun je je bestelling verwachten binnen:</p><p>•      Nederland en België: 1–2 werkdagen</p><p>•      Duitsland en Frankrijk: 2–3 werkdagen</p><p>Je ontvangt een bevestigingsmail met Track & Trace<br/>zodra je bestelling onderweg is.</p>"
+          }
+        },
+        "faq_item_2_waVbnA": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoeveel kan ik maximaal bestellen?",
+            "richtext_richtext": "<p>Vanwege logistieke beperkingen gelden de volgende maximale bestelhoeveelheden per bestelling:</p><p>•      Nederland, België en Frankrijk:<br/>maximaal 10 trays (60 potjes)</p><p>•      Duitsland: maximaal 6 trays (36<br/>potjes)</p><p>Wil je een grotere hoeveelheid bestellen? Neem dan contact op via sales@littlemaryam.com.</p>"
+          }
+        },
+        "faq_item_2_8BTmm4": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoe zijn de producten verpakt en is de verpakking duurzaam?",
+            "richtext_richtext": "<p>De producten van Little Maryam zitten in glazen potjes — bewust gekozen omdat glas recyclebaar, veilig en smaakvrij is. Zes potjes zitten samen in een kartonnen tray (recyclebaar). Voor verzending worden de trays verpakt in een stevige verzenddoos met vulmiddel zodat de potjes veilig aankomen. De glazen potjes en het deksel kunnen na gebruik worden gerecycled via de glasbak.</p>"
           }
         },
         "faq_item_EkPKWG": {
@@ -162,6 +190,10 @@
       },
       "block_order": [
         "faq_item_2_JmYeVb",
+        "faq_item_2_TNMRQk",
+        "faq_item_2_WEeq7J",
+        "faq_item_2_waVbnA",
+        "faq_item_2_8BTmm4",
         "faq_item_EkPKWG",
         "faq_item_TxtbV4",
         "faq_item_Kp6xnY",
