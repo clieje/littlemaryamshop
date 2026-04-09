@@ -42,8 +42,11 @@
                                 <div li-object="product.compare_at_price | money" class="price text-style-strikethrough card">{{ product.compare_at_price | money }}</div>
                                   </div>
 {% endif %}
+                              <div class="price">€</div>
                               <div li-object="product.price | money" class="price">{{ product.price | money }}</div>
-                              <div class="kleine_eigenschap _1">6 stuks</div>
+                              <div li-object:text="product.metafields.custom.stuks" class="kleine_eigenschap _1">
+{{ product.metafields.custom.stuks }}
+</div>
                             </div>
                           </a>
                           <div class="spacer-small"></div>
