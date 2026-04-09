@@ -90,6 +90,74 @@
         "url_link": "",
         "text_button_tekst": "shop nu"
       }
+    },
+    "faq_FxhTmc": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_EkPKWG": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
+        "faq_item_yjQDQc": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
+        "faq_item_z3DR8T": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
+        "faq_item_mmGTx3": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
+        "faq_item_639Xa9": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
+        "faq_item_MLNt7Y": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        },
+        "faq_item_QeJgJF": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_EkPKWG",
+        "faq_item_yjQDQc",
+        "faq_item_z3DR8T",
+        "faq_item_mmGTx3",
+        "faq_item_639Xa9",
+        "faq_item_MLNt7Y",
+        "faq_item_QeJgJF"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "text_heading": "Heading",
+        "richtext_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+      }
     }
   },
   "layout": "theme",
@@ -98,6 +166,7 @@
     "product_header",
     "uitgelicht_DNF8HQ",
     "lint_RdFjr9",
-    "call_to_action_MLPxrH"
+    "call_to_action_MLPxrH",
+    "faq_FxhTmc"
   ]
 }
