@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "titel_default_eKUjk3": {
+      "type": "titel_default",
+      "name": "Titel default",
+      "settings": {
+        "text_tag": "sinds 2019",
+        "text_heading": "Vind Little Maryam<br>bij jou in de buurt"
+      }
+    },
     "store_locator_4_9j74ar": {
       "type": "store-locator_4",
       "name": "Winkelzoeker",
@@ -18,6 +26,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "titel_default_eKUjk3",
     "store_locator_4_9j74ar"
   ]
 }
