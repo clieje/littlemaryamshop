@@ -1,1 +1,56 @@
-{"type":"footer","name":"Footer Group","sections":{"footer":{"type":"footer","settings":{}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "shipping_4QBcyb": {
+          "type": "shipping",
+          "settings": {
+            "image_icon": "shopify://shop_images/download_-2.png"
+          }
+        },
+        "shipping_C9qzDa": {
+          "type": "shipping",
+          "settings": {
+            "image_icon": "shopify://shop_images/download_-1.png"
+          }
+        },
+        "shipping_B8y7Wb": {
+          "type": "shipping",
+          "settings": {
+            "image_icon": "shopify://shop_images/download_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "shipping_4QBcyb",
+        "shipping_C9qzDa",
+        "shipping_B8y7Wb"
+      ],
+      "settings": {
+        "text_contact": "Contact",
+        "text_adresgegevens": "Little Maryam Kerkenbos 10376546 BB NijmegenNederland",
+        "text_delivery": "Verzendmethoden",
+        "text_payment_method": "Betalingsmethoden",
+        "text_copyright_text": "© 2021-2026 Alle rechten voorbehouden Little Maryam",
+        "text_little_maryam_is_onderdeel_van": "Little Maryam is onderdeel van Hal’All Food Friends",
+        "placeholder_text": "Email address",
+        "footer_menu": "footer"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
