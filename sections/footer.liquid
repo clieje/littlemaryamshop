@@ -108,16 +108,19 @@
                   <div class="text-size-regular">
 {{ section.settings.text_payment_method }}
 </div>
-                  <ul role="list" class="footer_payment-list w-list-unstyled">
-                    {% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
-                                    
-                      
-                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
-                            
-                    
-                        </li>
+                  <div class="footer_icon-row">
+                    {% for block in section.blocks %}
+    {% if block.type == "payment" %}
+                    <div li-block="Payment" class="footer_icon-item">
+                                    {% if block.settings.image_icon %}
+{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
+{% else %}
+<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+{% endif %}
+                            </div>
+            {% endif %}
 {% endfor %}
-                  </ul>
+                  </div>
                     </div>
 {% endif %}
               </div>
@@ -153,6 +156,17 @@
         {
             "name": "Shipping",
             "type": "shipping",
+            "settings": [
+                {
+                    "id": "image_icon",
+                    "type": "image_picker",
+                    "label": "Icon"
+                }
+            ]
+        },
+        {
+            "name": "Payment",
+            "type": "payment",
             "settings": [
                 {
                     "id": "image_icon",
@@ -231,6 +245,9 @@
                 },
                 {
                     "type": "shipping"
+                },
+                {
+                    "type": "payment"
                 }
             ]
         }

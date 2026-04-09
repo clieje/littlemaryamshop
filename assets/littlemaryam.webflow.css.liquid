@@ -553,6 +553,10 @@ figcaption {
   line-height: 1.25;
 }
 
+.text-size-regular.paragraph.small {
+  max-width: 450px;
+}
+
 .text-size-regular.mid {
   text-align: center;
 }
@@ -2508,6 +2512,7 @@ figcaption {
 .footer_shipping-icon {
   object-fit: contain;
   width: 30px;
+  max-height: 20px;
 }
 
 .li-lang_dd-list {
@@ -2733,6 +2738,10 @@ figcaption {
 
 .error-text {
   color: #e23939;
+}
+
+.section_filter {
+  background-color: var(--_schema---white);
 }
 
 .filter_layout {
@@ -5411,6 +5420,47 @@ figcaption {
   align-items: center;
   margin-bottom: 1px;
   margin-left: 5px;
+  display: flex;
+}
+
+.collection-header {
+  background-color: #fff;
+  padding-top: 200px;
+  padding-bottom: 75px;
+}
+
+.h1-collection {
+  text-align: left;
+  font-size: 64px;
+  line-height: .8;
+}
+
+.h1-collection.mid {
+  text-align: center;
+}
+
+.title-cont {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.title-section {
+  background-color: var(--_schema---white);
+  margin-bottom: 50px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.mid-container {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
   display: flex;
 }
 
