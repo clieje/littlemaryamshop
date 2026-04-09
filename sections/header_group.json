@@ -14,7 +14,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "url_link": "",
+        "url_link": "shopify://collections/smaken",
         "text_button_tekst": "shop nu",
         "text_cart": "Winkelwagen",
         "text_gratis_verzending_titel": "Gratis verzending",
