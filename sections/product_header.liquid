@@ -7,7 +7,7 @@
     
                   <a li-object:href="product.collections[0].url" href="{{ product.collections[0].url }}" class="w-inline-block">
                     <div li-object="product.collections[0].title" class="small-text">{{ product.collections[0].title }}</div>
-                  </a><img src="{{ 'hartje_klein.png' | asset_url }}" loading="lazy" sizes="(max-width: 991px) 96vw, (max-width: 2472px) 98vw, 2423px" srcset="{{ 'hartje_klein-p-500.png' | asset_url }} 500w, {{ 'hartje_klein-p-800.png' | asset_url }} 800w, {{ 'hartje_klein-p-1080.png' | asset_url }} 1080w, {{ 'hartje_klein-p-1600.png' | asset_url }} 1600w, {{ 'hartje_klein-p-2000.png' | asset_url }} 2000w, {{ 'hartje_klein.png' | asset_url }} 2423w" alt="" class="hartje-kleinst">
+                  </a><img src="{{ 'hartje_klein.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 2472px) 98vw, 2423px" srcset="{{ 'hartje_klein-p-500.png' | asset_url }} 500w, {{ 'hartje_klein-p-800.png' | asset_url }} 800w, {{ 'hartje_klein-p-1080.png' | asset_url }} 1080w, {{ 'hartje_klein-p-1600.png' | asset_url }} 1600w, {{ 'hartje_klein-p-2000.png' | asset_url }} 2000w, {{ 'hartje_klein.png' | asset_url }} 2423w" alt="" class="hartje-kleinst">
                     </li>
 {% endif %}
                 {% if template == 'product' %}    <li li-if="template == 'product'" class="breadcrum_item">
@@ -48,7 +48,7 @@
                       <div li-for:inside="media in product.media" class="swiper-wrapper is-product-thumbnail _1">
         {% for media in product.media %}                            
                         
-                            {% if media.media_type == 'image'  and forloop.first == false %}    <div li-if="media.media_type == 'image'  and forloop.first == false" class="swiper-slide is-product-thumbnail">
+                            {% if media.media_type == 'image'  and forloop.first == false %}    <div li-if="media.media_type == 'image'  and forloop.first == false" class="swiper-slide is-product-thumbnail is-active">
     <img li-object:src="media | image_url: width: 200" li-object:alt="media.alt" alt="{{ media.alt }}" src="{{ media | image_url: width: 200 }}" loading="lazy" class="product-header_thumbnail-image-3">    </div>
 {% endif %}
                             
