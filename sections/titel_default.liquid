@@ -1,0 +1,40 @@
+<div class="padding_5">
+          <div class="mid-container">
+            <div class="small-tag">
+              <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                  <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                </svg></div>
+              <div class="tag-text">
+{{ section.settings.text_tag }}
+</div>
+            </div>
+            <h1 class="h1-collection mid">
+{{ section.settings.text_heading }}
+</h1>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Titel default",
+    "class": "title-section",
+    "settings": [
+        {
+            "id": "text_tag",
+            "type": "text",
+            "label": "Tag",
+            "default": "sinds 2019"
+        },
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Vind Little Maryam<br\/>bij jou in de buurt"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Titel default",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
