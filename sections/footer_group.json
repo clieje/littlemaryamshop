@@ -17,13 +17,14 @@
         "social_media_jGi8kY": {
           "type": "social-media",
           "settings": {
-            "url_link": ""
+            "url_link": "https://www.facebook.com/LittleMaryamBabyfood/",
+            "image_icon": "shopify://shop_images/facebook-f-logo-white-png-11722276743yjc1dgqgsa.webp"
           }
         },
         "social_media_wYKCwM": {
           "type": "social-media",
           "settings": {
-            "url_link": ""
+            "url_link": "https://www.instagram.com/littlemaryam.lm/"
           }
         },
         "shipping_4QBcyb": {
