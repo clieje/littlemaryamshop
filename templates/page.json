@@ -1,12 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "default": {
-            "type": "default"
+  "sections": {
+    "faq_Ew4z8p": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_2_ar3dgR": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoe zijn de producten verpakt en is de verpakking duurzaam?",
+            "richtext_richtext": "<p>De producten van Little Maryam zitten in glazen potjes — bewust gekozen omdat glas recyclebaar, veilig en smaakvrij is. Zes potjes zitten samen in een kartonnen tray (recyclebaar). Voor verzending worden de trays verpakt in een stevige verzenddoos met vulmiddel zodat de potjes veilig aankomen. De glazen potjes en het deksel kunnen na gebruik worden gerecycled via de glasbak.</p>"
+          }
+        },
+        "faq_item_2_rxDtqY": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "In welke landen leveren jullie?",
+            "richtext_richtext": "<p>We leveren momenteel in Nederland, België, Duitsland en Frankrijk. Verzendkosten en levertijden per land worden getoond tijdens het afrekenen.</p>"
+          }
+        },
+        "faq_item_2_JWpHGB": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Wat zijn de levertijden?",
+            "richtext_richtext": "<p>Na verzending kun je je bestelling verwachten binnen:</p><p>•      Nederland en België: 1–2 werkdagen</p><p>•      Duitsland en Frankrijk: 2–3 werkdagen</p><p>Je ontvangt een bevestigingsmail met Track & Trace<br/>zodra je bestelling onderweg is.</p>"
+          }
+        },
+        "faq_item_2_rQTWzk": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoeveel kan ik maximaal bestellen?",
+            "richtext_richtext": "<p>Vanwege logistieke beperkingen gelden de volgende maximale bestelhoeveelheden per bestelling:</p><p>•      Nederland, België en Frankrijk:<br/>maximaal 10 trays (60 potjes)</p><p>•      Duitsland: maximaal 6 trays (36<br/>potjes)</p><p>Wil je een grotere hoeveelheid bestellen? Neem dan contact op via sales@littlemaryam.com.</p>"
+          }
+        },
+        "faq_item_2_4WxN9V": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Welke betaalmethoden accepteren jullie?",
+            "richtext_richtext": "<p>Je kunt betalen via iDEAL, creditcard, Bancontact, PayPal en andere methoden via Mollie en Shopify Payments. De beschikbare opties zie je tijdens het afrekenen.</p>"
+          }
+        },
+        "faq_item_2_tXKQia": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Kan ik mijn bestelling annuleren?",
+            "richtext_richtext": "<p>Je hebt als consument altijd het recht om je bestelling kosteloos te annuleren binnen 14 dagen na ontvangst, zonder opgave van reden. Dit is het wettelijke herroepingsrecht. Neem contact op via retour@littlemaryam.com. Let op: voor bederfelijke producten of producten waarvan de verpakking al geopend is, geldt het herroepingsrecht niet.</p>"
+          }
+        },
+        "faq_item_2_pTVYyT": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Kan ik mijn bestelling retourneren?",
+            "richtext_richtext": "<p>Vanwege de aard van onze producten (biologische babyvoeding, bederfelijk en beperkt houdbaar) is retourneren helaas niet mogelijk nadat de verpakking is geopend. Ongeopende producten kunnen binnen 14 dagen worden geretourneerd, mits de verpakking onbeschadigd is.</p>"
+          }
+        },
+        "faq_item_2_dyG6Kg": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Wat als ik een beschadigd of verkeerd product heb ontvangen?",
+            "richtext_richtext": "<p>Dat spijt ons! Neem binnen 48 uur na ontvangst contact op via shop@littlemaryam.com met een foto en beschrijving van het probleem. We zorgen voor een passende oplossing.</p>"
+          }
+        },
+        "faq_item_2_rBFijL": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoe dien ik een klacht in?",
+            "richtext_richtext": "<p>Stuur je klacht zo volledig mogelijk naar shop@littlemaryam.com. We reageren binnen 14 dagen. Bij urgente klachten over productveiligheid of allergische reacties neem dan zo snel mogelijk contact op.</p>"
+          }
+        },
+        "faq_item_2_rBf8Uk": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Hoe kan ik jullie bereiken?",
+            "richtext_richtext": "<p>Je kunt ons bereiken via:</p><p>•      E-mail: shop@littlemaryam.com (reactie<br/>binnen 1 werkdag)</p><p>•      Website: littlemaryam.com</p>"
+          }
+        },
+        "faq_item_2_bJNahF": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Zijn jullie ook in de winkel verkrijgbaar?",
+            "richtext_richtext": "<p>Little Maryam is beschikbaar in meer dan 1.350 supermarkten in Nederland en België. Kijk op onze website voor een actueel overzicht van verkooppunten.</p>"
+          }
+        },
+        "faq_item_2_iih4kV": {
+          "type": "faq-item-2",
+          "settings": {
+            "text_heading": "Ik ben retailer en wil Little Maryam inkopen. Wie kan ik benaderen?",
+            "richtext_richtext": "<p>Geweldig! Stuur een mail naar sales@littlemaryam.com en we nemen snel contact met je op.</p>"
+          }
+        },
+        "faq_item_MKTL3y": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat is Little Maryam?",
+            "richtext_richtext": "<p>Little Maryam is een biologische en halal gecertificeerde babyvoeding, gemaakt voor ouders die het beste willen voor hun kindje zonder concessies op het gebied van kwaliteit, gezondheid of voedingswaarden. Onze producten zijn puur, lekker en eerlijk.</p>"
+          }
+        },
+        "faq_item_peEKP8": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Voor wie zijn de producten bedoeld?",
+            "richtext_richtext": "<p>Onze producten zijn geschikt voor baby's en peuters. We bieden maaltijden aan in verschillende leeftijdscategorieën, zodat er altijd iets passends is voor jouw kleintje, van de eerste hapjes tot een volledige maaltijd.</p>"
+          }
+        },
+        "faq_item_LQY3LB": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Waar worden de producten gemaakt?",
+            "richtext_richtext": "<p>De producten van Little Maryam worden geproduceerd in Letland, onder de strengste voedselveiligheidsnormen. Onze producent is gecertificeerd voor de productie van biologische en halal babyvoeding.</p>"
+          }
+        },
+        "faq_item_8D7UcX": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Zijn de producten halal?",
+            "richtext_richtext": "<p>Ja, alle producten van Little Maryam zijn halal gecertificeerd door internationaal erkende vertificerings instantie HCS (Halal Correct Standard). Dit betekent dat je er zeker van kunt zijn dat elk product voldoet aan de halal-eisen, van ingrediënten tot productieproces.</p>"
+          }
+        },
+        "faq_item_nkNefj": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Wat houdt de halal-certificering precies in?",
+            "richtext_richtext": "<p>Onze halal-certificering door HCS garandeert dat alle ingrediënten halal zijn, dat er geen kruisbesmetting plaatsvindt met niet-halal producten en dat het productieproces voldoet aan de islamitische voedingsnormen. Heb je vragen omtrent halal, neem contact op met HCS via info@halalcs.org of via het contactformulier op de website:https://www.halalcs.org/contact</p>"
+          }
+        },
+        "faq_item_hywVDb": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Zijn de producten biologisch?",
+            "richtext_richtext": "<p>Ja! Alle producten van Little Maryam zijn biologisch gecertificeerd (organic). We gebruiken uitsluitend biologische ingrediënten, vrij van pesticiden en kunstmatige toevoegingen. Ons biologisch certificaat is uitgegeven volgens de Europese biologische regelgeving (EU Organic).</p>"
+          }
+        },
+        "faq_item_ydUL7R": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Bevatten de producten kunstmatige toevoegingen, suiker of zout?",
+            "richtext_richtext": "<p>Nee. Onze producten bevatten geen toegevoegd suiker, zout, kunstmatige kleurstoffen, conserveringsmiddelen of smaakversterkers. Alleen pure, biologische ingrediënten, precies wat jij op het etiket ziet.</p>"
+          }
+        },
+        "faq_item_yUaCbC": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Zijn de producten geschikt voor niet-moslims?",
+            "richtext_richtext": "<p>Absoluut! Halal gecertificeerd betekent ook: hoge kwaliteitsnormen voor iedereen. Veel ouders kiezen bewust voor halal producten vanwege de strikte kwaliteitseisen, ongeacht hun geloofsovertuiging. Little Maryam is er voor elk gezin.</p>"
+          }
+        },
+        "faq_item_UUaqTb": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Welke leeftijdscategorieën zijn er?",
+            "richtext_richtext": "<p>Onze producten zijn ingedeeld per leeftijdsfase, zodat de textuur en samenstelling perfect aansluiten bij de ontwikkeling van jouw kindje. Kijk op onze website voor het actuele aanbod per leeftijdscategorie.</p>"
+          }
+        },
+        "faq_item_W9qCJy": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Bevatten de producten allergenen?",
+            "richtext_richtext": "<p>Een aantal van onze producten kan allergenen bevatten. Alle allergenen worden duidelijk vetgedrukt vermeld op de verpakking en op de productpagina op onze website. Twijfel je? Neem gerust contact op via shop@littlemaryam.com.</p>"
+          }
+        },
+        "faq_item_DtctdG": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Zijn de producten geschikt voor kinderen met een koemelkallergie?",
+            "richtext_richtext": "<p>Sommige producten zijn zuivelvrij, andere niet. Bekijk altijd de ingrediëntenlijst op de verpakking of productpagina. Heb je vragen over specifieke allergieën? Stuur ons een bericht en we helpen je verder.</p>"
+          }
         }
-    },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "default"
-    ]
+      },
+      "block_order": [
+        "faq_item_2_ar3dgR",
+        "faq_item_2_rxDtqY",
+        "faq_item_2_JWpHGB",
+        "faq_item_2_rQTWzk",
+        "faq_item_2_4WxN9V",
+        "faq_item_2_tXKQia",
+        "faq_item_2_pTVYyT",
+        "faq_item_2_dyG6Kg",
+        "faq_item_2_rBFijL",
+        "faq_item_2_rBf8Uk",
+        "faq_item_2_bJNahF",
+        "faq_item_2_iih4kV",
+        "faq_item_MKTL3y",
+        "faq_item_peEKP8",
+        "faq_item_LQY3LB",
+        "faq_item_8D7UcX",
+        "faq_item_nkNefj",
+        "faq_item_hywVDb",
+        "faq_item_ydUL7R",
+        "faq_item_yUaCbC",
+        "faq_item_UUaqTb",
+        "faq_item_W9qCJy",
+        "faq_item_DtctdG"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "text_heading": "Veelgestelde vragen"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "faq_Ew4z8p"
+  ]
 }
