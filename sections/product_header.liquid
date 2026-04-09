@@ -7,7 +7,7 @@
     
                   <a li-object:href="product.collections[0].url" href="{{ product.collections[0].url }}" class="w-inline-block">
                     <div li-object="product.collections[0].title" class="small-text">{{ product.collections[0].title }}</div>
-                  </a><img src="{{ 'hartje_klein.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 2472px) 98vw, 2423px" srcset="{{ 'hartje_klein-p-500.png' | asset_url }} 500w, {{ 'hartje_klein-p-800.png' | asset_url }} 800w, {{ 'hartje_klein-p-1080.png' | asset_url }} 1080w, {{ 'hartje_klein-p-1600.png' | asset_url }} 1600w, {{ 'hartje_klein-p-2000.png' | asset_url }} 2000w, {{ 'hartje_klein.png' | asset_url }} 2423w" alt="" class="hartje-kleinst">
+                  </a><img src="{{ 'hartje_klein.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 2472px) 98vw, 2423px, 2423px, 2423px, 2423px" srcset="{{ 'hartje_klein-p-500.png' | asset_url }} 500w, {{ 'hartje_klein-p-800.png' | asset_url }} 800w, {{ 'hartje_klein-p-1080.png' | asset_url }} 1080w, {{ 'hartje_klein-p-1600.png' | asset_url }} 1600w, {{ 'hartje_klein-p-2000.png' | asset_url }} 2000w, {{ 'hartje_klein.png' | asset_url }} 2423w" alt="" class="hartje-kleinst">
                     </li>
 {% endif %}
                 {% if template == 'product' %}    <li li-if="template == 'product'" class="breadcrum_item">
@@ -21,8 +21,9 @@
 <div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
                 <div id="w-node-fe548112-1dd8-9dee-4669-09e4aeb677a0-9580fc58" class="swiper-container is-product-gallery">
                   <div class="swiper is-product-gallery">
-                    <div id="my-gallery" li-for:inside="media in product.media" class="swiper-wrapper is-product-gallery">
-        {% for media in product.media %}                            
+                    {% assign gallery_media = product.media | slice: 1, product.media.size %}
+                    <div id="my-gallery" li-for:inside="media in gallery.media" class="swiper-wrapper is-product-gallery">
+        {% for media in gallery.media %}                            
                       
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="swiper-slide is-product-gallery">
     
@@ -43,26 +44,9 @@
                     {% endfor %}    </div>
                   </div>
                   <div class="product-header_slider-wrapper-3">
-                    <div class="swiper_button-wrapper is-product-slider pointer-events-off z-index-1 hide-mobile-landscape">
-                      <a aria-label="Previous Slide" href="#" class="swiper_button-2 swiper-prev pointer-events-on w-inline-block">
-                        <div class="swiper_button-icon is-reversed w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
-                            <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                              <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
-                              <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
-                            </g>
-                          </svg></div>
-                      </a>
-                      <a aria-label="Next Slide" href="#" class="swiper_button-2 swiper-next pointer-events-on w-inline-block">
-                        <div class="swiper_button-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
-                            <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                              <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
-                              <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
-                            </g>
-                          </svg></div>
-                      </a>
-                    </div>
+                    <div class="swiper_button-wrapper is-product-slider pointer-events-off z-index-1 hide-mobile-landscape"></div>
                     <div class="swiper is-product-thumbnail">
-                      <div li-for:inside="media in product.media" class="swiper-wrapper is-product-thumbnail">
+                      <div li-for:inside="media in product.media" class="swiper-wrapper is-product-thumbnail _1">
         {% for media in product.media %}                            
                         
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="swiper-slide is-product-thumbnail">
