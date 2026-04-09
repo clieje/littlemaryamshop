@@ -203,11 +203,17 @@
       "settings": {
         "text_heading": "Veelgestelde <br>vragen"
       }
+    },
+    "white_dBTPwN": {
+      "type": "white",
+      "name": "white",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "white_dBTPwN",
     "faq_Ew4z8p"
   ]
 }
