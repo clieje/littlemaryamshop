@@ -6,33 +6,59 @@
                   <h2 class="heading-style-h2-2">
 {{ section.settings.text_heading }}
 </h2>
-                  <div class="text-rich-text max-width-medium w-richtext"> {{ section.settings.richtext_richtext }} </div>
                 </div>
-                <ul x-data="{open: 1}" role="list" class="faq_list">
-                  {% for block in section.blocks %}
+                <div class="outsideflex">
+                  <ul x-data="{open: 0}" role="list" class="faq_list">
+                    {% for block in section.blocks %}
     {% if block.type == "faq-item" %}
                     <li li-block="FAQ Item" role="button" tabindex="0" aria-controls="faq-body-{{forloop.index}}" x-on:click="open = (open === {{forloop.index}} ? 0 : {{forloop.index}}); $el.setAttribute('aria-expanded', open === {{forloop.index}} ? 'true' : 'false')" class="faq_item">
                                     
-                    
+                      
                                     <div class="faq_item-heading">
-                      <h3 id="faq-heading-{{forloop.index}}" class="heading-style-h4-2">
+                        <h3 id="faq-heading-{{forloop.index}}" class="heading-style-h4-2">
 {{ block.settings.text_heading }}
 </h3>
-                      <div x-bind:style="open === {{ forloop.index }} ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)'" class="faq_icon w-embed"><svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21.107 10.4622L13.3631 18.4523C13.2552 18.5641 13.127 18.6527 12.9858 18.7132C12.8446 18.7737 12.6932 18.8048 12.5403 18.8048C12.3874 18.8048 12.2361 18.7737 12.0949 18.7132C11.9537 18.6527 11.8254 18.5641 11.7175 18.4523L3.97362 10.4622C3.75541 10.237 3.63281 9.93164 3.63281 9.61322C3.63281 9.2948 3.75541 8.98942 3.97362 8.76427C4.19184 8.53911 4.48781 8.41262 4.79641 8.41262C5.10502 8.41262 5.40098 8.53911 5.6192 8.76427L12.5413 15.9065L19.4634 8.76327C19.6816 8.53811 19.9775 8.41162 20.2861 8.41162C20.5948 8.41162 20.8907 8.53811 21.1089 8.76327C21.3272 8.98843 21.4497 9.2938 21.4497 9.61222C21.4497 9.93064 21.3272 10.236 21.1089 10.4612L21.107 10.4622Z" fill="currentColor"></path>
-                        </svg></div>
-                    </div>
+                        <div x-bind:style="open === {{ forloop.index }} ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)'" class="faq_icon w-embed"><svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.107 10.4622L13.3631 18.4523C13.2552 18.5641 13.127 18.6527 12.9858 18.7132C12.8446 18.7737 12.6932 18.8048 12.5403 18.8048C12.3874 18.8048 12.2361 18.7737 12.0949 18.7132C11.9537 18.6527 11.8254 18.5641 11.7175 18.4523L3.97362 10.4622C3.75541 10.237 3.63281 9.93164 3.63281 9.61322C3.63281 9.2948 3.75541 8.98942 3.97362 8.76427C4.19184 8.53911 4.48781 8.41262 4.79641 8.41262C5.10502 8.41262 5.40098 8.53911 5.6192 8.76427L12.5413 15.9065L19.4634 8.76327C19.6816 8.53811 19.9775 8.41162 20.2861 8.41162C20.5948 8.41162 20.8907 8.53811 21.1089 8.76327C21.3272 8.98843 21.4497 9.2938 21.4497 9.61222C21.4497 9.93064 21.3272 10.236 21.1089 10.4612L21.107 10.4622Z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                                    
+                      
+                                    <div id="faq-body-{{forloop.index}}" x-show="open === {{ forloop.index }}" x-collapse="" x-cloak="" aria-labelledby="faq-heading-{{forloop.index}}" class="faq_item-body">
+                        <div class="text-rich-text margin-top margin-small w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                      </div>
                                     
                     
-                                    <div id="faq-body-{{forloop.index}}" x-show="open === {{ forloop.index }}" x-collapse="" x-cloak="" aria-labelledby="faq-heading-{{forloop.index}}" class="faq_item-body">
-                      <div class="text-rich-text margin-top margin-small w-richtext"> {{ block.settings.richtext_richtext }} </div>
-                    </div>
-                                    
-                  
                             </li>
             {% endif %}
 {% endfor %}
-                </ul>
+                  </ul>
+                  <ul x-data="{open: 0}" role="list" class="faq_list">
+                    {% for block in section.blocks %}
+    {% if block.type == "faq-item" %}
+                    <li li-block="FAQ Item" role="button" tabindex="0" aria-controls="faq-body-{{forloop.index}}" x-on:click="open = (open === {{forloop.index}} ? 0 : {{forloop.index}}); $el.setAttribute('aria-expanded', open === {{forloop.index}} ? 'true' : 'false')" class="faq_item">
+                                    
+                      
+                                    <div class="faq_item-heading">
+                        <h3 id="faq-heading-{{forloop.index}}" class="heading-style-h4-2">
+{{ block.settings.text_heading }}
+</h3>
+                        <div x-bind:style="open === {{ forloop.index }} ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)'" class="faq_icon w-embed"><svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.107 10.4622L13.3631 18.4523C13.2552 18.5641 13.127 18.6527 12.9858 18.7132C12.8446 18.7737 12.6932 18.8048 12.5403 18.8048C12.3874 18.8048 12.2361 18.7737 12.0949 18.7132C11.9537 18.6527 11.8254 18.5641 11.7175 18.4523L3.97362 10.4622C3.75541 10.237 3.63281 9.93164 3.63281 9.61322C3.63281 9.2948 3.75541 8.98942 3.97362 8.76427C4.19184 8.53911 4.48781 8.41262 4.79641 8.41262C5.10502 8.41262 5.40098 8.53911 5.6192 8.76427L12.5413 15.9065L19.4634 8.76327C19.6816 8.53811 19.9775 8.41162 20.2861 8.41162C20.5948 8.41162 20.8907 8.53811 21.1089 8.76327C21.3272 8.98843 21.4497 9.2938 21.4497 9.61222C21.4497 9.93064 21.3272 10.236 21.1089 10.4612L21.107 10.4622Z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                                    
+                      
+                                    <div id="faq-body-{{forloop.index}}" x-show="open === {{ forloop.index }}" x-collapse="" x-cloak="" aria-labelledby="faq-heading-{{forloop.index}}" class="faq_item-body">
+                        <div class="text-rich-text margin-top margin-small w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                      </div>
+                                    
+                    
+                            </li>
+            {% endif %}
+{% endfor %}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -65,13 +91,7 @@
             "id": "text_heading",
             "type": "text",
             "label": "Heading",
-            "default": "Heading"
-        },
-        {
-            "id": "richtext_richtext",
-            "type": "richtext",
-            "label": "Richtext",
-            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+            "default": "Veelgestelde <br\/>vragen"
         }
     ],
     "presets": [
@@ -79,6 +99,9 @@
             "name": "FAQ",
             "category": "Liquify",
             "blocks": [
+                {
+                    "type": "faq-item"
+                },
                 {
                     "type": "faq-item"
                 }
