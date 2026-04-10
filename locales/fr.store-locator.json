@@ -1,0 +1,23 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "store_locator": {
+      "name": "Localisateur de magasins",
+      "search_placeholder": "Rechercher par ville ou code postal...",
+      "my_location": "Ma position",
+      "stores_found": "magasins trouvés",
+      "no_results": "Aucun magasin trouvé.<br>Essayez un autre terme de recherche.",
+      "directions": "Itinéraire",
+      "your_location": "Votre position",
+      "geocode_country": "Pays-Bas"
+    }
+  }
+}
