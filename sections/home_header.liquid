@@ -1,7 +1,9 @@
 <div class="container-mid">
           <div class="flex-mid-vert">
             <div>
-              <h4 class="h4">halal babyvoeding</h4>
+              <h4 class="h4">
+{{ section.settings.text_boventitel }}
+</h4>
               <div class="h1_2line_container">
                 <div class="line-container">
                   <h1 class="h1_1">
@@ -58,6 +60,12 @@
     "name": "Home header",
     "class": "section_home_header",
     "settings": [
+        {
+            "id": "text_boventitel",
+            "type": "text",
+            "label": "Boventitel",
+            "default": "halal babyvoeding"
+        },
         {
             "id": "text_h1_line_1",
             "type": "text",

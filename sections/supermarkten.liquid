@@ -1,6 +1,8 @@
 <div class="container-mid">
           <div class="grid-vertical">
-            <h3 class="h3-mid">little maryam is ook verkrijgbaar bij</h3>
+            <h3 class="h3-mid">
+{{ section.settings.text_te_verkrijgen_bij }}
+</h3>
             <div class="logo-grid">{% if section.settings.image_logo_1 %}
 {{ section.settings.image_logo_1 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-_21aac7b8-f328-d01a-7dbd-da3322dac00e-9580fc40', class: 'supermarkt-logo product_list-item' }}
 {% else %}
@@ -24,6 +26,12 @@
     "name": "Supermarkten",
     "class": "section_supermarkten",
     "settings": [
+        {
+            "id": "text_te_verkrijgen_bij",
+            "type": "text",
+            "label": "Te verkrijgen bij",
+            "default": "little maryam is ook verkrijgbaar bij"
+        },
         {
             "id": "image_logo_1",
             "type": "image_picker",
