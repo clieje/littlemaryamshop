@@ -17,9 +17,9 @@
         "text_heading": "Vind Little Maryam<br>bij jou in de buurt"
       }
     },
-    "store_locator_4_9j74ar": {
-      "type": "store-locator_4",
-      "name": "Winkelzoeker",
+    "store_locator_4_1_qYKpCw": {
+      "type": "store-locator_4_1",
+      "name": "t:sections.store_locator.name",
       "settings": {}
     }
   },
@@ -27,6 +27,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "titel_default_eKUjk3",
-    "store_locator_4_9j74ar"
+    "store_locator_4_1_qYKpCw"
   ]
 }
