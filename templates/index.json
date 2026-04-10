@@ -12,6 +12,7 @@
     "home_header": {
       "type": "home_header",
       "settings": {
+        "text_boventitel": "HALAL BABYVOEDING",
         "text_h1_line_1": "Begin",
         "text_h1_line_2": "Klein",
         "url_link": "shopify://collections/smaken",
@@ -95,6 +96,7 @@
     "supermarkten": {
       "type": "supermarkten",
       "settings": {
+        "text_te_verkrijgen_bij": "little maryam is ook verkrijgbaar bij",
         "image_logo_1": "shopify://shop_images/Artboard_1.png",
         "image_logo_2": "shopify://shop_images/Artboard_2.png",
         "image_logo_4": "shopify://shop_images/Artboard_3.png",
