@@ -115,7 +115,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="fs_accordion-1_item">
+                      {% if product.metafields.custom.allergenen != blank %}    <div li-if="product.metafields.custom.allergenen != blank" class="fs_accordion-1_item">
+    
                         <div id="accordion-1-header-1" tabindex="0" role="button" aria-controls="accordion-1-content-1" aria-expanded="false" class="fs_accordion-1_header">
                           <div class="text-size-regular bold">
 {{ block.settings.text_titel_2 }}
@@ -131,7 +132,8 @@
 </p>
                           </div>
                         </div>
-                      </div>
+                          </div>
+{% endif %}
                       <div class="fs_accordion-1_item">
                         <div id="accordion-1-header-1" tabindex="0" role="button" aria-controls="accordion-1-content-1" aria-expanded="false" class="fs_accordion-1_header">
                           <div class="text-size-regular bold">
