@@ -1,7 +1,7 @@
 <div data-animation="default" class="nav_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="9132635a-7891-b0d1-9b20-ecb0d5a86df9" role="banner" data-duration="400" x-data="">
           <div class="nav_container">
             <nav role="navigation" id="w-node-_9132635a-7891-b0d1-9b20-ecb0d5a86dfd-d5a86df8" class="nav_menu is-page-height-tablet w-nav-menu">
-              {% for link in linklists[section.settings.menu].links %}    <div data-hover="true" data-delay="200" li-for="link in linklists[section.settings.menu].links" class="nav_menu-dropdown w-dropdown">
+              {% for link in linklists[section.settings.mobielmenu].links %}    <div data-hover="true" data-delay="200" li-for="link in linklists[section.settings.mobielmenu].links" class="nav_menu-dropdown w-dropdown">
                                     
                 
                             <div class="nav_dropdown-toggle w-dropdown-toggle">
@@ -54,6 +54,26 @@
               
                         </div>
 {% endfor %}
+              {% if localization.available_languages.size > 1 %}    <div li-if="localization.available_languages.size > 1" class="language-switch-container left">
+    
+                {% form 'localization', class: 'language-form left' %}
+<div data-hover="true" data-delay="0" class="dropdown w-dropdown">
+                    <div class="language_dropdown w-dropdown-toggle"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></div>
+                    <nav li-for:inside="language in localization.available_languages" class="language_list w-dropdown-list">
+        {% for language in localization.available_languages %}                            
+                      
+                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="divflag">
+    
+                        <a hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" href="#" class="lang-link-block w-inline-block"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></a>
+                          </div>
+{% endunless %}
+                            
+                    
+                    {% endfor %}    </nav>
+                  </div>
+                {% endform %}
+                  </div>
+{% endif %}
             </nav>
             <div class="nav_menu-button w-nav-button">
               <div class="menu-icon">
