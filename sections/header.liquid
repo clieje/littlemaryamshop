@@ -55,6 +55,15 @@
                         </div>
 {% endfor %}
             </nav>
+            <div class="nav_menu-button w-nav-button">
+              <div class="menu-icon">
+                <div class="menu-icon_line-top"></div>
+                <div class="menu-icon_line-middle">
+                  <div class="menu-icon_line-middle-inner"></div>
+                </div>
+                <div class="menu-icon_line-bottom"></div>
+              </div>
+            </div>
             <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand">
               <div class="organic-nav-form w-embed"><svg id="Group_2" data-name="Group 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewbox="0 0 183.683 150.956">
                   <defs>
@@ -670,28 +679,21 @@
                       </div>
                       <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
                         <div class="mini-cart_header">
-                          <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                          <div class="heading-style-h3">
+{{ section.settings.text_lege_winkelwagen }}
+</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
                             <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
                               </svg></div>
                           </button>
                         </div>
                         <div class="mini-cart_empty-content">
-                          <div class="text-size-regular">No Products selected</div>
+                          <div li-setings:text="Geen producten" class="text-size-regular">Je hebt nog geen producten in je winkelwagen.</div>
                         </div>
                       </div>
                     </div>
                   </nav>
                 </div>
-              </div>
-            </div>
-            <div class="nav_menu-button w-nav-button">
-              <div class="menu-icon">
-                <div class="menu-icon_line-top"></div>
-                <div class="menu-icon_line-middle">
-                  <div class="menu-icon_line-middle-inner"></div>
-                </div>
-                <div class="menu-icon_line-bottom"></div>
               </div>
             </div>
           </div>
@@ -773,6 +775,12 @@
             "type": "text",
             "label": "Belofte 2",
             "default": "Gratis retourzending"
+        },
+        {
+            "id": "text_lege_winkelwagen",
+            "type": "text",
+            "label": "Lege winkelwagen",
+            "default": "Winkelwagen"
         },
         {
             "type": "header",
