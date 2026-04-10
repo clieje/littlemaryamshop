@@ -82,7 +82,7 @@
             </a>
             <div class="nav_shop-icons small">
               <a href="{{ section.settings.url_link }}" class="icon-button secondary w-inline-block"> <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none"> <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path> </svg></div> <div class="button-text white">{{ section.settings.text_button_tekst }}</div><img loading="lazy" src="{{ 'Hartje-Little-Maryam-Wit.png' | asset_url }}" alt="" class="hartje_maryam"> </a>
-              {% if localization.available_languages.size > 1 %}    <div li-if="localization.available_languages.size > 1" class="language-switch-container">
+              {% if localization.available_languages.size > 1 %}    <div li-if="localization.available_languages.size > 1" class="lanugage_component">
     
                 {% form 'localization' %}
 <div data-hover="true" data-delay="0" class="w-dropdown">
@@ -100,6 +100,22 @@
                     {% endfor %}    </nav>
                   </div>
                 {% endform %}
+                <div class="hide-2 w-embed w-script">
+                  <script>
+  document.querySelectorAll(".language_component").forEach((wrapper) => {
+  const form = wrapper.querySelector("form");
+  const input = wrapper.querySelector("input[name='language_code']");
+  if (form && input) {
+    form.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        input.value = event.currentTarget.dataset.value;
+        form.submit();
+      });
+    });
+  }
+});
+</script>
+                </div>
                   </div>
 {% endif %}
               <div class="nav_mini-cart">
