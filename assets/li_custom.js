@@ -507,6 +507,7 @@ document.addEventListener('alpine:init', () => {
 
         /**
          * Add a single product to cart.
+         * Maximum 10 items in cart (across all products combined).
          */
         async addToCart(e, toggleMiniCart = true, productId = undefined, quantity = undefined) {
             if (!e || !(e instanceof Event) || typeof e.preventDefault !== 'function') {
@@ -519,6 +520,25 @@ document.addEventListener('alpine:init', () => {
                 return
             }
 
+            // Check cart limiet van 10
+            const CART_LIMIT = 10;
+            const cartResponse = await fetch(window.Shopify.routes.root + 'cart.js');
+            const cartData = await cartResponse.json();
+            const currentCount = cartData.item_count;
+            const addingQuantity = quantity ?? this.quantity ?? 1;
+
+            if (currentCount + addingQuantity > CART_LIMIT) {
+                const remaining = CART_LIMIT - currentCount;
+                this.$dispatch('showcartmessage', {
+                    status: 422,
+                    message: remaining > 0
+                        ? `Je kunt nog maar ${remaining} product${remaining === 1 ? '' : 'en'} toevoegen.`
+                        : 'Je winkelwagen is vol (maximaal 10 producten).',
+                    description: ''
+                });
+                return;
+            }
+
             // Innerhalb von $nextTick(() => { activateVariants() }) bezieht sich this.$el auf den Container des Alpine-Objekts.
             // Bei einer Variantenauswahl hingegen verweist this.$el auf das Element, das die Auswahl ausgelöst hat.
             let form = this.$el.closest('form') ?? this.$el.querySelector('form');
@@ -526,7 +546,7 @@ document.addEventListener('alpine:init', () => {
             const payload = {
                 "items" : [{
                     id: productId ?? this.product.selected_or_first_available_variant?.id,
-                    quantity: quantity ?? this.quantity ?? 1,
+                    quantity: addingQuantity,
                     ...formData
                 }]
             };
