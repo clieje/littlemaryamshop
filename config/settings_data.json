@@ -26,6 +26,13 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "2647664283302970701": {
+        "type": "shopify://apps/cookiebot-cmp/blocks/uc-banner/42d95aba-03be-478d-adf0-7bb4f5efae78",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   }
 }
