@@ -54,26 +54,6 @@
               
                         </div>
 {% endfor %}
-              {% if localization.available_languages.size > 1 %}    <div li-if="localization.available_languages.size > 1" class="language-switch-container left">
-    
-                {% form 'localization', class: 'language-form left' %}
-<div data-hover="true" data-delay="0" class="dropdown w-dropdown">
-                    <div class="language_dropdown w-dropdown-toggle"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></div>
-                    <nav li-for:inside="language in localization.available_languages" class="language_list w-dropdown-list">
-        {% for language in localization.available_languages %}                            
-                      
-                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="divflag">
-    
-                        <a hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" href="#" class="lang-link-block w-inline-block"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></a>
-                          </div>
-{% endunless %}
-                            
-                    
-                    {% endfor %}    </nav>
-                  </div>
-                {% endform %}
-                  </div>
-{% endif %}
             </nav>
             <div class="nav_menu-button w-nav-button">
               <div class="menu-icon">
@@ -100,13 +80,13 @@
 <img src="{{ 'Logo-Little-Maryam-Wit.png' | asset_url }}" loading="lazy" alt="" class="nav_logo">
 {% endif %}
             </a>
-            <div class="nav_shop-icons">
+            <div class="nav_shop-icons small">
               <a href="{{ section.settings.url_link }}" class="icon-button secondary w-inline-block"> <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none"> <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path> </svg></div> <div class="button-text white">{{ section.settings.text_button_tekst }}</div><img loading="lazy" src="{{ 'Hartje-Little-Maryam-Wit.png' | asset_url }}" alt="" class="hartje_maryam"> </a>
               {% if localization.available_languages.size > 1 %}    <div li-if="localization.available_languages.size > 1" class="language-switch-container">
     
-                {% form 'localization', class: 'language-form' %}
+                {% form 'localization' %}
 <div data-hover="true" data-delay="0" class="w-dropdown">
-                    <div class="language_dropdown w-dropdown-toggle"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></div>
+                    <div class="language_dropdown w-dropdown-toggle"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ localization.language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></div>
                     <nav li-for:inside="language in localization.available_languages" class="language_list w-dropdown-list">
         {% for language in localization.available_languages %}                            
                       
@@ -620,7 +600,9 @@
                               <div class="mini-cart_line-item_product-info">
                                 <div class="cart-title">
                                   <div li-js-object="product.title" class="heading-style-h4 text-weight-normal dark" x-text="product.title">Product Title</div>
-                                  <div li-js-object:text="product.metafields.custom.stuks" class="small-promise" x-bind:text="product.metafields.custom.stuks">6 stuks</div>
+                                  <div class="small-promise">
+{{ section.settings.text_6_stuks }}
+</div>
                                 </div>
                                 <div class="mini-cart_line-item_price">
                                   <div class="flex-left-small">
@@ -655,7 +637,9 @@
                         </div>
                         <div class="mini-cart_footer">
                           <div class="mini-cart_footer-total">
-                            <div li="" class="text-size-regular text-weight-bold">In totaal</div>
+                            <div class="text-size-regular text-weight-bold">
+{{ section.settings.text_in_totaal }}
+</div>
                             <div class="mini-cart_footer-price">
                               <div class="flex-left-small">
                                 <div class="text-size-regular text-weight-bold totaal">€</div>
@@ -777,6 +761,18 @@
             "id": "free_shipping",
             "label": "Free Shipping",
             "default": "100"
+        },
+        {
+            "id": "text_6_stuks",
+            "type": "text",
+            "label": "6 stuks",
+            "default": "6 stuks"
+        },
+        {
+            "id": "text_in_totaal",
+            "type": "text",
+            "label": "In totaal",
+            "default": "In totaal"
         },
         {
             "id": "text_checkout_tekst",
