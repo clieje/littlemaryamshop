@@ -15,6 +15,15 @@
         "settings": {
           "text_bericht": "Binnen 1-2 werkdagen geleverd"
         }
+      },
+      "korting": {
+        "type": "korting",
+        "settings": {
+          "url_actiebalk": "shopify://collections/smaken",
+          "text_grote_tekst": "Aléén tijdens dit weekend beschikbaar",
+          "text_geel_blok": "20% lanceringskorting",
+          "text_kleine_tekst": "Op het gehele assortiment"
+        }
       }
     },
     "content_for_index": []
