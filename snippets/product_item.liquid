@@ -23,16 +23,24 @@
                                   </div>
 {% endif %}
                             </div>
+                            <div class="maanden">
+                              <div li-object:text="product.metafields.custom.maanden" class="maand-text">
+{{ product.metafields.custom.maanden }}
+</div>
+                              <div li-object:text="product.metafields.custom.maandentekst" class="kleine_eigenschap parrent">
+{{ product.metafields.custom.maandentekst }}
+</div>
+                            </div>
                           </div>
                           <a li-object:href="product.url" href="{{ product.url }}" class="product-item_text-link w-inline-block">
                             <div class="product-item_left">
                               <div li-object="product.title" class="heading-style-h4 text-weight-normal">{{ product.title }}</div>
-                              <div class="eigenschappen">
-                                <div li-object:text="product.metafields.custom.productbeschrijving" class="kleine_eigenschap">
+                              <div li-object:text="product.metafields.custom.productbeschrijving" class="text-size-regular white">
 {{ product.metafields.custom.productbeschrijving }}
 </div>
-                                <div li-object:text="product.metafields.custom.maanden" class="kleine_eigenschap">
-{{ product.metafields.custom.maanden }}
+                              <div class="eigenschappen">
+                                <div li-object:text="product.metafields.custom.extraomschrijving" class="small-text beperkt">
+{{ product.metafields.custom.extraomschrijving }}
 </div>
                               </div>
                             </div>

@@ -26,7 +26,7 @@
 {{ section.settings.image_achtergrondafbeelding_patroon | image_url: width: 1000 | image_tag: class: 'patroon', sizes: '(max-width: 2560px) 100vw, 2560px', loading: 'lazy' }}
 {% else %}
 <img class="patroon" src="{{ 'patroon_achtergrond.png' | asset_url }}" alt="" sizes="(max-width: 2560px) 100vw, 2560px" loading="lazy" srcset="{{ 'patroon_achtergrond-p-500.png' | asset_url }} 500w, {{ 'patroon_achtergrond-p-800.png' | asset_url }} 800w, {{ 'patroon_achtergrond-p-1080.png' | asset_url }} 1080w, {{ 'patroon_achtergrond-p-1600.png' | asset_url }} 1600w, {{ 'patroon_achtergrond-p-2000.png' | asset_url }} 2000w, {{ 'patroon_achtergrond.png' | asset_url }} 2560w">
-{% endif %}</div>
+{% endif %}<img src="{{ 'littlemaryam_mascotte.png' | asset_url }}" loading="lazy" sizes="(max-width: 1902px) 100vw, 1902px" srcset="{{ 'littlemaryam_mascotte-p-500.png' | asset_url }} 500w, {{ 'littlemaryam_mascotte-p-800.png' | asset_url }} 800w, {{ 'littlemaryam_mascotte-p-1080.png' | asset_url }} 1080w, {{ 'littlemaryam_mascotte-p-1600.png' | asset_url }} 1600w, {{ 'littlemaryam_mascotte.png' | asset_url }} 1902w" alt="" class="mascotte"></div>
         <div class="_3-product-header">
           <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="potje _3">{% if section.settings.image_potje_2 %}
 {{ section.settings.image_potje_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'potje-img' }}
@@ -64,7 +64,7 @@
             "id": "text_boventitel",
             "type": "text",
             "label": "Boventitel",
-            "default": "halal babyvoeding"
+            "default": "halal &amp;\u00a0Bio babyvoeding"
         },
         {
             "id": "text_h1_line_1",
