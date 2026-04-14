@@ -576,6 +576,7 @@ figcaption {
 
 .text-size-regular.white {
   color: #fff;
+  min-height: 30px;
   font-family: College Star Full Lovesvg, Arial, sans-serif;
 }
 
@@ -4316,7 +4317,7 @@ figcaption {
 .kleine_eigenschap {
   color: #ffffff80;
   font-family: College Star Full Lovesvg, Arial, sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1;
 }
 
@@ -5610,8 +5611,8 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   padding-top: 2px;
   display: flex;
   position: absolute;
@@ -5691,24 +5692,50 @@ figcaption {
 
 .icons-product {
   z-index: 15;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-flow: column;
+  display: flex;
   position: absolute;
-  inset: auto 50px 175px auto;
+  inset: auto 40px 175px auto;
 }
 
 .icon-test {
   background-color: var(--_schema---white);
   border-radius: 100px;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 75px;
   height: 75px;
+  padding-top: 5px;
   display: flex;
+}
+
+.icon-test.extraspace {
+  padding-top: 10px;
 }
 
 .month {
   font-family: Luckiestguy, Arial, sans-serif;
   font-size: 28px;
   line-height: 1;
+}
+
+.maanden-tekst {
+  font-family: Luckiestguy, Arial, sans-serif;
+  font-size: 32px;
+  line-height: .9;
+}
+
+.maand-tekst {
+  font-family: College Star Full Lovesvg, Arial, sans-serif;
+  font-size: 10px;
+  line-height: .9;
+}
+
+.halalsvg {
+  max-width: 50px;
 }
 
 @media screen and (max-width: 991px) {
@@ -6020,7 +6047,8 @@ figcaption {
 
   .swiper-container.is-product-gallery {
     padding-right: 0;
-    position: static;
+    position: relative;
+    top: 0;
   }
 
   .footer_main-wrapper {
@@ -6408,6 +6436,10 @@ figcaption {
 
   .hartje-relatief {
     margin-top: 15px;
+  }
+
+  .icons-product {
+    inset: auto 25px 165px auto;
   }
 }
 
@@ -7530,6 +7562,35 @@ figcaption {
 
   .smallcloud.right.below {
     display: none;
+  }
+
+  .icons-product {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    bottom: 160px;
+    right: 20px;
+  }
+
+  .icon-test {
+    width: 45px;
+    height: 45px;
+    padding-top: 3px;
+  }
+
+  .icon-test.extraspace {
+    padding-top: 3px;
+  }
+
+  .maanden-tekst {
+    font-size: 20px;
+  }
+
+  .maand-tekst {
+    font-size: 7px;
+  }
+
+  .halalsvg {
+    max-width: 25px;
   }
 }
 
