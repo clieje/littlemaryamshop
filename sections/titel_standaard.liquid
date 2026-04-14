@@ -8,31 +8,23 @@
 {{ section.settings.text_tag }}
 </div>
             </div>
-            <h1 class="h1-collection mid maxx">
-{{ section.settings.text_heading }}
-</h1>
+            <h1 li-object="page.title" class="h1-collection mid maxx">{{ page.title }}</h1>
           </div>
         </div> {% schema %} {
     "tag": "section",
-    "name": "Titel default",
-    "class": "title-section",
+    "name": "Titel standaard",
+    "class": "title-section st",
     "settings": [
         {
             "id": "text_tag",
             "type": "text",
             "label": "Tag",
             "default": "sinds 2019"
-        },
-        {
-            "id": "text_heading",
-            "type": "text",
-            "label": "Heading",
-            "default": "Vind Little Maryam<br\/>bij jou in de buurt"
         }
     ],
     "presets": [
         {
-            "name": "Titel default",
+            "name": "Titel standaard",
             "category": "Liquify",
             "blocks": []
         }
