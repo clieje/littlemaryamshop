@@ -1,6 +1,11 @@
 <div li-block="Product Name" {{ block.shopify_attributes }}>
                     
                     
+                    <div class="_6pack-text">
+{{ block.settings.text_6_stuks }}
+</div>
+                    
+                    
                     <h1 li-object:text="product.title" class="heading-style-h2 left">
 {{ product.title }}
 </h1>
@@ -8,7 +13,14 @@
                   
                 </div> {% schema %} {
     "name": "Product Name",
-    "settings": [],
+    "settings": [
+        {
+            "id": "text_6_stuks",
+            "type": "text",
+            "label": "6 stuks",
+            "default": "6 stuks"
+        }
+    ],
     "presets": [
         {
             "name": "Product Name",

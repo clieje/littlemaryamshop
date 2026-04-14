@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: Luckiestguy;
+  src: url({{ 'LuckiestGuy-Regular.ttf' | asset_url }}) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: College Star Full Lovesvg;
   src: url({{ 'College-Star-Full-LoveSVG.otf' | asset_url }}) format("opentype");
   font-weight: 400;
@@ -564,6 +572,11 @@ figcaption {
 
 .text-size-regular.bold {
   font-weight: 400;
+}
+
+.text-size-regular.white {
+  color: #fff;
+  font-family: College Star Full Lovesvg, Arial, sans-serif;
 }
 
 .text-align-right {
@@ -1686,8 +1699,8 @@ figcaption {
   align-items: flex-start;
   margin-top: -45px;
   padding-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   display: flex;
 }
@@ -1696,7 +1709,7 @@ figcaption {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   flex-flow: column;
-  margin-right: 1rem;
+  margin-right: 0;
   display: flex;
 }
 
@@ -1981,7 +1994,7 @@ figcaption {
   grid-column-gap: 25px;
   grid-row-gap: 100px;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -2112,7 +2125,7 @@ figcaption {
 }
 
 .swiper-slide.is-product-thumbnail.is-active {
-  border: 1px solid #9b9b9b;
+  border: .5px solid var(--_schema---secondary);
 }
 
 .swiper_button-wrapper {
@@ -4069,6 +4082,12 @@ figcaption {
   opacity: .75;
 }
 
+.small-text.beperkt {
+  color: #ffffff80;
+  max-width: 175px;
+  line-height: 1.25;
+}
+
 .flex-mid-vert {
   grid-column-gap: 75px;
   grid-row-gap: 75px;
@@ -4241,6 +4260,10 @@ figcaption {
   color: var(--_schema---white);
 }
 
+.small-tag.biggerred {
+  color: var(--_schema---beige-background);
+}
+
 .tag-text {
   color: var(--_schema---main);
   margin-bottom: -3px;
@@ -4285,6 +4308,8 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   min-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   display: flex;
 }
 
@@ -4299,6 +4324,12 @@ figcaption {
   margin-bottom: 3px;
 }
 
+.kleine_eigenschap.parrent {
+  color: var(--_schema---white);
+  margin-top: -2px;
+  font-size: 8px;
+}
+
 .shadow {
   opacity: .25;
   filter: blur(10px);
@@ -4309,7 +4340,7 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  inset: auto 0% 75px;
+  inset: 200px 0% auto;
 }
 
 .product-buy-container {
@@ -4358,6 +4389,11 @@ figcaption {
   display: flex;
 }
 
+.flex-left.label {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
 .footer-container-top {
   padding: 100px 5% 125px;
 }
@@ -4396,6 +4432,7 @@ figcaption {
 .cta-container {
   color: var(--_schema---white);
   border-radius: 25px;
+  margin-top: 50px;
   padding-top: 100px;
   padding-bottom: 200px;
   position: relative;
@@ -4464,6 +4501,11 @@ figcaption {
 .flex-outside.line {
   border-left: .5px solid #ffffff57;
   border-right: .5px solid #ffffff57;
+}
+
+.flex-outside.title {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
 }
 
 ._2-text {
@@ -4614,6 +4656,7 @@ figcaption {
   padding-top: 150px;
   padding-bottom: 150px;
   display: flex;
+  position: relative;
 }
 
 .button-title-par {
@@ -4665,7 +4708,7 @@ figcaption {
   grid-column-gap: 100px;
   grid-row-gap: 100px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -5450,6 +5493,7 @@ figcaption {
   background-color: #fff;
   padding-top: 200px;
   padding-bottom: 75px;
+  position: relative;
 }
 
 .h1-collection {
@@ -5555,6 +5599,116 @@ figcaption {
 .input {
   padding: 0;
   overflow: clip;
+}
+
+.maanden {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  pointer-events: none;
+  background-color: #00000021;
+  border-radius: 75px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding-top: 2px;
+  display: flex;
+  position: absolute;
+  inset: 1rem 1rem auto auto;
+}
+
+.maand-text {
+  color: var(--_schema---white);
+  font-family: Luckiestguy, Arial, sans-serif;
+  font-size: 26px;
+  line-height: .9;
+}
+
+.flex-horizontal-small {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  flex-flow: column;
+  display: flex;
+}
+
+.mascotte {
+  max-width: 250px;
+  position: absolute;
+  inset: auto auto 0% 0%;
+}
+
+.hartje-relatief {
+  max-width: 65px;
+  transform: rotate(10deg);
+}
+
+.image-container {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.lm {
+  max-width: 200px;
+  position: relative;
+  top: -40px;
+}
+
+.little-maryam-mid {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: auto 0% -76px;
+}
+
+.image {
+  max-width: 225px;
+}
+
+.smallcloud {
+  max-width: 250px;
+  position: absolute;
+  inset: 0% auto auto -50px;
+}
+
+.smallcloud.right {
+  inset: 50px -50px auto auto;
+}
+
+.smallcloud.right.below {
+  inset: auto -50px 0% auto;
+}
+
+.smallcloud.leftbelow {
+  max-width: 275px;
+  inset: auto auto 0% -50px;
+}
+
+.icons-product {
+  z-index: 15;
+  position: absolute;
+  inset: auto 50px 175px auto;
+}
+
+.icon-test {
+  background-color: var(--_schema---white);
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  display: flex;
+}
+
+.month {
+  font-family: Luckiestguy, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1;
 }
 
 @media screen and (max-width: 991px) {
@@ -6181,14 +6335,14 @@ figcaption {
   }
 
   .flex-outside.title {
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     flex-flow: column;
   }
 
   ._2-text {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
     flex-flow: column;
     display: flex;
   }
@@ -6246,6 +6400,14 @@ figcaption {
   .dropdown {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .mascotte {
+    display: none;
+  }
+
+  .hartje-relatief {
+    margin-top: 15px;
   }
 }
 
@@ -6749,6 +6911,10 @@ figcaption {
     padding-bottom: 100px;
   }
 
+  .logo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .labels {
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -6797,6 +6963,18 @@ figcaption {
 
   .korting-aankondiging {
     font-size: 12px;
+  }
+
+  .smallcloud.right.below {
+    max-width: 175px;
+    bottom: -50px;
+    right: -25px;
+  }
+
+  .smallcloud.leftbelow {
+    max-width: 150px;
+    bottom: -50px;
+    left: -25px;
   }
 }
 
@@ -6958,8 +7136,13 @@ figcaption {
   .product-item_text-link {
     margin-top: -40px;
     padding-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .product-item_tag_list {
+    top: 10px;
+    left: 10px;
   }
 
   .nav_component {
@@ -7218,7 +7401,7 @@ figcaption {
     align-items: center;
     margin-top: 0;
     margin-left: 0;
-    padding: 10px 15px 15px;
+    padding: 10px 10px 15px;
   }
 
   .footer-left, .footer-right {
@@ -7231,7 +7414,11 @@ figcaption {
     font-size: 55px;
   }
 
-  .flex-outside.title {
+  .section_onsverhaal {
+    margin-top: -75px;
+  }
+
+  .flex-outside.title, ._2-text {
     grid-column-gap: 25px;
     grid-row-gap: 25px;
   }
@@ -7249,6 +7436,10 @@ figcaption {
     grid-row-gap: 50px;
     flex-flow: column;
     display: flex;
+  }
+
+  .section_supermarkten {
+    padding-bottom: 75px;
   }
 
   .logo-grid {
@@ -7331,9 +7522,18 @@ figcaption {
   .kortings-actie {
     min-width: 166px;
   }
+
+  .hartje-relatief {
+    max-width: 50px;
+    margin-left: -69px;
+  }
+
+  .smallcloud.right.below {
+    display: none;
+  }
 }
 
-#w-node-_21aac7b8-f328-d01a-7dbd-da3322dac00e-9580fc40, #w-node-_8dd4970e-5a76-755e-0984-794fd0904bb8-9580fc40, #w-node-_3fa2267d-adc2-b15c-a55b-02d47fbe2ce2-9580fc40, #w-node-_70caa9fa-a2a6-45f2-ec85-8e4493608dec-9580fc40 {
+#w-node-_21aac7b8-f328-d01a-7dbd-da3322dac00e-9580fc40, #w-node-_8dd4970e-5a76-755e-0984-794fd0904bb8-9580fc40, #w-node-_3fa2267d-adc2-b15c-a55b-02d47fbe2ce2-9580fc40, #w-node-_70caa9fa-a2a6-45f2-ec85-8e4493608dec-9580fc40, #w-node-fd960c66-10cb-a06a-7470-28734c4fa58f-9580fc40 {
   place-self: center;
 }
 
@@ -7711,6 +7911,13 @@ figcaption {
 @font-face {
   font-family: 'Baukasten';
   src: url({{ 'HomepagebaukastenBook-3nYL.ttf' | asset_url }}) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Luckiestguy';
+  src: url({{ 'LuckiestGuy-Regular.ttf' | asset_url }}) format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

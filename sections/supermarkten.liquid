@@ -19,6 +19,10 @@
 {{ section.settings.image_logo_3 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-_70caa9fa-a2a6-45f2-ec85-8e4493608dec-9580fc40', class: 'supermarkt-logo product_list-item' }}
 {% else %}
 <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" id="w-node-_70caa9fa-a2a6-45f2-ec85-8e4493608dec-9580fc40" alt="" class="supermarkt-logo product_list-item">
+{% endif %}{% if section.settings.image_logo_5 %}
+{{ section.settings.image_logo_5 | image_url: width: 1000 | image_tag: loading: 'lazy', id: 'w-node-fd960c66-10cb-a06a-7470-28734c4fa58f-9580fc40', class: 'supermarkt-logo product_list-item' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" id="w-node-fd960c66-10cb-a06a-7470-28734c4fa58f-9580fc40" alt="" class="supermarkt-logo product_list-item">
 {% endif %}</div>
           </div>
         </div> {% schema %} {
@@ -51,6 +55,11 @@
             "id": "image_logo_3",
             "type": "image_picker",
             "label": "Logo 3"
+        },
+        {
+            "id": "image_logo_5",
+            "type": "image_picker",
+            "label": "Logo 5"
         }
     ],
     "presets": [
