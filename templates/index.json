@@ -12,9 +12,9 @@
     "home_header": {
       "type": "home_header",
       "settings": {
-        "text_boventitel": "HALAL BABYVOEDING",
+        "text_boventitel": "HALAL & BIO BABYVOEDING",
         "text_h1_line_1": "Begin",
-        "text_h1_line_2": "Klein",
+        "text_h1_line_2": "Klein.",
         "url_link": "shopify://collections/smaken",
         "text_button_tekst": "shop nu",
         "image_bio_label": "shopify://shop_images/bio.svg",
