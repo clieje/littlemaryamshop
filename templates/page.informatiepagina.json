@@ -9,12 +9,11 @@
  */
 {
   "sections": {
-    "titel_default_tbdpmk": {
-      "type": "titel_default",
-      "name": "Titel default",
+    "titel_standaard_JXw3zx": {
+      "type": "titel_standaard",
+      "name": "Titel standaard",
       "settings": {
-        "text_tag": "sinds 2019",
-        "text_heading": "Vind Little Maryambij jou in de buurt"
+        "text_tag": "Little maryam"
       }
     },
     "default_YGVC3w": {
@@ -26,7 +25,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "titel_default_tbdpmk",
+    "titel_standaard_JXw3zx",
     "default_YGVC3w"
   ]
 }
