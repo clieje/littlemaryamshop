@@ -21,10 +21,13 @@
         "text_nog": "Nog",
         "text_tot_gratis_verzending": "tot gratis verzending!",
         "text_success_text": "Yes! Je hebt gratis verzending",
-        "free_shipping": "1500",
+        "free_shipping": "7500",
+        "text_6_stuks": "6 stuks",
+        "text_in_totaal": "In totaal",
         "text_checkout_tekst": "ik ga bestellen",
         "text_belofte_1": "100% Halal",
         "text_belofte_2": "Voor 23:59 besteld, morgen in huis",
+        "text_lege_winkelwagen": "Winkelwagen",
         "menu": "main-menu"
       }
     }
