@@ -9,14 +9,19 @@
  */
 {
   "sections": {
+    "white_dBTPwN": {
+      "type": "white",
+      "name": "white",
+      "settings": {}
+    },
     "faq_Ew4z8p": {
       "type": "faq",
       "blocks": {
-        "faq_item_2_ar3dgR": {
+        "faq_item_2_PiJPCR": {
           "type": "faq-item-2",
           "settings": {
             "text_heading": "Hoe zijn de producten verpakt en is de verpakking duurzaam?",
-            "richtext_richtext": "<p>De producten van Little Maryam zitten in glazen potjes — bewust gekozen omdat glas recyclebaar, veilig en smaakvrij is. Zes potjes zitten samen in een kartonnen tray (recyclebaar). Voor verzending worden de trays verpakt in een stevige verzenddoos met vulmiddel zodat de potjes veilig aankomen. De glazen potjes en het deksel kunnen na gebruik worden gerecycled via de glasbak.</p>"
+            "richtext_richtext": "<p>De producten van Little Maryam zitten in glazen potjes. Dit is bewust gekozen omdat glas recyclebaar, veilig en smaakvrij is. Zes potjes zitten samen in een kartonnen tray (recyclebaar). <br/><br/>Voor verzending worden de trays verpakt in een stevige verzenddoos. Om onze glazen potjes veilig te houden, is jouw doos gevuld met milieuvriendelijke verpakkingschips. Ze zijn 100% composteerbaar, maar ook 100% leuk! Je kunt ze gebruiken voor creatieve knutselprojecten met kinderen (en volwassenen!). Maak kleurrijke kettingen of plak ze aan elkaar om fantastische sculpturen te bouwen.</p><p>Geen zin in knutselen? Geen probleem! Gooi ze gewoon in de compostbak of kijk hoe ze verdwijnen in de gootsteen met een scheutje water.<br/><br/>De glazen potjes en het deksel kunnen na gebruik worden gerecycled via de glasbak.</p>"
           }
         },
         "faq_item_2_rxDtqY": {
@@ -175,7 +180,7 @@
         }
       },
       "block_order": [
-        "faq_item_2_ar3dgR",
+        "faq_item_2_PiJPCR",
         "faq_item_2_rxDtqY",
         "faq_item_2_JWpHGB",
         "faq_item_2_rQTWzk",
@@ -203,11 +208,6 @@
       "settings": {
         "text_heading": "Veelgestelde <br>vragen"
       }
-    },
-    "white_dBTPwN": {
-      "type": "white",
-      "name": "white",
-      "settings": {}
     }
   },
   "layout": "theme",
