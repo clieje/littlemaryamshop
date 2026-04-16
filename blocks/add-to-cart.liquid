@@ -4,7 +4,7 @@
                     <div class="winkelwagen-cont">
                       <div class="product-header_form-block w-form">
                         {% form 'product', product, class: 'product-header_default-state' %}
-<div x-show="'items < 10' class='addtocart_holder'" x-data="{ items: 0 }' @carttotalitems.window='items = event.detail" class="addtocart_holder">
+<div x-show="items < 10' class='addtocart_holder'" x-data="{ items: 0 }' @carttotalitems.window='items = event.detail" class="addtocart_holder">
                             <div class="product-header_add-to-cart-wrapper">
                               <template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper">
