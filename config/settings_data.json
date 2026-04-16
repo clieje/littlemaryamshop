@@ -13,7 +13,7 @@
       "berichtenbalk": {
         "type": "berichtenbalk",
         "settings": {
-          "text_bericht": "Binnen 1-2 werkdagen geleverd"
+          "text_bericht": "Op werkdagen besteld, verzending binnen 24 uur"
         }
       },
       "korting": {
