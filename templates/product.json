@@ -45,7 +45,7 @@
           "name": "Add to Cart",
           "settings": {
             "text_button_tekst": "in winkelwagen",
-            "text_levertijd": "Binnen 1-2 werkdagen geleverd",
+            "text_levertijd": "Op werkdagen besteld, verzending binnen 24 uur",
             "image_icon": "shopify://shop_images/download_1.svg",
             "image_icon_2": "shopify://shop_images/download_2.svg",
             "image_icon_3": "shopify://shop_images/download_3.svg",
