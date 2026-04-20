@@ -173,15 +173,17 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
   {% render 'search_javascript' %}
 <script>
+  const CART_LIMIT = 10;
+
   function updateCartLimit(itemCount) {
+    // Add to cart knop op productpagina
     const addToCartBtn = document.querySelector('.addtocart_holder');
     const input = document.querySelector('#quantity');
-    const remaining = 10 - itemCount;
-    const increaseBtns = document.querySelectorAll('.mini-cart-line-item_quantity-adjust[li-element="mini-cart-item-increase"]');
+    const remaining = CART_LIMIT - itemCount;
 
     if (addToCartBtn) {
-      addToCartBtn.style.opacity = itemCount >= 10 ? '0.5' : '1';
-      addToCartBtn.style.pointerEvents = itemCount >= 10 ? 'none' : 'auto';
+      addToCartBtn.style.opacity = itemCount >= CART_LIMIT ? '0.5' : '1';
+      addToCartBtn.style.pointerEvents = itemCount >= CART_LIMIT ? 'none' : 'auto';
     }
 
     if (input) {
@@ -191,9 +193,10 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
       }
     }
 
-    increaseBtns.forEach(btn => {
-      btn.style.opacity = itemCount >= 10 ? '0.5' : '1';
-      btn.style.pointerEvents = itemCount >= 10 ? 'none' : 'auto';
+    // + knoppen in minicart
+    document.querySelectorAll('[li-element="mini-cart-item-increase"]').forEach(btn => {
+      btn.style.opacity = itemCount >= CART_LIMIT ? '0.5' : '1';
+      btn.style.pointerEvents = itemCount >= CART_LIMIT ? 'none' : 'auto';
     });
   }
 
@@ -206,6 +209,15 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   window.addEventListener('carttotalitems', function(e) {
     updateCartLimit(e.detail);
   });
+
+  // Observer voor dynamisch geladen minicart items
+  const observer = new MutationObserver(() => {
+    fetch('/cart.js')
+      .then(r => r.json())
+      .then(data => updateCartLimit(data.item_count));
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
 </script>
 </body>
 </html>
