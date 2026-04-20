@@ -675,7 +675,7 @@
                               <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
                             </div>
                           </div>
-                          <a x-bind:href="'/checkout'" href="#" class="icon-button checkout w-inline-block">
+                          <a x-bind:style="'display: ' + (cart.item_count >= 4 ? 'block' : 'none')" x-bind:href="'/checkout'" href="#" class="icon-button checkout w-inline-block">
                             <div class="button-background checkout w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
                                 <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
                               </svg></div>
