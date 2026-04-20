@@ -173,14 +173,36 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
   {% render 'search_javascript' %}
   <script>
-  function updateCartLimit(itemCount) {
+  // Check bij pagina load
+  fetch('/cart.js')
+    .then(r => r.json())
+    .then(data => {
+      const btn = document.querySelector('.addtocart_holder');
+      if (btn) {
+        btn.style.opacity = data.item_count >= 10 ? '0.5' : '1';
+        btn.style.pointerEvents = data.item_count >= 10 ? 'none' : 'auto';
+      }
+    });
+
+  // Check bij cart update
+  window.addEventListener('carttotalitems', function(e) {
     const btn = document.querySelector('.addtocart_holder');
+    if (btn) {
+      btn.style.opacity = e.detail >= 10 ? '0.5' : '1';
+      btn.style.pointerEvents = e.detail >= 10 ? 'none' : 'auto';
+    }
+  });
+</script>
+<script>
+  function updateCartLimit(itemCount) {
+    const addToCartBtn = document.querySelector('.addtocart_holder');
     const input = document.querySelector('#quantity');
     const remaining = 10 - itemCount;
+    const increaseBtns = document.querySelectorAll('.mini-cart-line-item_quantity-adjust[li-element="mini-cart-item-increase"]');
 
-    if (btn) {
-      btn.style.opacity = itemCount >= 10 ? '0.5' : '1';
-      btn.style.pointerEvents = itemCount >= 10 ? 'none' : 'auto';
+    if (addToCartBtn) {
+      addToCartBtn.style.opacity = itemCount >= 10 ? '0.5' : '1';
+      addToCartBtn.style.pointerEvents = itemCount >= 10 ? 'none' : 'auto';
     }
 
     if (input) {
@@ -189,6 +211,11 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
         input.value = remaining > 0 ? remaining : 0;
       }
     }
+
+    increaseBtns.forEach(btn => {
+      btn.style.opacity = itemCount >= 10 ? '0.5' : '1';
+      btn.style.pointerEvents = itemCount >= 10 ? 'none' : 'auto';
+    });
   }
 
   // Check bij pagina load
