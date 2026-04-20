@@ -173,24 +173,32 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
   {% render 'search_javascript' %}
   <script>
+  function updateCartLimit(itemCount) {
+    const btn = document.querySelector('.addtocart_holder');
+    const input = document.querySelector('#quantity');
+    const remaining = 10 - itemCount;
+
+    if (btn) {
+      btn.style.opacity = itemCount >= 10 ? '0.5' : '1';
+      btn.style.pointerEvents = itemCount >= 10 ? 'none' : 'auto';
+    }
+
+    if (input) {
+      input.max = remaining > 0 ? remaining : 0;
+      if (parseInt(input.value) > remaining) {
+        input.value = remaining > 0 ? remaining : 0;
+      }
+    }
+  }
+
   // Check bij pagina load
   fetch('/cart.js')
     .then(r => r.json())
-    .then(data => {
-      const btn = document.querySelector('.addtocart_holder');
-      if (btn) {
-        btn.style.opacity = data.item_count >= 10 ? '0.5' : '1';
-        btn.style.pointerEvents = data.item_count >= 10 ? 'none' : 'auto';
-      }
-    });
+    .then(data => updateCartLimit(data.item_count));
 
   // Check bij cart update
   window.addEventListener('carttotalitems', function(e) {
-    const btn = document.querySelector('.addtocart_holder');
-    if (btn) {
-      btn.style.opacity = e.detail >= 10 ? '0.5' : '1';
-      btn.style.pointerEvents = e.detail >= 10 ? 'none' : 'auto';
-    }
+    updateCartLimit(e.detail);
   });
 </script>
 </body>
