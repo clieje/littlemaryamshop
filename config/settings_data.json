@@ -31,7 +31,8 @@
   "platform_customizations": {
     "custom_css": [
       "._500px {display: none;}",
-      "@media (min-width: 768px) {._500px {display: block; }}"
+      "@media (min-width: 768px) {._500px {display: block; }}",
+      "a[href=\"https://www.halalcs.org/contact\"] {text-decoration: underline;}"
     ]
   }
 }
