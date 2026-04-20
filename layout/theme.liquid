@@ -222,5 +222,30 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
 
   observer.observe(document.body, { childList: true, subtree: true });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Intercept alle cart/add.js en cart/update.js calls
+    const originalFetch = window.fetch;
+    window.fetch = function(...args) {
+      const url = args[0];
+      if (typeof url === 'string' && (url.includes('cart/add') || url.includes('cart/update'))) {
+        return originalFetch('/cart.js')
+          .then(r => r.json())
+          .then(cart => {
+            if (cart.item_count >= 8) {
+              // Blokkeer de call volledig
+              return new Response(JSON.stringify({
+                status: 422,
+                message: 'Maximum van 8 producten bereikt.',
+                description: ''
+              }), { status: 422, headers: { 'Content-Type': 'application/json' } });
+            }
+            return originalFetch(...args);
+          });
+      }
+      return originalFetch(...args);
+    };
+  });
+</script>
 </body>
 </html>
