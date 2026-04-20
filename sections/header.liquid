@@ -671,9 +671,32 @@
                           </div>
                           <div x-bind:style="'display: ' + (cart.item_count >= 4 ? 'none' : 'block')" class="bestelling">
                             <div class="melding">
-                              <div class="melding">voeg nog <span li-js-object="4 - cart.item_count" x-text="4 - cart.item_count">3</span> producten toe om te bestellen</div>
+                              <div class="melding">
+{{ section.settings.text_minimale_bestelwaarde }}
+</div>
+                              <div class="melding tekst"><span>
+{{ section.settings.text_voeg_nog }}
+</span> <span li-js-object="4 - cart.item_count" x-text="4 - cart.item_count"><strong>3</strong></span> <span>
+{{ section.settings.text_producten_toe_om_te_bestellen }}
+</span></div>
                             </div>
-                            <p class="paragraph_text">Little Maryam komt haar producten graag bij je thuisbezorgen met speciale verpakking om de glazen potjes te beschermen. Om dit te doen, en met respect voor het milieu is de <strong>minimale order grootte vier 6-packs.</strong> Voor jouw kleintje kiezen we bewust.</p>
+                            <div class="div-block">
+                              <div class="speciaal-verpakt">
+                                <div class="melding _3">
+{{ section.settings.text_reden_1 }}
+</div>
+                              </div>
+                              <div class="speciaal-verpakt">
+                                <div class="melding _3">
+{{ section.settings.text_reden_2 }}
+</div>
+                              </div>
+                              <div class="speciaal-verpakt">
+                                <div class="melding _3">
+{{ section.settings.text_reden_3 }}
+</div>
+                              </div>
+                            </div>
                           </div>
                           <div li-element="mini-cart-api-response" class="mini-cart_footer-message hide">
                             <div class="mini-cart_footer-message-item">
@@ -681,7 +704,7 @@
                               <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
                             </div>
                           </div>
-                          <a x-bind:style="cart.item_count >= 4 ? 'opacity: 0.5; pointer-events: none;' : ''" x-bind:href="'/checkout'" href="#" class="icon-button checkout w-inline-block">
+                          <a x-bind:style="cart.item_count < 4 ? 'opacity: 0.5; pointer-events: none;' : ''" x-bind:href="'/checkout'" href="#" class="icon-button checkout w-inline-block">
                             <div class="button-background checkout w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
                                 <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
                               </svg></div>
@@ -795,6 +818,42 @@
             "type": "text",
             "label": "In totaal",
             "default": "In totaal"
+        },
+        {
+            "id": "text_minimale_bestelwaarde",
+            "type": "text",
+            "label": "Minimale bestelwaarde",
+            "default": "Minimale besteling is 4 items"
+        },
+        {
+            "id": "text_voeg_nog",
+            "type": "text",
+            "label": "Voeg nog",
+            "default": "voeg nog"
+        },
+        {
+            "id": "text_producten_toe_om_te_bestellen",
+            "type": "text",
+            "label": "producten toe om te bestellen",
+            "default": "producten toe om te bestellen"
+        },
+        {
+            "id": "text_reden_1",
+            "type": "text",
+            "label": "Reden 1",
+            "default": "Speciaal<br\/>verpakt<br\/>"
+        },
+        {
+            "id": "text_reden_2",
+            "type": "text",
+            "label": "Reden 2",
+            "default": "Voor het <br\/>milieu<br\/>"
+        },
+        {
+            "id": "text_reden_3",
+            "type": "text",
+            "label": "Reden 3",
+            "default": "Het beste voor <br\/>jouw kleintje<br\/>"
         },
         {
             "id": "text_checkout_tekst",
