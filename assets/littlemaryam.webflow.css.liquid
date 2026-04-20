@@ -1636,6 +1636,10 @@ figcaption {
   display: flex;
 }
 
+.mini-cart_line-item_quantity-adjust.p-e {
+  pointer-events: none;
+}
+
 .mini-cart_line-item_product-info {
   grid-column-gap: 2.5px;
   grid-row-gap: 2.5px;
@@ -5759,7 +5763,7 @@ figcaption {
   background-color: var(--_schema---cta);
   color: var(--_schema---main);
   text-align: center;
-  border-radius: 5px;
+  border-radius: 12.5px;
   padding-top: 6px;
   padding-bottom: 4px;
   font-family: College Star Full Lovesvg, Arial, sans-serif;
@@ -5798,6 +5802,25 @@ figcaption {
   justify-content: space-between;
   margin-top: 15px;
   display: grid;
+}
+
+.full-message {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  border: .05px solid var(--_schema---secondary);
+  text-align: left;
+  background-color: #fff;
+  border-radius: 12.5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 25px;
+  display: flex;
+}
+
+.image-2 {
+  padding: 4px;
 }
 
 @media screen and (max-width: 991px) {

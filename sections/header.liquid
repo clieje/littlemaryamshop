@@ -609,6 +609,13 @@
                           </div>
                         </div>
                         <div class="mini-cart_line-item no-scrollbar">
+                          <div x-bind:style="'display: ' + (cart.item_count >= 8 ? 'none' : 'block')">
+                            <div class="full-message"><img src="{{ 'bestelling.svg' | asset_url }}" loading="lazy" alt="" class="image-2">
+                              <div class="text-size-small-2">
+{{ section.settings.text_winkelwagen_is_vol }}
+</div>
+                            </div>
+                          </div>
                           <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
                             <template x-for="product in products" :key="product.key">
     <li li-element="mini-cart-item" class="mini-cart_line-item_item">
@@ -635,7 +642,7 @@
                                 </div>
                                 <div class="cart-flex">
                                   <div class="mini-cart_line-item_quantity">
-                                    <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                                    <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust p-e" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
                                     <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
                                   </div>
                                   <div li-element="mini-cart-item-remove" class="bin w-embed" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 22.152 22.527">
@@ -806,6 +813,12 @@
             "id": "free_shipping",
             "label": "Free Shipping",
             "default": "100"
+        },
+        {
+            "id": "text_winkelwagen_is_vol",
+            "type": "text",
+            "label": "Winkelwagen is vol",
+            "default": "Je hebt het maximale aantal producten\u00a0(8) per bestelling bereikt. "
         },
         {
             "id": "text_6_stuks",
