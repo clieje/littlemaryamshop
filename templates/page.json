@@ -35,7 +35,7 @@
           "type": "faq-item-2",
           "settings": {
             "text_heading": "Wat zijn de levertijden?",
-            "richtext_richtext": "<p>Na verzending kun je je bestelling verwachten binnen:</p><p>•      Nederland en België: 1–2 werkdagen</p><p>•      Duitsland en Frankrijk: 2–3 werkdagen</p><p>Je ontvangt een bevestigingsmail met Track & Trace<br/>zodra je bestelling onderweg is.</p>"
+            "richtext_richtext": "<p>Na verzending kun je je bestelling verwachten binnen:</p><p>•      Nederland en België: gemiddeld 1–2 werkdagen</p><p>•      Duitsland en Frankrijk: gemiddeld 2-5 werkdagen</p><p>Je ontvangt een bevestigingsmail met Track & Trace zodra je bestelling onderweg is.</p>"
           }
         },
         "faq_item_2_rQTWzk": {
@@ -206,7 +206,7 @@
       ],
       "name": "FAQ",
       "settings": {
-        "text_heading": "Veelgestelde <br>vragen"
+        "text_heading": "Veelgestelde vragen"
       }
     }
   },
