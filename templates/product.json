@@ -284,7 +284,7 @@
       "type": "call_to_action",
       "name": "Call to action",
       "settings": {
-        "image_achtergrondafbeelding": "shopify://shop_images/e853cc4a-8cc5-44eb-8d94-358377e3b123.jpg",
+        "image_achtergrondafbeelding": "shopify://shop_images/32.png",
         "text_titel": "Wereldse<br>smaken met<br>liefde bereid",
         "url_link": "shopify://collections/smaken",
         "text_button_tekst": "shop nu"
