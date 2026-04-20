@@ -173,6 +173,18 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
   {% render 'search_javascript' %}
   <script>
+  // Check bij pagina load
+  fetch('/cart.js')
+    .then(r => r.json())
+    .then(data => {
+      const btn = document.querySelector('.addtocart_holder');
+      if (btn) {
+        btn.style.opacity = data.item_count >= 10 ? '0.5' : '1';
+        btn.style.pointerEvents = data.item_count >= 10 ? 'none' : 'auto';
+      }
+    });
+
+  // Check bij cart update
   window.addEventListener('carttotalitems', function(e) {
     const btn = document.querySelector('.addtocart_holder');
     if (btn) {
