@@ -94,3 +94,14 @@
   });
   observer.observe(document.body, { childList: true, subtree: true });
 </script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const priceEl = document.getElementById('price');
+  const perStukEl = document.getElementById('perstuk');
+  if (priceEl && perStukEl) {
+    const price = parseFloat(priceEl.textContent.replace(',', '.'));
+    const perStuk = price / 6;
+    perStukEl.textContent = perStuk.toFixed(2);
+  }
+});
+</script>

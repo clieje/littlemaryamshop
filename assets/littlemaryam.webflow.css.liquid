@@ -388,7 +388,7 @@ figcaption {
   grid-column-gap: .75rem;
   grid-row-gap: .75rem;
   flex-flow: column;
-  display: flex;
+  display: none;
 }
 
 .text-weight-semibold {
@@ -1450,8 +1450,7 @@ figcaption {
 .login_form {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  border: 1px solid var(--base-color-neutral--black);
-  background-color: var(--base-color-neutral--white);
+  border: 1px none var(--base-color-neutral--black);
   flex-direction: column;
   min-width: 30rem;
   max-width: 30rem;
@@ -4080,6 +4079,8 @@ figcaption {
 }
 
 .small-text.link {
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
   transition: all .2s;
 }
 
@@ -5680,8 +5681,12 @@ figcaption {
   inset: auto 0% -76px;
 }
 
+.little-maryam-mid.product_list-item {
+  bottom: -104px;
+}
+
 .image {
-  max-width: 225px;
+  max-width: 275px;
 }
 
 .smallcloud {
@@ -5821,6 +5826,17 @@ figcaption {
 
 .image-2 {
   padding: 4px;
+}
+
+.aangepast {
+  font-size: 88px;
+  line-height: .75;
+}
+
+.foto {
+  background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg);
+  background-position: 50%;
+  background-size: cover;
 }
 
 @media screen and (max-width: 991px) {
@@ -7090,6 +7106,14 @@ figcaption {
     font-size: 12px;
   }
 
+  .little-maryam-mid.product_list-item {
+    bottom: -75px;
+  }
+
+  .image {
+    max-width: 175px;
+  }
+
   .smallcloud.right.below {
     max-width: 175px;
     bottom: -50px;
@@ -7655,6 +7679,10 @@ figcaption {
   .hartje-relatief {
     max-width: 50px;
     margin-left: -69px;
+  }
+
+  .image {
+    max-width: 225px;
   }
 
   .smallcloud.right.below {
