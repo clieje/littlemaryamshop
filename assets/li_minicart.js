@@ -82,12 +82,12 @@ document.addEventListener('alpine:init', () => {
          * @param quantity
          */
         increaseCartItemQuantity(key, quantity) {
-            const CART_LIMIT = 10;
+            const CART_LIMIT = 8;
 
             if (this.cart.item_count >= CART_LIMIT) {
                 this.$dispatch('showcartmessage', {
                     status: 422,
-                    message: 'Je winkelwagen is vol (maximaal 10 producten).',
+                    message: `Je winkelwagen is vol (maximaal ${CART_LIMIT} producten).`,
                     description: ''
                 });
                 return;
@@ -111,28 +111,30 @@ document.addEventListener('alpine:init', () => {
          * @param quantity
          */
         updateCartItemQuantity(key, quantity) {
-            const CART_LIMIT = 10;
+            const CART_LIMIT = 8;
 
-            // Bereken het totaal als we deze wijziging doorvoeren
-            const currentItem = this.cart.items.find(item => item.key === key);
-            const currentQuantity = currentItem ? currentItem.quantity : 0;
-            const quantityDifference = quantity - currentQuantity;
-            const newTotal = this.cart.item_count + quantityDifference;
+            // Bereken totaal van alle andere items, dan voeg nieuwe quantity toe
+            const otherItemsTotal = this.cart.items
+                .filter(item => item.key !== key)
+                .reduce((sum, item) => sum + item.quantity, 0);
 
-            // Blokkeer als het nieuwe totaal boven de limiet komt
-            if (newTotal > CART_LIMIT && quantityDifference > 0) {
-                const remaining = CART_LIMIT - this.cart.item_count;
-                quantity = currentQuantity + (remaining > 0 ? remaining : 0);
+            const newTotal = otherItemsTotal + parseInt(quantity);
+
+            if (newTotal > CART_LIMIT) {
+                const maxAllowed = CART_LIMIT - otherItemsTotal;
+                quantity = maxAllowed > 0 ? maxAllowed : 1;
+
+                // Reset Alpine x-model waarde ook
+                const currentItem = this.cart.items.find(item => item.key === key);
+                if (currentItem) currentItem.quantity = quantity;
 
                 this.$dispatch('showcartmessage', {
                     status: 422,
-                    message: remaining > 0
-                        ? `Je kunt nog maar ${remaining} product${remaining === 1 ? '' : 'en'} toevoegen.`
-                        : 'Je winkelwagen is vol (maximaal 10 producten).',
+                    message: `Maximum van ${CART_LIMIT} producten bereikt.`,
                     description: ''
                 });
 
-                if (remaining <= 0) return;
+                if (maxAllowed <= 0) return;
             }
 
             this.initAbortController();
@@ -155,7 +157,6 @@ document.addEventListener('alpine:init', () => {
                     this.resetAbortController();
                     console.log('updateCartItemQuantity(): ', data);
 
-                    // Update item_count na succesvolle update
                     this.cart.item_count = data.item_count;
 
                     this.$dispatch('cartupdated', this.cart.items);
