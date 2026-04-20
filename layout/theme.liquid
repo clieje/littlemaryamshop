@@ -172,27 +172,6 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=699d9173bb0215f09580fb97" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
   {% render 'search_javascript' %}
-  <script>
-  // Check bij pagina load
-  fetch('/cart.js')
-    .then(r => r.json())
-    .then(data => {
-      const btn = document.querySelector('.addtocart_holder');
-      if (btn) {
-        btn.style.opacity = data.item_count >= 10 ? '0.5' : '1';
-        btn.style.pointerEvents = data.item_count >= 10 ? 'none' : 'auto';
-      }
-    });
-
-  // Check bij cart update
-  window.addEventListener('carttotalitems', function(e) {
-    const btn = document.querySelector('.addtocart_holder');
-    if (btn) {
-      btn.style.opacity = e.detail >= 10 ? '0.5' : '1';
-      btn.style.pointerEvents = e.detail >= 10 ? 'none' : 'auto';
-    }
-  });
-</script>
 <script>
   function updateCartLimit(itemCount) {
     const addToCartBtn = document.querySelector('.addtocart_holder');
