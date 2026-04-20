@@ -173,10 +173,9 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
   <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
   {% render 'search_javascript' %}
 <script>
-  const CART_LIMIT = 10;
+  const CART_LIMIT = 8;
 
   function updateCartLimit(itemCount) {
-    // Add to cart knop op productpagina
     const addToCartBtn = document.querySelector('.addtocart_holder');
     const input = document.querySelector('#quantity');
     const remaining = CART_LIMIT - itemCount;
@@ -188,29 +187,33 @@ body:has(.nav_mini-cart-holder.w--open) .message_section {
 
     if (input) {
       input.max = remaining > 0 ? remaining : 0;
-      if (parseInt(input.value) > remaining) {
-        input.value = remaining > 0 ? remaining : 0;
-      }
+      input.value = Math.min(parseInt(input.value) || 1, remaining > 0 ? remaining : 0);
+
+      // Forceer maximumwaarde bij typen
+      input.oninput = function() {
+        if (parseInt(this.value) > remaining) {
+          this.value = remaining > 0 ? remaining : 0;
+        }
+        if (parseInt(this.value) < 1) {
+          this.value = 1;
+        }
+      };
     }
 
-    // + knoppen in minicart
     document.querySelectorAll('[li-element="mini-cart-item-increase"]').forEach(btn => {
       btn.style.opacity = itemCount >= CART_LIMIT ? '0.5' : '1';
       btn.style.pointerEvents = itemCount >= CART_LIMIT ? 'none' : 'auto';
     });
   }
 
-  // Check bij pagina load
   fetch('/cart.js')
     .then(r => r.json())
     .then(data => updateCartLimit(data.item_count));
 
-  // Check bij cart update
   window.addEventListener('carttotalitems', function(e) {
     updateCartLimit(e.detail);
   });
 
-  // Observer voor dynamisch geladen minicart items
   const observer = new MutationObserver(() => {
     fetch('/cart.js')
       .then(r => r.json())
