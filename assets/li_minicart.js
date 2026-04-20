@@ -64,7 +64,6 @@ document.addEventListener('alpine:init', () => {
                         return item
                     })
 
-
                     this.cart.total_price = data.total_price;
                     this.cart.total_weight = data.total_weight;
                     this.cart.total_discount = data.total_discount;
@@ -83,6 +82,17 @@ document.addEventListener('alpine:init', () => {
          * @param quantity
          */
         increaseCartItemQuantity(key, quantity) {
+            const CART_LIMIT = 10;
+
+            if (this.cart.item_count >= CART_LIMIT) {
+                this.$dispatch('showcartmessage', {
+                    status: 422,
+                    message: 'Je winkelwagen is vol (maximaal 10 producten).',
+                    description: ''
+                });
+                return;
+            }
+
             this.updateCartItemQuantity(key, parseInt(quantity) + 1);
         },
 
@@ -101,9 +111,33 @@ document.addEventListener('alpine:init', () => {
          * @param quantity
          */
         updateCartItemQuantity(key, quantity) {
+            const CART_LIMIT = 10;
+
+            // Bereken het totaal als we deze wijziging doorvoeren
+            const currentItem = this.cart.items.find(item => item.key === key);
+            const currentQuantity = currentItem ? currentItem.quantity : 0;
+            const quantityDifference = quantity - currentQuantity;
+            const newTotal = this.cart.item_count + quantityDifference;
+
+            // Blokkeer als het nieuwe totaal boven de limiet komt
+            if (newTotal > CART_LIMIT && quantityDifference > 0) {
+                const remaining = CART_LIMIT - this.cart.item_count;
+                quantity = currentQuantity + (remaining > 0 ? remaining : 0);
+
+                this.$dispatch('showcartmessage', {
+                    status: 422,
+                    message: remaining > 0
+                        ? `Je kunt nog maar ${remaining} product${remaining === 1 ? '' : 'en'} toevoegen.`
+                        : 'Je winkelwagen is vol (maximaal 10 producten).',
+                    description: ''
+                });
+
+                if (remaining <= 0) return;
+            }
+
             this.initAbortController();
             console.log('updateCartItemQuantity(): key, quantity: ', key, quantity);
-            this.cart.items.filter((product)  => {
+            this.cart.items.filter((product) => {
                 if(product.key === key) {
                     product.quantity = quantity
                 }
@@ -121,7 +155,11 @@ document.addEventListener('alpine:init', () => {
                     this.resetAbortController();
                     console.log('updateCartItemQuantity(): ', data);
 
+                    // Update item_count na succesvolle update
+                    this.cart.item_count = data.item_count;
+
                     this.$dispatch('cartupdated', this.cart.items);
+                    this.$dispatch('carttotalitems', data.item_count);
                     this.$dispatch('showcartmessage', { status: data.status, message: data.message, description: data.description });
                 })
                 .catch((error) => {
