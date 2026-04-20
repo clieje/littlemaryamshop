@@ -609,7 +609,7 @@
                           </div>
                         </div>
                         <div class="mini-cart_line-item no-scrollbar">
-                          <div x-bind:style="'display: ' + (cart.item_count >= 8 ? 'none' : 'block')">
+                          <div x-bind:style="'display: ' + (cart.item_count >= 8 ? 'block' : 'none')">
                             <div class="full-message"><img src="{{ 'bestelling.svg' | asset_url }}" loading="lazy" alt="" class="image-2">
                               <div class="text-size-small-2">
 {{ section.settings.text_winkelwagen_is_vol }}
