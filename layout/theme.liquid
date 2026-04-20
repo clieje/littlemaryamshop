@@ -150,6 +150,56 @@
     });
   });
 </script>
+<script>
+  const CART_LIMIT = 10;
+
+  function updateCartLimit(itemCount) {
+    const addToCartBtn = document.querySelector('.addtocart_holder');
+    const input = document.querySelector('#quantity');
+    const remaining = CART_LIMIT - itemCount;
+
+    if (addToCartBtn) {
+      addToCartBtn.style.opacity = itemCount >= CART_LIMIT ? '0.5' : '1';
+      addToCartBtn.style.pointerEvents = itemCount >= CART_LIMIT ? 'none' : 'auto';
+    }
+
+    if (input) {
+      input.max = remaining > 0 ? remaining : 0;
+      input.value = Math.min(parseInt(input.value) || 1, remaining > 0 ? remaining : 0);
+
+      // Forceer maximumwaarde bij typen
+      input.oninput = function() {
+        if (parseInt(this.value) > remaining) {
+          this.value = remaining > 0 ? remaining : 0;
+        }
+        if (parseInt(this.value) < 1) {
+          this.value = 1;
+        }
+      };
+    }
+
+    document.querySelectorAll('[li-element="mini-cart-item-increase"]').forEach(btn => {
+      btn.style.opacity = itemCount >= CART_LIMIT ? '0.5' : '1';
+      btn.style.pointerEvents = itemCount >= CART_LIMIT ? 'none' : 'auto';
+    });
+  }
+
+  fetch('/cart.js')
+    .then(r => r.json())
+    .then(data => updateCartLimit(data.item_count));
+
+  window.addEventListener('carttotalitems', function(e) {
+    updateCartLimit(e.detail);
+  });
+
+  const observer = new MutationObserver(() => {
+    fetch('/cart.js')
+      .then(r => r.json())
+      .then(data => updateCartLimit(data.item_count));
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+</script>
 <script src="{{ 'li_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body>
   <div class="page-wrapper">
