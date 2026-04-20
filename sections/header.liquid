@@ -54,6 +54,42 @@
               
                         </div>
 {% endfor %}
+              {% if localization.available_languages.size > 1 %}    <div li-if="localization.available_languages.size > 1" class="language_component mobile">
+    
+                {% form 'localization' %}
+<div data-hover="true" data-delay="0" class="w-dropdown">
+                    <div class="language_dropdown w-dropdown-toggle"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ localization.language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></div>
+                    <nav li-for:inside="language in localization.available_languages" class="language_list w-dropdown-list">
+        {% for language in localization.available_languages %}                            
+                      
+                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="divflag">
+    
+                        <a hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" href="#" class="lang-link-block w-inline-block"><img src="https://cdn.shopify.com/s/files/1/1039/1653/6133/files/{{ language.iso_code | downcase }}.png" loading="lazy" alt="" class="flag"></a>
+                          </div>
+{% endunless %}
+                            
+                    
+                    {% endfor %}    </nav>
+                  </div><input type="hidden" name="language_code" value="{{ localization.language.iso_code }}" class="input">
+                {% endform %}
+                <div class="hide-2 w-embed w-script">
+                  <script>
+  document.querySelectorAll(".language_component").forEach((wrapper) => {
+  const form = wrapper.querySelector("form");
+  const input = wrapper.querySelector("input[name='language_code']");
+  if (form && input) {
+    form.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        input.value = event.currentTarget.dataset.value;
+        form.submit();
+      });
+    });
+  }
+});
+</script>
+                </div>
+                  </div>
+{% endif %}
             </nav>
             <div class="nav_menu-button w-nav-button">
               <div class="menu-icon">

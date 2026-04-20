@@ -64,6 +64,7 @@ document.addEventListener('alpine:init', () => {
                         return item
                     })
 
+
                     this.cart.total_price = data.total_price;
                     this.cart.total_weight = data.total_weight;
                     this.cart.total_discount = data.total_discount;
@@ -82,17 +83,6 @@ document.addEventListener('alpine:init', () => {
          * @param quantity
          */
         increaseCartItemQuantity(key, quantity) {
-            const CART_LIMIT = 8;
-
-            if (this.cart.item_count >= CART_LIMIT) {
-                this.$dispatch('showcartmessage', {
-                    status: 422,
-                    message: `Je winkelwagen is vol (maximaal ${CART_LIMIT} producten).`,
-                    description: ''
-                });
-                return;
-            }
-
             this.updateCartItemQuantity(key, parseInt(quantity) + 1);
         },
 
@@ -111,35 +101,9 @@ document.addEventListener('alpine:init', () => {
          * @param quantity
          */
         updateCartItemQuantity(key, quantity) {
-            const CART_LIMIT = 8;
-
-            // Bereken totaal van alle andere items, dan voeg nieuwe quantity toe
-            const otherItemsTotal = this.cart.items
-                .filter(item => item.key !== key)
-                .reduce((sum, item) => sum + item.quantity, 0);
-
-            const newTotal = otherItemsTotal + parseInt(quantity);
-
-            if (newTotal > CART_LIMIT) {
-                const maxAllowed = CART_LIMIT - otherItemsTotal;
-                quantity = maxAllowed > 0 ? maxAllowed : 1;
-
-                // Reset Alpine x-model waarde ook
-                const currentItem = this.cart.items.find(item => item.key === key);
-                if (currentItem) currentItem.quantity = quantity;
-
-                this.$dispatch('showcartmessage', {
-                    status: 422,
-                    message: `Maximum van ${CART_LIMIT} producten bereikt.`,
-                    description: ''
-                });
-
-                if (maxAllowed <= 0) return;
-            }
-
             this.initAbortController();
             console.log('updateCartItemQuantity(): key, quantity: ', key, quantity);
-            this.cart.items.filter((product) => {
+            this.cart.items.filter((product)  => {
                 if(product.key === key) {
                     product.quantity = quantity
                 }
@@ -157,10 +121,7 @@ document.addEventListener('alpine:init', () => {
                     this.resetAbortController();
                     console.log('updateCartItemQuantity(): ', data);
 
-                    this.cart.item_count = data.item_count;
-
                     this.$dispatch('cartupdated', this.cart.items);
-                    this.$dispatch('carttotalitems', data.item_count);
                     this.$dispatch('showcartmessage', { status: data.status, message: data.message, description: data.description });
                 })
                 .catch((error) => {
