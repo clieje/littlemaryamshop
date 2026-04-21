@@ -34,6 +34,7 @@
     },
     "ons_verhaal": {
       "type": "ons_verhaal",
+      "custom_css": [],
       "settings": {
         "image_afbeelding_ons_verhaal": "shopify://shop_images/Little_maryam_Sam_1.png",
         "text_h2_1": "ons",
