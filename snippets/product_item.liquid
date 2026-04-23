@@ -22,6 +22,14 @@
                                 <div class="tag-text white">coming soon</div>
                                   </div>
 {% endif %}
+                              <div class="small-tag red">
+                                <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                                    <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                                  </svg></div>
+                                <div class="tag-text white">
+{{ section.settings.text_verpakt_per }}
+</div>
+                              </div>
                             </div>
                             <div class="maanden">
                               <div li-object:text="product.metafields.custom.maanden" class="maand-text">
@@ -51,7 +59,9 @@
                                   </div>
 {% endif %}
                               <div class="price">€</div>
-                              <div li-object="product.price | money" class="price">{{ product.price | money }}</div>
+                              <div li-object:text="product.metafields.custom.prijs_per_eenheid" class="price">
+{{ product.metafields.custom.prijs_per_eenheid }}
+</div>
                               <div li-object:text="product.metafields.custom.stuks" class="kleine_eigenschap _1">
 {{ product.metafields.custom.stuks }}
 </div>
