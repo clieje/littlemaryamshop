@@ -14,7 +14,8 @@
       "name": "collectionheader",
       "settings": {
         "text_tag": "Assortiment",
-        "text_heading_collections": "Werelde smaken<br>met liefde bereidt"
+        "text_heading_collections": "Wereldse smaken met liefde bereid",
+        "img_little_maryam_pop": ""
       }
     },
     "collection_products": {
