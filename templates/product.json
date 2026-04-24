@@ -74,7 +74,9 @@
     "uitgelicht_DNF8HQ": {
       "type": "uitgelicht",
       "name": "Uitgelicht",
-      "settings": {}
+      "settings": {
+        "text_verpakt_per": "per 6 stuks"
+      }
     },
     "faq_FxhTmc": {
       "type": "faq",
