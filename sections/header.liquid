@@ -712,7 +712,7 @@
     </template>
                             </div>
                           </div>
-                          <div x-bind:style="'display: ' + (cart.item_count >= 4 ? 'none' : 'block')" class="bestelling">
+                          <div x-bind:style="'display: ' + (cart.item_count >= 3 ? 'none' : 'block')" class="bestelling">
                             <div class="melding">
                               <div class="melding">
 {{ section.settings.text_minimale_bestelwaarde }}
@@ -872,7 +872,7 @@
             "id": "text_minimale_bestelwaarde",
             "type": "text",
             "label": "Minimale bestelwaarde",
-            "default": "Minimale besteling is 4 items"
+            "default": "Minimale besteling is 3 items"
         },
         {
             "id": "text_voeg_nog",

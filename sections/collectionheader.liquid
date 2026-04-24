@@ -18,7 +18,7 @@
               <p li-object="collection.description" class="text-size-regular paragraph small">{{ collection.description }}</p>
             </div>
           </div>
-        </div><img src="{{ 'wolkjepaars.png' | asset_url }}" loading="lazy" sizes="100vw" srcset="{{ 'wolkjepaars-p-500.png' | asset_url }} 500w, {{ 'wolkjepaars.png' | asset_url }} 609w" alt="" class="smallcloud right below"> {% schema %} {
+        </div><img src="{{ 'wolkjepaars.png' | asset_url }}" loading="lazy" sizes="(max-width: 609px) 100vw, 609px" srcset="{{ 'wolkjepaars-p-500.png' | asset_url }} 500w, {{ 'wolkjepaars.png' | asset_url }} 609w" alt="" class="smallcloud right below"> {% schema %} {
     "tag": "section",
     "name": "collectionheader",
     "class": "collection-header",
@@ -33,7 +33,7 @@
             "id": "text_heading_collections",
             "type": "text",
             "label": "Heading collections",
-            "default": "Wereldse smaken<br\/>met liefde bereidt"
+            "default": "Wereldse smaken<br\/>met liefde bereid"
         },
         {
             "id": "img_little_maryam_pop",
