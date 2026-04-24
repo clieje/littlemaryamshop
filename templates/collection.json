@@ -20,7 +20,9 @@
     },
     "collection_products": {
       "type": "collection_products",
-      "settings": {}
+      "settings": {
+        "text_verpakt_per": "per 6 stuks"
+      }
     }
   },
   "layout": "theme",
