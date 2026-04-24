@@ -28,6 +28,7 @@
         "text_h2_2": "producten",
         "collection_collection": "smaken",
         "collection_collection_limit": 5,
+        "text_verpakt_per": "per 6 stuks",
         "url_link": "shopify://collections/smaken",
         "text_button_tekst": "alle producten"
       }
