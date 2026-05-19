@@ -22,19 +22,6 @@
       "settings": {
         "text_heading": "Andere artikelen"
       }
-    },
-    "homepagina_producten_VgQFFR": {
-      "type": "homepagina_producten",
-      "name": "Homepagina producten",
-      "settings": {
-        "text_h2_1": "onze",
-        "text_h2_2": "producten",
-        "collection_collection": "smaken",
-        "collection_collection_limit": 5,
-        "text_verpakt_per": "per 6 stuks",
-        "url_link": "",
-        "text_button_tekst": "alle producten"
-      }
     }
   },
   "layout": "theme",
@@ -42,7 +29,6 @@
   "order": [
     "article_hero",
     "article_content",
-    "related_articles",
-    "homepagina_producten_VgQFFR"
+    "related_articles"
   ]
 }
