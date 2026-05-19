@@ -1,14 +1,33 @@
 <div class="header_background-image-wrapper">
-          <div class="header_overlay-layer"></div><img src="{{ article.image | image_url: width: 1000 }}" loading="eager" li-object:src="article.image | image_url: width: 1000" li-object:alt="article.image.alt" alt="{{ article.image.alt }}" class="header_background-image">
+          <div class="header_overlay-layer"></div><img class="header_background-image _3" src="{{ article.image | image_url: width: 1000 }}" alt="{{ article.image.alt }}" sizes="(max-width: 1766px) 100vw, 1766px" li-object:src="article.image | image_url: width: 1000" loading="eager" li-object:alt="article.image.alt" srcset="{{ 'lmfoto-p-500.jpg' | asset_url }} 500w, {{ 'lmfoto-p-800.jpg' | asset_url }} 800w, {{ 'lmfoto-p-1080.jpg' | asset_url }} 1080w, {{ 'lmfoto-p-1600.jpg' | asset_url }} 1600w, {{ 'lmfoto.jpg' | asset_url }} 1766w">
         </div>
         <div class="padding-global padding-section-large">
           <div class="container-large">
-            <h1 li-object="article.title" class="heading-style-h1 text-color-white">{{ article.title }}</h1>
+            <div class="flex-mid">
+              <div class="small-tag">
+                <div class="button-background w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 160.917 54.977" width="100%" height="100%" preserveaspectratio="none">
+                    <path d="M.176,10.8,6.938,47.713s64.278,3.9,89.154,0S148.044,43.3,148.044,43.3,163.629,9.658,158.1,2.609,68.452,4.885,61.637,6.158.57,4.779.176,7.234A7.969,7.969,0,0,0,.176,10.8Z" transform="translate(1.726) rotate(2)" fill="currentColor"></path>
+                  </svg></div>
+                <div li-object="tag" class="tag-text bigger">{{ tag }}</div>
+              </div>
+            </div>
+            <h1 li-object="article.title" class="heading-style-h1 text-color-white blog">{{ article.title }}</h1>
+            <div class="label-text">
+              <div class="cllla w-embed"><svg id="Page-1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 20 22">
+                  <g id="Artboard" transform="translate(-919 -1443)">
+                    <g id="calendar" transform="translate(920 1444)">
+                      <rect id="Rectangle-path" width="18" height="18" rx="2" transform="translate(0 2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
+                      <path id="Shape" d="M13,0V4M5,0V4M0,8H18" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"></path>
+                    </g>
+                  </g>
+                </svg></div>
+              <div li-object="article.published_at | date: format: 'date'" class="text-block-2">{{ article.published_at | date: format: 'date' }}</div>
+            </div>
           </div>
         </div> {% schema %} {
     "tag": "header",
     "name": "Article Hero",
-    "class": "section_content-header",
+    "class": "section_content-header blog",
     "presets": [
         {
             "name": "Article Hero",
