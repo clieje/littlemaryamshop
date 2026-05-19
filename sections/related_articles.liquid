@@ -1,4 +1,4 @@
-<div class="padding-global padding-section-medium">
+<div class="padding-global padding-section-medium _5-container">
           <div class="container-large">
             {% assign currentArticle = article.title %}
             <h2 class="heading-style-h2">
@@ -13,20 +13,11 @@
     
                   <a li-object:href="article.url" href="{{ article.url }}" class="blog_item-grid w-inline-block">
                     <div id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7be-4b06a7bd" class="blog_tags-wrapper"><img src="{{ article.image | image_url: width: 450 }}" loading="lazy" id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7bf-4b06a7bd" li-object:src="article.image | image_url: width: 450" alt="{{ article.image.alt }}" li-object:alt="article.image.alt" class="blog_img">
-                      <div class="blog_tag-row">
-                        {% for tag in article.tags %}    <div li-for="tag in article.tags" class="blog_tag">
-                                    
-                          
-                            <div li-object="tag">{{ tag }}</div>
-                            
-                        
-                        </div>
-{% endfor %}
-                      </div>
+                      <div class="blog_tag-row"></div>
                     </div>
                     <div id="w-node-_6b97875b-5fce-9f5a-43fd-5792b69faf23-4b06a7bd" class="spacer-small"></div>
                     <div class="blog_info-wrapper">
-                      <h3 li-object="article.title" class="heading-style-h3">{{ article.title }}</h3>
+                      <h3 li-object="article.title" class="heading-style-h3 blog">{{ article.title }}</h3>
                     </div>
                   </a>
                     </div>
