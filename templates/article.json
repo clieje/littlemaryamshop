@@ -1,20 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "article_hero": {
-            "type": "article_hero"
-        },
-        "article_content": {
-            "type": "article_content"
-        },
-        "related_articles": {
-            "type": "related_articles"
-        }
+  "sections": {
+    "article_hero": {
+      "type": "article_hero",
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "article_hero",
-        "article_content",
-        "related_articles"
-    ]
+    "article_content": {
+      "type": "article_content",
+      "settings": {}
+    },
+    "related_articles": {
+      "type": "related_articles",
+      "settings": {
+        "text_heading": "Andere artikelen"
+      }
+    },
+    "homepagina_producten_VgQFFR": {
+      "type": "homepagina_producten",
+      "name": "Homepagina producten",
+      "settings": {
+        "text_h2_1": "onze",
+        "text_h2_2": "producten",
+        "collection_collection": "smaken",
+        "collection_collection_limit": 6,
+        "text_verpakt_per": "per 6 stuks",
+        "url_link": "",
+        "text_button_tekst": "alle producten"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "article_hero",
+    "article_content",
+    "related_articles",
+    "homepagina_producten_VgQFFR"
+  ]
 }
