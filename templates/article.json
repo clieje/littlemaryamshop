@@ -29,6 +29,13 @@
         "url_link": "",
         "text_button_tekst": "alle producten"
       }
+    },
+    "related_articles_dnVKg6": {
+      "type": "related_articles",
+      "name": "Related Articles",
+      "settings": {
+        "text_heading": "Meer blogs"
+      }
     }
   },
   "layout": "theme",
@@ -36,6 +43,7 @@
   "order": [
     "article_hero",
     "article_content",
-    "homepagina_producten_iecDbk"
+    "homepagina_producten_iecDbk",
+    "related_articles_dnVKg6"
   ]
 }
