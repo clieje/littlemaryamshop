@@ -17,10 +17,17 @@
       "type": "article_content",
       "settings": {}
     },
-    "related_articles": {
-      "type": "related_articles",
+    "homepagina_producten_iecDbk": {
+      "type": "homepagina_producten",
+      "name": "Homepagina producten",
       "settings": {
-        "text_heading": "Andere artikelen"
+        "text_h2_1": "onze",
+        "text_h2_2": "producten",
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6,
+        "text_verpakt_per": "per 6 stuks",
+        "url_link": "",
+        "text_button_tekst": "alle producten"
       }
     }
   },
@@ -29,6 +36,6 @@
   "order": [
     "article_hero",
     "article_content",
-    "related_articles"
+    "homepagina_producten_iecDbk"
   ]
 }
