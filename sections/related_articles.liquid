@@ -12,12 +12,25 @@
                             {% if article.title != currentArticle %}    <div li-if="article.title != currentArticle" role="listitem" class="blog_list-item w-dyn-item">
     
                   <a li-object:href="article.url" href="{{ article.url }}" class="blog_item-grid w-inline-block">
-                    <div id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7be-4b06a7bd" class="blog_tags-wrapper"><img src="{{ article.image | image_url: width: 450 }}" loading="lazy" id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7bf-4b06a7bd" li-object:src="article.image | image_url: width: 450" alt="{{ article.image.alt }}" li-object:alt="article.image.alt" class="blog_img">
+                    <div id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7be-4b06a7bd" class="blog_tags-wrapper">
+                      <div class="blog_info-wrapper">
+                        <h3 li-object="article.title" class="heading-style-h3 blog">{{ article.title }}</h3>
+                      </div>
+                      <div class="label-text left">
+                        <div class="cllla w-embed"><svg id="Page-1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 20 22">
+                            <g id="Artboard" transform="translate(-919 -1443)">
+                              <g id="calendar" transform="translate(920 1444)">
+                                <rect id="Rectangle-path" width="18" height="18" rx="2" transform="translate(0 2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
+                                <path id="Shape" d="M13,0V4M5,0V4M0,8H18" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div li-object="article.published_at | date: format: 'date'" class="text-block-2">{{ article.published_at | date: format: 'date' }}</div>
+                      </div>
+                      <div class="relative"><img src="{{ article.image | image_url: width: 450 }}" loading="lazy" li-object:src="article.image | image_url: width: 450" li-object:alt="article.image.alt" alt="{{ article.image.alt }}" class="blog_img">
+                        <div class="blog_overlay"></div>
+                      </div>
                       <div class="blog_tag-row"></div>
-                    </div>
-                    <div id="w-node-_6b97875b-5fce-9f5a-43fd-5792b69faf23-4b06a7bd" class="spacer-small"></div>
-                    <div class="blog_info-wrapper">
-                      <h3 li-object="article.title" class="heading-style-h3 blog">{{ article.title }}</h3>
                     </div>
                   </a>
                     </div>
