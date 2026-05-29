@@ -1,5 +1,5 @@
 <div class="header_background-image-wrapper">
-          <div class="header_overlay-layer"></div><img class="header_background-image _3" src="{{ article.image | image_url: width: 1000 }}" alt="{{ article.image.alt }}" sizes="(max-width: 1766px) 100vw, 1766px" li-object:src="article.image | image_url: width: 1000" loading="eager" li-object:alt="article.image.alt" srcset="{{ 'lmfoto-p-500.jpg' | asset_url }} 500w, {{ 'lmfoto-p-800.jpg' | asset_url }} 800w, {{ 'lmfoto-p-1080.jpg' | asset_url }} 1080w, {{ 'lmfoto-p-1600.jpg' | asset_url }} 1600w, {{ 'lmfoto.jpg' | asset_url }} 1766w">
+          <div class="header_overlay-layer"></div><img src="{{ article.image | image_url: width: 1000 }}" loading="eager" li-object:src="article.image | image_url: width: 1000" li-object:alt="article.image.alt" alt="{{ article.image.alt }}" class="header_background-image _3">
         </div>
         <div class="padding-global padding-section-large">
           <div class="container-large flex">
