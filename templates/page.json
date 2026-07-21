@@ -115,6 +115,13 @@
             "richtext_richtext": "<p>Onze producten zijn geschikt voor baby's en peuters. We bieden maaltijden aan in verschillende leeftijdscategorieën, zodat er altijd iets passends is voor jouw kleintje, van de eerste hapjes tot een volledige maaltijd.</p>"
           }
         },
+        "faq_item_dJAexj": {
+          "type": "faq-item",
+          "settings": {
+            "text_heading": "Waarom moet ik minimaal 3 trays bestellen?",
+            "richtext_richtext": "<p>Door minimaal 3 trays per bestelling te hanteren, benutten we de ruimte in onze verzenddozen optimaal. Zo verminderen we onnodig verpakkingsafval, verlagen we de CO₂-uitstoot per product en beperken we het aantal transportbewegingen.</p><p>Deze werkwijze helpt ons bovendien om logistieke kosten laag te houden, zodat we onze producten scherp geprijsd kunnen aanbieden, zonder concessies aan kwaliteit of service. </p><p>Met jouw bestelling draag je dus bij aan een efficiënter verzendproces én aan een duurzamere, maatschappelijk verantwoorde manier van ondernemen. Bedankt dat je hier samen met ons aan bijdraagt!</p>"
+          }
+        },
         "faq_item_LQY3LB": {
           "type": "faq-item",
           "settings": {
@@ -194,6 +201,7 @@
         "faq_item_2_iih4kV",
         "faq_item_MKTL3y",
         "faq_item_peEKP8",
+        "faq_item_dJAexj",
         "faq_item_LQY3LB",
         "faq_item_8D7UcX",
         "faq_item_nkNefj",
