@@ -12,7 +12,12 @@
               <h1 class="h1-collection mid left">
 {{ section.settings.text_heading_collections }}
 </h1>
-              <div class="image-container"><img src="{{ 'maryam.png' | asset_url }}" loading="lazy" alt="" class="lm" img="{{ section.settings.img_little_maryam_pop }}"></div>
+              <div class="maryam-promise">
+                <div class="image-container"><img src="{{ 'maryam.png' | asset_url }}" loading="lazy" alt="" class="lm" img="{{ section.settings.img_little_maryam_pop }}"></div>
+                <div class="about-cloud">
+                  <p class="promise">Onze kleine superheldin Maryam zorgt voor gezonde brandstof voor de dagelijkse overwinningen van jouw kleintje.</p><img src="{{ 'bluecl.png' | asset_url }}" loading="lazy" sizes="100vw" srcset="{{ 'bluecl-p-500.png' | asset_url }} 500w, {{ 'bluecl.png' | asset_url }} 609w" alt="" class="cloud-img">
+                </div>
+              </div>
             </div>
             <div class="_500px">
               <p li-object="collection.description" class="text-size-regular paragraph small">{{ collection.description }}</p>
@@ -20,7 +25,7 @@
           </div>
         </div> {% schema %} {
     "tag": "section",
-    "name": "collectionheader",
+    "name": "collection header V2",
     "class": "collection-header",
     "settings": [
         {
@@ -43,7 +48,7 @@
     ],
     "presets": [
         {
-            "name": "collectionheader",
+            "name": "collection header V2",
             "category": "Liquify",
             "blocks": []
         }
