@@ -32,6 +32,11 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
+      },
+      "7918667362130427036": {
+        "type": "shopify://apps/g-volume-discounts/blocks/bundle-widget/a702c84b-0471-4e7b-bea8-21bf53809d67",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
