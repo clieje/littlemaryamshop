@@ -67,6 +67,7 @@
         "description",
         "add-to-cart"
       ],
+      "disabled": true,
       "settings": {
         "text_producten": "Producten"
       }
