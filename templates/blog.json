@@ -17,8 +17,9 @@
         "text_heading": "Blogartikelen"
       }
     },
-    "blog_articles": {
+    "blog_articles_BnXCfF": {
       "type": "blog_articles",
+      "name": "Blog-Articles",
       "settings": {}
     }
   },
@@ -26,6 +27,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "titel_default_RiREWW",
-    "blog_articles"
+    "blog_articles_BnXCfF"
   ]
 }
